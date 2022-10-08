@@ -1,5 +1,5 @@
 ---
-use_math: true
+mathjax: true
 ---
 # PPWJC 
 Lab 2
@@ -178,11 +178,6 @@ Napisz program delta.exe przyjmujący parametry a b c który wypisze w standardo
 
 $$ \Delta = b^2 - 4ac $$
 
-$ \Delta = b^2 - 4ac $
-
-```math
-\Delta = b^2 - 4ac
-```
 
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
