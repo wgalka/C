@@ -182,6 +182,10 @@ $$
 
 $ \Delta = b^2 - 4ac $
 
+```math
+\Delta = b^2 - 4ac
+```
+
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
 2. Usuń utworzone pliki z pulpitu
