@@ -180,15 +180,6 @@ $$
 \Delta = b^2 - 4ac 
 $$
 
-asd
-
-$ \Delta = b^2 - 4ac $
-
-asd
-
-```math
-\Delta = b^2 - 4ac
-```
 
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
