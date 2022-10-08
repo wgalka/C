@@ -176,7 +176,9 @@ Przetestuj działanie kodu uruchamiając program z róznymi argumentami np. `arg
 ### Zadanie 6
 Napisz program delta.exe przyjmujący parametry a b c który wypisze w standardowym wyjściu wartość delty. 
 
-$$ \Delta = b^2 - 4ac $$
+$$ 
+\Delta = b^2 - 4ac 
+$$
 
 
 ## Po zakończonej pracy:
