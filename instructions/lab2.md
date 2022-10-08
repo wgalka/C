@@ -178,6 +178,8 @@ Napisz program delta.exe przyjmujący parametry a b c który wypisze w standardo
 
 $$ \Delta = b^2 - 4ac $$
 
+$ \Delta = b^2 - 4ac $
+
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
 2. Usuń utworzone pliki z pulpitu
