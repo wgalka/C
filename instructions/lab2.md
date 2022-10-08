@@ -175,7 +175,9 @@ Skompiluj kod do pliku uruchomieniowego `arguments.exe`. Uruchom kod poleceniem 
 Przetestuj działanie kodu uruchamiając program z róznymi argumentami np. `arguments.exe 1 2 3 4`(W jaki sposób odczytać wartość "4" z tego polecenia?), w komentarzu napisz co przechowuje zmienna argc oraz argv. 
 
 ### Zadanie 6
-Napisz program delta.exe przyjmujący parametry a b c który wypisze w standardowym wyjściu wartość delty. $$ \Delta = b^2 - 4ac $$
+Napisz program delta.exe przyjmujący parametry a b c który wypisze w standardowym wyjściu wartość delty. 
+
+$$ \Delta = b^2 - 4ac $$
 
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
