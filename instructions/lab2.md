@@ -1,5 +1,4 @@
 ---
-math: true
 mathjax: true
 ---
 # PPWJC 
