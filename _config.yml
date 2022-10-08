@@ -15,7 +15,7 @@ include:
 
 markdown: kramdown
 kramdown:
-  input: Kramdown
-  # input: GFM
-# kramdown:
-#   syntax_highlighter: rouge  
+  # input: Kramdown
+  input: GFM
+#   syntax_highlighter: rouge
+#   syntax_highlighter: coderay  
