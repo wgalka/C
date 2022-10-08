@@ -1,5 +1,5 @@
 ---
-mathjax: true
+use_math: true
 ---
 # PPWJC 
 Lab 2
