@@ -13,11 +13,11 @@
 #   - ISSUE_TEMPLATE.md
 #   - PULL_REQUEST_TEMPLATE.md
 
-# markdown: GFM
-markdown: kramdown
-kramdown:
-  # input: Kramdown
-  input: GFM
-  math_engine: mathjax
+markdown: GFM
+# markdown: kramdown
+# kramdown:
+#   # input: Kramdown
+#   input: GFM
+#   math_engine: mathjax
 #   syntax_highlighter: rouge
 #   syntax_highlighter: coderay  
