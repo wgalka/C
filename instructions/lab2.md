@@ -35,6 +35,7 @@ Przypisz zmiennym nowe wartości będące danymi kolegów po twojej lewej i praw
 ### Zadanie 2 - Operatory
 Utwórz plik operators.c a następnie wykonaj poniższe polecenia.\
 **Operatory arytmrtyczne:**
+
 |Symbol | Działanie                       |
 |-------|---------------------------------|
 | +     |                                 |
@@ -44,7 +45,7 @@ Utwórz plik operators.c a następnie wykonaj poniższe polecenia.\
 | %     |                                 |
 
 Utwórz zmienną `a = 16` oraz `b = 5`. Przetestuj działanie kolejnych operatorów w następujący sposób (przykład dla +):
-```C
+```c
 int a = 16;
 int b = 5;
 int result1 = a + b;
@@ -52,7 +53,7 @@ prinft("Wynik działania 16 + 5 = %i",result1);
 ```
 
 W jaki inny sposób można zapisać następujący kod?
-```C
+```c
 float a = 10;
 float b = 4;
 a = a / b;
@@ -60,6 +61,7 @@ printf("%i", a);
 ```
 
 **Operator przypisania**
+
 |Symbol  | Działanie                       |
 |--------|---------------------------------|
 | =      |                                 |
@@ -70,7 +72,7 @@ printf("%i", a);
 | %=     |                                 |
 
 Przetestuj działanie operatorów, napisz jak działają w komentarzu. Poniżej przykład użycia operatorów `=` oraz `+=`.
-```C
+```c
 int a = 16;
 int b = 5;
 int result1 = a;
@@ -80,6 +82,7 @@ printf("result1 += b = %i",result1);
 ```
 
 **Operatory porównania**
+
 |Symbol  | Działanie                       |
 |--------|---------------------------------|
 | ==     |                                 |
@@ -88,12 +91,14 @@ printf("result1 += b = %i",result1);
 | >      |                                 |
 | <=     |                                 |
 | >=     |                                 |
-```C
+
+```c
 int a = 16;
 float b = 16;
 bool result = a == b;
 printf("a == b - %i",a==b)
 ```
+
 Przetestuj działanie powyższych operatorów. Wyniki wypisz w standardowym wyjściu.
 
 ### Zadanie 3 - I/O
@@ -104,14 +109,14 @@ Zapoznaj się z dokumentacją instrukcji
 [if](https://learn.microsoft.com/pl-pl/cpp/c-language/if-statement-c?view=msvc-170) oraz 
 [switch](https://learn.microsoft.com/pl-pl/cpp/c-language/switch-statement-c?view=msvc-170).
 
-```C
+```c
 if (/* condition */)
 {
     /* code */
 }
 ```
 
-```C
+```c
 if (/* condition */)
 {
     /* code */
@@ -121,7 +126,7 @@ if (/* condition */)
 }
 ```
 
-```C
+```c
 if (/* condition */)
 {
     /* code */
@@ -139,13 +144,16 @@ if (/* condition */)
     /* code */
 }
 ```
+
+
 Napisz program który prosi użytkownika o wpisanie liczby a nastepnie sprawdza czy podana liczba jest podzielna przez 2 i wypisuje odpowiednią informacje.
 
 Napisz program który prosi użytkownika o dwie wartości liczbowe oraz jedną znakową + - * lub /. Używając instrukcji switch wykonaj obliczenia w zależności od wyboru użytkownika.
 
 ### Zadanie 5
 utwórz plik arguments.c a w nim umieść poniższy kod:
-```C
+
+```c
 int main(int argc, char const *argv[])
 {
     printf("argc = %d\n", argc);
@@ -155,6 +163,7 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+
 Skompiluj kod do pliku uruchomieniowego `arguments.exe`. Uruchom kod poleceniem `arguments.exe 12 cześć "hello world"`
 
 Przetestuj działanie kodu uruchamiając program z róznymi argumentami np. `arguments.exe 1 2 3 4`(W jaki sposób odczytać wartość "4" z tego polecenia?), w komentarzu napisz co przechowuje zmienna argc oraz argv. 
