@@ -38,11 +38,11 @@ Utwórz plik operators.c a następnie wykonaj poniższe polecenia.\
 
 |Symbol | Działanie                       |
 |-------|---------------------------------|
-| +     |                                 |
-| -     |                                 |
-| *     |                                 |
-| /     |                                 |
-| %     |                                 |
+| +     |  .                               |
+| -     |  .                               |
+| *     |  .                               |
+| /     |  .                               |
+| %     |  .                               |
 
 Utwórz zmienną `a = 16` oraz `b = 5`. Przetestuj działanie kolejnych operatorów w następujący sposób (przykład dla +):
 ```c
@@ -64,12 +64,12 @@ printf("%i", a);
 
 |Symbol  | Działanie                       |
 |--------|---------------------------------|
-| =      |                                 |
-| +=     |                                 |
-| -=     |                                 |
-| *=     |                                 |
-| /=     |                                 |
-| %=     |                                 |
+| =      | .                                |
+| +=     | .                                |
+| -=     | .                                |
+| *=     | .                                |
+| /=     | .                                |
+| %=     | .                                |
 
 Przetestuj działanie operatorów, napisz jak działają w komentarzu. Poniżej przykład użycia operatorów `=` oraz `+=`.
 ```c
@@ -85,12 +85,12 @@ printf("result1 += b = %i",result1);
 
 |Symbol  | Działanie                       |
 |--------|---------------------------------|
-| ==     |                                 |
-| !=     |                                 | 
-| <      |                                 |
-| >      |                                 |
-| <=     |                                 |
-| >=     |                                 |
+| ==     | .                                |
+| !=     | .                                | 
+| <      | .                                |
+| >      |  .                               |
+| <=     | .                                |
+| >=     | .                                |
 
 ```c
 int a = 16;
