@@ -45,6 +45,7 @@ Utwórz plik operators.c a następnie wykonaj poniższe polecenia.\
 | %     |  .                               |
 
 Utwórz zmienną `a = 16` oraz `b = 5`. Przetestuj działanie kolejnych operatorów w następujący sposób (przykład dla +):
+
 ```c
 int a = 16;
 int b = 5;
@@ -72,6 +73,7 @@ printf("%i", a);
 | %=     | .                                |
 
 Przetestuj działanie operatorów, napisz jak działają w komentarzu. Poniżej przykład użycia operatorów `=` oraz `+=`.
+
 ```c
 int a = 16;
 int b = 5;
