@@ -1,6 +1,3 @@
----
-mathjax: true
----
 # PPWJC 
 Lab 2
 
