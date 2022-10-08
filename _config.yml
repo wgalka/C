@@ -14,5 +14,8 @@ include:
   - PULL_REQUEST_TEMPLATE.md
 
 markdown: kramdown
+kramdown:
+  input: Kramdown
+  # input: GFM
 # kramdown:
 #   syntax_highlighter: rouge  
