@@ -2,7 +2,7 @@
 Lab 2
 
 ## Pytania
-- Jak działa dyrektywa `#define`?
+- Jak działa dyrektywa `#include`?
 - Czym jest zmienna? Jak deklarujemy zmienne?
 - Typy zmiennych w C
 - Czego potrzebuje program by działać?
