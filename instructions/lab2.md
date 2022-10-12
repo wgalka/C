@@ -18,7 +18,69 @@ Lab 2
 
 ## Zadania
 Utwórz folder Lab2 na pulpicie, następnie otwórz folder w Visual Studio Code.
+
+
 ### Zadanie 1 - I/O i zmienne
+Deklaracja zmiennej wygląda następująco `[typ zmiennej] [nazwa zmiennej];
+np.:
+
+```c
+int zmienna1;
+```
+
+Tak zainicjowana zmienna obecnie odnosi się do danego miejsca w pamięci komputera w którym bity pamięci są w "losowym stanie".
+
+```c
+#include <stdio.h> 
+#include <stdlib.h>
+
+int main(int argc, char const *argv[]) // każdy program musi mieć punkt startu którym domyślnie jest funkcja main.
+{
+    int a;
+    printf("Wartość zmiennej a: %i",a);
+    return 0;
+}
+```
+
+```bash
+> 2658304
+```
+
+Przy kolejnych uruchomieniach programu możemy dostać inny wynik:
+
+```bash
+> 3563520
+```
+
+Aby ustawić ciąg bitów w pamięci a tym samym aby nasza zmienna przechowywała wartości przez nas zdefiniowane używamy operatora przypisania `=`.
+
+```c
+int a = 3; // W pamięci zostaną ustawione odpowiednio bity dla liczby 3.
+printf("Wartość zmiennej a: %i",a);
+```
+
+Podstawowe typy zmiennych i literały pozwalające je definiwoać:
+
+```c
+int liczbaCalkowita = 432871; // typ przechowuje liczby całkowite w danym zakresie
+float liczbaZmiennoprzecinkowa = 3.14; // typ przechowuje liczby zmienno przecinkowe w danym zakresie
+char znak = 'a'; // typ przechowuje litery, cyfry i znaki specjalne.
+double liczbaZmiennoprzechnkowa = 32.32; // yp przechowuje liczby zmienno przecinkowe z dokładnością większą niż float
+```
+
+Stałe definiujemy dopisując przed definicją zmiennej `const` lub dytektywą `#define`. Wartości stałej w przeciwieństwie do zmiennej dynamicznej nie możemy pomownie przypisać.
+```c
+int a = 12;
+const B = 54;
+
+// dozwolona jest zmiana wartości a
+a = 43;
+
+// nie dozwolone jest przypisanie nowej wartości stałej
+// B = 66;
+```
+
+
 Interakcja z programem - [`printf()`](https://documentation.help/C-Cpp-Reference/printf.html) [`scanf()`](https://documentation.help/C-Cpp-Reference/scanf.html)\
 Korzystając z dokumentacji funkcji [printf](https://documentation.help/C-Cpp-Reference/printf.html) utwórz program task1.exe który przechowuje w następujących zmiennych:
 - `name` - imię
@@ -50,7 +112,7 @@ Utwórz zmienną `a = 16` oraz `b = 5`. Przetestuj działanie kolejnych operator
 int a = 16;
 int b = 5;
 int result1 = a + b;
-prinft("Wynik działania 16 + 5 = %i",result1);
+printf("Wynik działania 16 + 5 = %i",result1);
 ```
 
 W jaki inny sposób można zapisać następujący kod?

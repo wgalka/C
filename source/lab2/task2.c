@@ -19,7 +19,8 @@ int main(int argc, char const *argv[])
     // float b = 16;
     // _Bool result = a == b;
     // printf("%i",a==b);
-   
+    int a;
+    printf("%i",a);
 
     return 0;
 }
