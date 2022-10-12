@@ -80,6 +80,27 @@ a = 43;
 // B = 66;
 ```
 
+Zmienne tablicowe przechowują w nastepujących po sobie adresach pamięci zmienne określonego typu. W ten sposób możemy definiować łańcychy znaków.
+
+```c
+char string[20]; // utworzenie zmiennej string która przechowuje 20 zmiennych char do których odwołujemy się po indeksach.
+string[0] = 'H'; // przypisanie do pierwszego zarezerwowanego adresu litery 'H'
+string[1] = 'e';
+string[2] = 'l';
+string[3] = 'l';
+string[4] = 'o';
+string[5] = ' ';
+string[6] = 'C';
+printf("%c", string[6]); // Wypisanie znaku na 7 miejscu w tablicy.
+printf("%s",string);
+```
+
+Literał ułatwiający przypisanie wartości do kolejnych elementów tablicy(wynik działania programu będzie taki sam jak poprzedniego):
+
+```c
+char string2[20] = "Hello C";
+printf("%s",string2);
+```
 
 Interakcja z programem - [`printf()`](https://documentation.help/C-Cpp-Reference/printf.html) [`scanf()`](https://documentation.help/C-Cpp-Reference/scanf.html)\
 Korzystając z dokumentacji funkcji [printf](https://documentation.help/C-Cpp-Reference/printf.html) utwórz program task1.exe który przechowuje w następujących zmiennych:
