@@ -145,6 +145,7 @@ printf("%i", a);
 ```
 
 **Operator przypisania**
+Uzupełnij tabelkę.
 
 |Symbol  | Działanie                       |
 |--------|---------------------------------|
@@ -167,6 +168,7 @@ printf("result1 += b = %i",result1);
 ```
 
 **Operatory porównania**
+Uzupełnij tabelkę.
 
 |Symbol  | Działanie                       |
 |--------|---------------------------------|
