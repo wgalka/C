@@ -62,6 +62,7 @@ int main(int argc, char const *argv[])
 
 Definiowanie i przypisanie wartości tablicy wielowymiarowej.
 
+{% raw % }
 ```c
 char chararray[3][2] = /\{/\{'a','b'\},
                             /\{'c','d'\},
@@ -69,7 +70,7 @@ char chararray[3][2] = /\{/\{'a','b'\},
 
 printf("%c",chararray[1][1]);
 ```
-
+{% endraw % }
 Utwórz program który przechowa dane następującej tabeli:
 | 3.1 | 3.6 |
 |-----|-----|
