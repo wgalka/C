@@ -63,9 +63,9 @@ int main(int argc, char const *argv[])
 Definiowanie i przypisanie wartości tablicy wielowymiarowej.
 
 ```c
-char chararray[3][2] = \{\{'a','b'\},
-                            \{'c','d'\},
-                            \{'e','f'\}\};
+char chararray[3][2] = /\{/\{'a','b'\},
+                            /\{'c','d'\},
+                            /\{'e','f'/\}/\};
 
 printf("%c",chararray[1][1]);
 ```
