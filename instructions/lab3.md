@@ -65,9 +65,9 @@ Definiowanie i przypisanie wartości tablicy wielowymiarowej.
 
 ```c
 {% raw % }
-char chararray[3][2] = {{'a','b'},
+char chararray[3][2] = {{'{{'}}'a','b'{{"}"}},
                         {'c','d'},
-                        {'e','f'}};
+                        {'e','f'{{"}}"}};
 
 printf("%c",chararray[1][1]);
 {% endraw % }
