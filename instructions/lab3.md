@@ -100,7 +100,7 @@ Używając instrukcji break i continue napisz program który wypisze zadaną prz
 
 Utwórz program który wypisuje kolejne liczby pierwsze.*
 
-### 
+### Wykorzystanie pętli i tablic
 
 Napisz program który przechowuje w tablicy 3x3 wartości podane przez użytkownika. 
 
