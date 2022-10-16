@@ -94,6 +94,10 @@ Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 
 Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci?
 
+`break` - przerywa działanie pętli.
+`continue` - przechodzi do następnej iteracji.
+Używając instrukcji break i continue napisz program który wypisze zadaną przez użytkownika ilość liczb nieparzystych z pominięciem liczb podzielnych przez 3.
+
 Utwórz program który wypisuje kolejne liczby pierwsze.*
 
 ### 
@@ -107,4 +111,4 @@ Dodaj do programu menu z następującymi opcjami:
 3. Modyfikacja wybranej komórki
 4. Wyjście z progrmau
 
-Program ma działać dopóki użytkownik nie wybierze opcji 4.
+Program ma działać dopóki użytkownik nie wybierze opcji 4. W przypadkach 1,2,3 ma umożliwiać użytkownikowi wybranie wiersza/koumny a następnie wykonywać odpowiednie obliczenia.
