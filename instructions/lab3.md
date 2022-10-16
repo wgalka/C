@@ -90,6 +90,12 @@ Wypisz w konsoli zaznaczoną wartość używając indeksów.
 
 ### Pętle
 
+[for](https://learn.microsoft.com/pl-pl/cpp/c-language/for-statement-c?view=msvc-170)
+
+[do-while](https://learn.microsoft.com/pl-pl/cpp/c-language/do-while-statement-c?view=msvc-170)
+
+[while](https://learn.microsoft.com/pl-pl/cpp/c-language/while-statement-c?view=msvc-170)
+
 Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 
 Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci?
