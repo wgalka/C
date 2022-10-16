@@ -40,6 +40,8 @@ Lab 1
 
 - Visual Studio Code jest narzędziem które możemy konfigurować wedle swoich potrzeb dzięki pluginom. Zainstaluj C/C++ Extension Pack. Jedną z jego funkcjonalności jest kolorowanie składni. 
 <br>![c/c++ extension](images/lab0extension.png)
+- Dodatek [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) umożliwi skompilowanie aktywnego pliku a następnie uruchomienie wygenerowanego programu.
+
 - Skompiluj i uruchom program korzystając z IDE Visual Studio Code dzięki zainstalowanym pluginom. Mając wybraną zakładkę z twoim programem znajdź następującą opcję:
 <br>![run program](images/lab0runprogram.png)
 - Zmodyfikuj program "zakomentowując" deklarację biblioteki stdlib.h (linie zaczynające się od znaków "//" są komentarzami nie mającymmi wpływu na działanie kodu. Kompilator je pomija).  
