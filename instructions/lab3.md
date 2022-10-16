@@ -95,3 +95,16 @@ Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci?
 
 Utwórz program który wypisuje kolejne liczby pierwsze.*
+
+### 
+
+Napisz program który przechowuje w tablicy 3x3 wartości podane przez użytkownika. 
+
+Dodaj do programu menu z następującymi opcjami:
+
+1. Średnia z wybranej kolumny
+2. Średnia z wybranego wiersza
+3. Modyfikacja wybranej komórki
+4. Wyjście z progrmau
+
+Program ma działać dopóki użytkownik nie wybierze opcji 4.
