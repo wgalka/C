@@ -3,6 +3,13 @@ Lab 3
 
 ## Pytania
 
+- W jaki sposób definiujemy tablice?
+- Jak odczytać wartość z tablicy?
+- Jak zmodyfikować wartość tablicy?
+- Czym są tablice wielowymiarowe?
+- Jak zbudowana jest pętla for?
+- Jak zbudowana jest pętla while/do while?
+
 ## Zadania
 ### Defioniowanie tablic jedno i [wielowymiarowych](https://cse.engineering.nyu.edu/~mleung/CS1114/s08/ch08/MDmemory.htm):
 
