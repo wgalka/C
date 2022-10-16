@@ -64,9 +64,9 @@ Definiowanie i przypisanie wartości tablicy wielowymiarowej.
 
 
 ```c
-char chararray[3][2] = {{'{{'}} 'a','b'{{"}"}},
-                        { 'c','d' },
-                        { 'e','f' {{"}}"}};
+char chararray[3][2] = { {'a','b'},
+                         { 'c','d' },
+                         { 'e','f' } };
 
 printf("%c",chararray[1][1]);
 ```
@@ -82,3 +82,9 @@ Utwórz program który przechowa dane następującej tabeli:
 Wypisz w konsoli zaznaczoną wartość używając indeksów.
 
 ### Pętle
+
+Utwórz program który wypisuje 100 liczb podzielnych przez 5.
+
+Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci?
+
+Utwórz program który wypisuje kolejne liczby pierwsze.*
