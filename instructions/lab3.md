@@ -78,3 +78,5 @@ Utwórz program który przechowa dane następującej tabeli:
 | 3.5 | 32.6 |
 
 Wypisz w konsoli zaznaczoną wartość używając indeksów.
+
+### Pętle
