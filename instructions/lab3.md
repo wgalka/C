@@ -113,6 +113,8 @@ Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzy
 `continue` - przechodzi do następnej iteracji.
 Używając instrukcji break i continue napisz program który wypisze zadaną przez użytkownika ilość liczb nieparzystych z pominięciem liczb podzielnych przez 3.
 
+Spróbuj wykonać poprzednie zadania za pomocą innej pętli(jeśli używałeś for za pomocą pętli wile lub do-while).
+
 Utwórz program który wypisuje kolejne liczby pierwsze.*
 
 ### Wykorzystanie pętli i tablic
