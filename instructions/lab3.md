@@ -87,6 +87,7 @@ Utwórz program który przechowa dane następującej tabeli:
 | 3.5 | 32.6 |
 
 Wypisz w konsoli zaznaczoną wartość używając indeksów.
+Zmodyfikuj program tak by użytkownik mógł wskazać który element tablicy chce odczytać.
 
 ### Pętle
 
@@ -95,6 +96,14 @@ Wypisz w konsoli zaznaczoną wartość używając indeksów.
 [do-while](https://learn.microsoft.com/pl-pl/cpp/c-language/do-while-statement-c?view=msvc-170)
 
 [while](https://learn.microsoft.com/pl-pl/cpp/c-language/while-statement-c?view=msvc-170)
+
+Utwórz program który wypisuje liczby od 0 do 20.
+
+Utwórz program który wypisuje liczby od 5 do 25.
+
+Utwórz program który wypisuje liczby od 20 do 0.
+
+Utwórz program który wypisuje począwszy od 1 co 3 kolejną liczbę.
 
 Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 
