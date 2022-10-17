@@ -103,7 +103,7 @@ Utwórz program który wypisuje liczby od 5 do 25.
 
 Utwórz program który wypisuje liczby od 20 do 0.
 
-Utwórz program który wypisuje począwszy od 1 co 3 kolejną liczbę.
+Utwórz program który wypisuje począwszy od 1 co 3 kolejną liczbę do wartości 50.
 
 Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 
