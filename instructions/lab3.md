@@ -108,9 +108,9 @@ Utwórz program który wypisuje począwszy od 1 co 3 kolejną liczbę.
 Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 
 Utwórz program który wypisze w konsoli tablicę z poprzedniego zadania wykorzystując pętlę w formacie:<br>
-| 3.1&emsp;| 3.6&nbsp;&emsp;|<br>
+| 3.1&emsp;| 3.6&nbsp;&nbsp;&emsp;|<br>
 | 2.2&emsp;| 6.42&emsp;|<br>
-| 3.1&emsp;| 3.6&nbsp;&emsp;|<br>
+| 3.1&emsp;| 3.6&nbsp;&nbsp;&emsp;|<br>
 | 3.5&emsp;| 32.6&emsp;|<br>
 
 Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci?
