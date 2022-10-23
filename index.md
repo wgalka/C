@@ -3,7 +3,7 @@
 [Lab1](instructions/lab1.html) - Konfiguracja środowiska\
 [Lab2](instructions/lab2.html) - Zmienne, Operatory, Instrukcje warunkowe, I/O\
 [Lab3](instructions/lab3.html) - Pętle i tablice.\
-[Lab4]()\
+[Lab4](instructions/lab4.html)\
 [Lab5]()\
 [Lab6]()\
 [Lab7]()\
