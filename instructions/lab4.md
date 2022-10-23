@@ -159,4 +159,4 @@ Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/
 
 ### Zadanie 5 - `task5.exe` i `task5.c`
 Utworzyć funkcję która może przyjmować rózne liczby parametrów liczb zmienno przecinkowych i zwraca średnią argumentów.
-Zmodyfikuj funkcję tak by zwracała odchylenie standardowe (zapoznaj się z dokumentacją biblioteki [math.h](https://cpp0x.pl/dokumentacja/standard-C/cmath-math-h/101) i wyszukaj odpowiednie funkcje) przekazanych argumentów według wzoru: $\sigma = \sqrt{\frac{1}{N}\sumta{n=1}{N}(x_i - \overline{x})^2}$
+Zmodyfikuj funkcję tak by zwracała odchylenie standardowe (zapoznaj się z dokumentacją biblioteki [math.h](https://cpp0x.pl/dokumentacja/standard-C/cmath-math-h/101) i wyszukaj odpowiednie funkcje) przekazanych argumentów według wzoru: $\sigma = \sqrt{\frac{1}{N}\sumta{n=1}{N}(x_i - \overline{x})^2}$ gdzie $\overline{x}=\frac{1}{N}\sumta{i=1}{N}x_i$
