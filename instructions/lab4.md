@@ -169,3 +169,7 @@ $$
 $$
 
 ### Zadanie 6 - `task6.exe` i `task6.c`
+Utwórz pętlę w której za pomocą wskaźników wypiszesz co n-ty element tablicy przechowującej liczby całkowite od 0-20. 
+
+### Zadanie 7- `swap.exe` i `swap.c`
+Napisz funkcję `swap()` która przyjmuje wskaźniki do dwóch zmiennych typu float. Funkcja zamienia wartośći tych zmiennych.
