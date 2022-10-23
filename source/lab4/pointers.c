@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int *wsk; // deklaracja zmiennej przechowującej adres w pamięci. (wskaźnik)
+    int *ptr; // deklaracja zmiennej przechowującej adres w pamięci. (wskaźnik)
 
     char a = 'a';
 
@@ -11,13 +11,15 @@ int main(int argc, char const *argv[])
     // !Adres jest w formacie szesnastkowym, należy użyć odpowiedniego typu funkcji printf() aby go wypisać poprawnie.
     printf("Wartosc zmiennej a znajduje sie pod adresem: %p\n", &a);
 
-    wsk = &a; // Przypisanie adresu zmiennej a dla zmiennej wskaźnikowej
+    ptr = &a; // Przypisanie adresu zmiennej a dla zmiennej wskaźnikowej
     
-    printf("Wartosc zmiennej a znajduje sie pod adresem: %p \n", wsk);
+    printf("Wartosc zmiennej a znajduje sie pod adresem: %p \n", ptr);
     // Aby odczytać wartość znajdującą się pod danym adresem używamy operatora wyłuskania "*"
-    printf("Wartosc przechowywana pod adresem przechowaynym przez wskaznik %c", *wsk);
+    printf("Wartosc przechowywana pod adresem przechowaynym przez wskaznik %c\n", *ptr);
 
-    
+    // Zmiana wartości za pomocą wskaźnika
+    *ptr = 'b';
+    printf("Nowa wartosc zmiennej a: %c",a);
 
     return 0;
 }
