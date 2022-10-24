@@ -10,7 +10,7 @@ Lab 3
 - Jak zbudowana jest pętla for?
 - Jak zbudowana jest pętla while/do while?
 
-## Zadania
+## Przykłady
 ### Defioniowanie tablic jedno i [wielowymiarowych](https://cse.engineering.nyu.edu/~mleung/CS1114/s08/ch08/MDmemory.htm):
 
 ```c
@@ -79,6 +79,50 @@ printf("%c",chararray[1][1]);
 ```
 
 
+
+
+### Pętle
+
+[for](https://learn.microsoft.com/pl-pl/cpp/c-language/for-statement-c?view=msvc-170)
+
+[do-while](https://learn.microsoft.com/pl-pl/cpp/c-language/do-while-statement-c?view=msvc-170)
+
+[while](https://learn.microsoft.com/pl-pl/cpp/c-language/while-statement-c?view=msvc-170)
+
+`break` - przerywa działanie pętli.
+```c
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    for(int i = 0; i<10;i++){
+        if (i == 5){
+            break;
+        }
+        printf("i = %i\n",i);
+    }
+    return 0;
+}
+```
+`continue` - przechodzi do następnej iteracji.
+
+```c
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    for(int i = 0; i<10;i++){
+        if (i == 5){
+            continue;
+        }
+        printf("i = %i\n",i);
+    }
+    return 0;
+}
+```
+## Zadania
+
+### Zadanie 1 - `task1.exe`
 Utwórz program który przechowa dane następującej tabeli:
 | 3.1 | 3.6 |
 |-----|-----|
@@ -89,14 +133,7 @@ Utwórz program który przechowa dane następującej tabeli:
 Wypisz w konsoli zaznaczoną wartość używając indeksów.
 Zmodyfikuj program tak by użytkownik mógł wskazać który element tablicy chce odczytać.
 
-### Pętle
-
-[for](https://learn.microsoft.com/pl-pl/cpp/c-language/for-statement-c?view=msvc-170)
-
-[do-while](https://learn.microsoft.com/pl-pl/cpp/c-language/do-while-statement-c?view=msvc-170)
-
-[while](https://learn.microsoft.com/pl-pl/cpp/c-language/while-statement-c?view=msvc-170)
-
+### Zadanie 2 - `forexcercise.exe`
 Utwórz program który wypisuje liczby od 0 do 20.
 
 Utwórz program który wypisuje liczby od 5 do 25.
@@ -107,24 +144,25 @@ Utwórz program który wypisuje począwszy od 1 co 3 kolejną liczbę do wartoś
 
 Utwórz program który wypisuje 100 liczb podzielnych przez 5.
 
+### Zadanie 3 - `printtable.exe`
 Utwórz program który wypisze w konsoli tablicę z poprzedniego zadania wykorzystując pętlę w formacie:<br>
 | 3.1&emsp;| 3.6&nbsp;&nbsp;&emsp;|<br>
 | 2.2&emsp;| 6.42&emsp;|<br>
 | 3.1&emsp;| 3.6&nbsp;&nbsp;&emsp;|<br>
 | 3.5&emsp;| 32.6&emsp;|<br>
 
-Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci?
+### Zadanie 4 - `task4.exe`
+<!-- Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci? -->
 
-`break` - przerywa działanie pętli.
-`continue` - przechodzi do następnej iteracji.
-Używając instrukcji break i continue napisz program który wypisze zadaną przez użytkownika ilość liczb nieparzystych z pominięciem liczb podzielnych przez 3.
+Używając instrukcji break i continue napisz program który wypisze zadaną przez użytkownika ilość liczb nieparzystych począwszy od 0 do zadanej przez użytkownika wartości, z pominięciem liczb podzielnych przez 3.
 
-Spróbuj wykonać poprzednie zadania za pomocą innej pętli(jeśli używałeś for za pomocą pętli wile lub do-while).
+### Zadanie 5 - `otherloops.exe`
+Spróbuj wykonać poprzednie zadanie za pomocą innej pętli(jeśli używałeś for za pomocą pętli `while` lub `do-while`).
 
+### Zadanie 6 - `primenumbers.exe`
 Utwórz program który wypisuje kolejne liczby pierwsze.*
 
-### Wykorzystanie pętli i tablic
-
+### Zadanie 7 - `twodimensionarray.exe`
 Napisz program który przechowuje w tablicy 3x3 wartości podane przez użytkownika. 
 
 Dodaj do programu menu z następującymi opcjami:
@@ -135,3 +173,5 @@ Dodaj do programu menu z następującymi opcjami:
 4. Wyjście z progrmau
 
 Program ma działać dopóki użytkownik nie wybierze opcji 4. W przypadkach 1,2,3 ma umożliwiać użytkownikowi wybranie wiersza/koumny a następnie wykonywać odpowiednie obliczenia.
+
+
