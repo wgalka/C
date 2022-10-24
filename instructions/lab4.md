@@ -161,11 +161,11 @@ Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/
 Utworzyć funkcję która może przyjmować rózne liczby parametrów liczb zmienno przecinkowych i zwraca średnią argumentów.
 Zmodyfikuj funkcję tak by zwracała odchylenie standardowe (zapoznaj się z dokumentacją biblioteki [math.h](https://cpp0x.pl/dokumentacja/standard-C/cmath-math-h/101) i wyszukaj odpowiednie funkcje) przekazanych argumentów według wzoru: 
 $$
-\sigma = \sqrt{\frac{1}{N}\sum{n=1}^{N}(x_i - \overline{x})^2}
+\sigma = \sqrt{\frac{1}{N}\sum_{n=1}^{N}(x_i - \overline{x})^2}
 $$ 
 gdzie 
 $$
-\overline{x}=\frac{1}{N}\sum{i=1}^{N}x_i
+\overline{x}=\frac{1}{N}\sum_{i=1}^{N}x_i
 $$
 
 ### Zadanie 6
