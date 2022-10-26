@@ -51,7 +51,7 @@ int array[] = {1,2,3};
 
 Definiowanie tablicy wielowymiarowej(tablica w tablicy):
 
-[[1,2,3],\\
+[[1,2,3],<br>
 [4,5,6]]
 
 ```c
