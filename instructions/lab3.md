@@ -173,7 +173,7 @@ Utwórz program który wypisze w konsoli tablicę z poprzedniego zadania wykorzy
 ### Zadanie 4 - `task4.exe`
 <!-- Utwórz program który w tablicy oddarray przechowuje 1000 kolejnych liczb parzystych za pomocą pętli for. Jaki rozmiar tablicy musisz ustawić by zabrakło pamięci? -->
 
-Używając instrukcji break i continue napisz program który wypisze zadaną przez użytkownika ilość liczb nieparzystych począwszy od 0 do zadanej przez użytkownika wartości, z pominięciem liczb podzielnych przez 3.
+Używając instrukcji break i continue napisz program który wypisze liczby od 0 do zadanej przez użytkownika wartości z pominięciem liczb podzielnych przez 3.
 
 ### Zadanie 5 - `otherloops.exe`
 Spróbuj wykonać poprzednie zadanie za pomocą innej pętli(jeśli używałeś for za pomocą pętli `while` lub `do-while`).
