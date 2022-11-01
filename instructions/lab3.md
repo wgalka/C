@@ -194,3 +194,6 @@ Dodaj do programu menu z następującymi opcjami:
 Program ma działać dopóki użytkownik nie wybierze opcji 4. W przypadkach 1,2,3 ma umożliwiać użytkownikowi wybranie wiersza/koumny a następnie wykonywać odpowiednie obliczenia.
 
 
+test sprawdzający wartość średniej
+
+
