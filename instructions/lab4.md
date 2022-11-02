@@ -142,7 +142,12 @@ int main(int argc, char const *argv[])
 ## Zadania
 
 ### Zadanie 1 - `task1.exe` i `task1.c`
-Skopiuj kod z drugiego laboratorium gdzie należało wypisać swoje dane oraz dwóch osób obok. Wykorzystując funkcję zoptymalizuj kod tak by zajmował jak najmniej lini kodu.
+(Skopiuj kod z drugiego laboratorium gdzie należało wypisać swoje dane oraz dwóch osób obok. Wykorzystując funkcję zoptymalizuj kod tak by zajmował jak najmniej lini kodu.)
+
+Napisz funkcję `show()` która przyjmuje imię i nazwisko a następnie wypisuje je w konsoli.
+Wywołaj funkcję podając jako argumenty swoje dane oraz dwóch osób obok.
+
+Napisz funkcję `suma()` która zwraca sumę trzech liczb podanych jako argumenty funkcji.
 
 ### Zadanie 2 - `task2.exe` i `task2.c`
 Utwórz i przetestuj funkcję `max_tab()` która przyjmuje jako argument tablicę liczb całkowitych a następnie zwraca największy element tablicy.
