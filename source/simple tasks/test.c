@@ -4,6 +4,10 @@
 
 #include <limits.h>
 
+double stats(int tab[], char stat[]){
+    
+}
+
 int main(int argc, char const *argv[])
 
 {

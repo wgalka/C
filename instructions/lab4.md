@@ -156,11 +156,11 @@ Utwórz i przetestuj funkcję `max_tab()` która przyjmuje jako argument 10-elem
 Utwórz i przetestuj funkcję `mean()` która jako argument przyjmuje 10-elementową tablicę liczb całkowitych a następnie zwraca średnią z tablicy.
 
 ### Zadanie 4 - `stats.exe` i `stats.c`
-Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/standard-C/cstring-string-h/609) utwórz i przetestuj funkcję `stats` która jako argument przyjmuje 10-elementową tablicę liczb całkowitych oraz łańcuch znaków który w zależności od przechowywanej zmiennej sprawi że funkcja zwróci inną wartość:
-`min` - minimalną wartość z tablicy
-`max` - maksymalną wartość z tablicy
-`median` - medianę z tablicy
-`mean` - średnią z tablicy
+Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/standard-C/cstring-string-h/609) utwórz i przetestuj funkcję `stats()` która jako argument przyjmuje 10-elementową tablicę liczb całkowitych oraz łańcuch znaków który w zależności od przechowywanej zmiennej sprawi że funkcja zwróci inną wartość:
+- `min` - minimalną wartość z tablicy
+- `max` - maksymalną wartość z tablicy
+- `median` - medianę z tablicy
+- `mean` - średnią z tablicy
 
 ### Zadanie 5 - `task5.exe` i `task5.c`
 Utworzyć funkcję która może przyjmować rózne liczby parametrów liczb zmienno przecinkowych i zwraca średnią argumentów.
