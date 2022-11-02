@@ -150,13 +150,13 @@ Wywołaj funkcję podając jako argumenty swoje dane oraz dwóch osób obok.
 Napisz funkcję `suma()` która zwraca sumę trzech liczb podanych jako argumenty funkcji.
 
 ### Zadanie 2 - `task2.exe` i `task2.c`
-Utwórz i przetestuj funkcję `max_tab()` która przyjmuje jako argument tablicę liczb całkowitych a następnie zwraca największy element tablicy.
+Utwórz i przetestuj funkcję `max_tab()` która przyjmuje jako argument 10-elementową tablicę liczb całkowitych a następnie zwraca największy element tablicy.
 
 ### Zadanie 3 - `task3.exe` i `task3.c`
-Utwórz i przetestuj funkcję `mean()` która jako argument przyjmuje tablicę liczb całkowitych a następnie zwraca średnią z tablicy.
+Utwórz i przetestuj funkcję `mean()` która jako argument przyjmuje 10-elementową tablicę liczb całkowitych a następnie zwraca średnią z tablicy.
 
 ### Zadanie 4 - `stats.exe` i `stats.c`
-Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/standard-C/cstring-string-h/609) utwórz i przetestuj funkcję `stats` która jako argument przyjmuje tablicę liczb całkowitych oraz łańcuch znaków który w zależności od przechowywanej zmiennej sprawi że funkcja zwróci inną wartość:
+Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/standard-C/cstring-string-h/609) utwórz i przetestuj funkcję `stats` która jako argument przyjmuje 10-elementową tablicę liczb całkowitych oraz łańcuch znaków który w zależności od przechowywanej zmiennej sprawi że funkcja zwróci inną wartość:
 `min` - minimalną wartość z tablicy
 `max` - maksymalną wartość z tablicy
 `median` - medianę z tablicy
