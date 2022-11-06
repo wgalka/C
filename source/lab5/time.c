@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 
     // difftime()
     time_t time1 = time(NULL);
-    sleep(2);
+    sleep(1);
     time_t time2 = time(NULL);
     time_t timediff = difftime(time2,time1); // za pomocą funkcji difftime można obliczyć różnicę pomiędzy datami
     printf("time2 - time1 = %ld sekund\n", timediff);
@@ -29,5 +29,7 @@ int main(int argc, char const *argv[])
     strftime(data,80,"%A %d %B %Y", info);// funkcja zapisuje date w formacie łańcucha znaków do pierwszego argumentu. https://www.tutorialspoint.com/c_standard_library/c_function_strftime.htm
     printf("Data w zdefiniowanym formacie - |%s|\n", data );
 
+
+    
     return 0;
 }
