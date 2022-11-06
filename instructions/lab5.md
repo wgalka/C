@@ -325,15 +325,75 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
+### <stdio.h> scanf()
+```c
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    // Wczytanie od użytkownika zmiennych różnych typów
+    // pierwszy argumentt funkcji scanf() to format w postaci:
+    // %[ilość znaków do wczytania][modyfikator typu np. l dla long][typ]
+    int long i;
+    printf("Podaj wartosc typu int: ");
+    // zostaną wczytane tylko 4 występujące jako pierwsze po znaku spacji
+    scanf("%4ld", &i);
+    printf("i = %ld\n", i);
+
+    unsigned char character;
+    printf("Podaj wartosc typu char: ");
+    // jeśli podamy zbyt wiele znaków dla poprzedniej instrukcji scanf wtedy kolejny znak będzie odczytany przez tą instrukcję.
+    scanf(" %c", &character);
+    printf("character = %c\n", character);
+}
+```
+
+```c
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    char string[5];
+    printf("Podaj wartosc: ");
+    // Używając instrukcji scan f należy zachować ostrożność przy odczytywaniu łańcuchów znaków by nie przepełnić tablicy.
+    scanf("%5s", string);
+    printf("wartosc |%s|",string);
+
+    // Znaki będą odczytywane tylko do spacji. wpisując "abc abc" do string przypisze się tylko abc
+    return 0;
+}
+```
+
+```c
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+    float a,b,c;
+    printf("Podaj wartosci a b c oddzielajac je znakiem spacji: ");
+    scanf("%f %f %f", &a, &b, &c);
+    printf("a=%f b=%f c=%f", a ,b ,c);
+    return 0;
+}
+```
+
 
 ## Zadania
 ### Zadanie 0
-Przeanalizuj działanie przykłądów.
+Przeanalizuj działanie przykładów.
 
-### Zadanie 1
-Za pomocą pętli wypisz znaki i ich kody ASCII.
+### Zadanie 1 `task1.exe`
+Za pomocą pętli wypisz wszystkie znaki char i odpowiadające im wartośći całkowite w następującej postaci:
 
-### Zadanie 2
+```terminal
+<0> = 48
+```
+
+*Zmodyfikuj program tak by wypisywał znaki w 3 kolumnach pomijając 9, 10, 11, 12 które zostaną wypisane na końcu.
+```terminal
+```
+
+### Zadanie 2 `task2.exe`
 Napisz funkcję `radianToDegree()` oraz `degreeToRadian()` zamieniającą radiany na stopnie oraz stopnie na radiany. Funkcja powinna zwracać typ double.
 
 $$
@@ -344,3 +404,4 @@ $$
 \alpha(^\circ) = \frac{\alpha(rad)* 180^\circ}{\pi}
 $$
 
+### Zadanie 3  `task3.exe`
