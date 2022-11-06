@@ -391,6 +391,9 @@ Za pomocą pętli wypisz wszystkie znaki char i odpowiadające im wartośći ca�
 
 *Zmodyfikuj program tak by wypisywał znaki w 3 kolumnach pomijając 9, 10, 11, 12 które zostaną wypisane na końcu.
 ```terminal
+<☺> = 1          <V> = 86        <½> = 171
+<☻> = 2          <W> = 87        <¼> = 172
+...
 ```
 
 ### Zadanie 2 `task2.exe`
@@ -405,3 +408,47 @@ $$
 $$
 
 ### Zadanie 3  `task3.exe`
+
+Zadeklaruj zmienną `string` przechowującą łańcuch znaków o długości 200 znaków.
+Wartość zmiennej podaje użytkownik. Wypisz informację o ilości znaków w zmiennej:
+- z wykorzystaniem funkcji biblioteki standardowej.
+- bez korzystania z biblioteki standardowej.
+
+### Zadanie 4 `task4.exe`
+
+Napisz funkcję `countwords()` która wypisze ilość słów w łańcuchu znaków wedle zadanego separatora.
+
+*Napisz funkcję `countcharacters()` która wypisze informacje na temat ile w podanym jako parametr łańcuchu znaków znajduje się znaków specjalnych, cyfr, liter.
+
+### Zadanie 5 `task5.exe`
+
+Napisz funkcję `comparestr()` która w procentach określi podobieństwo dwóch łańcuchów znaków (takie same znaki na tej samej pozycji oznaczają podobieństwo).
+
+Przetestuj funkcję na następujących danych:
+```c
+char str1[100] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+char str2[50] = "      ipsum dolor sit amet";
+```
+
+### Zadanie 6 `task6.exe`
+
+Przetestuj działanie funkcji kopiującej łańcuch znaków z biblioteki standardowej. Następnie bez korzystania z bibliotek standardowych napisz funkcję `cpystr()` która kopiuje zawartość łańcucha znaków do innej zmiennej.
+
+### Zadanie 7 `task7.exe`
+
+Przetestuj działanie funkcji łączącej dwa łańcuchy znaków.
+Napisz własną funkcję `catstr` łączącą dwa łańcuchy znaków.
+
+Jeśli użytkownik będzie próbował połączyć dwa łańcuchy znaków tak że wykroczą one poza zakres zdefiniowanej tablicy program powinien wypisać komunikat a następnie zakończyć działanie korzystając z funkcji exit(EXIT_FAILURE) będącej częścią pakietu <stdlib.h>.
+
+Przetestuj działanie funkcji. Napisz odpowiednie komentarze objaśniające co testuje dany przypadek.
+
+### Zadanie 8 `task8.exe`
+
+Napisz funkcję `findandreplace()` która w podanym jako parametr łańcuchu znaków szuka słowa podanego jako inny parametr a nastepnie zamienia na słowo podane jako kolejny parametr funkcji. Funkcja zwraca liczbę zmienionych słów.
+
+### Zadanie 9 `task9.exe`
+
+Napisz program który wypisze wszystkie kombinacje z powtórzeniami 3 cyfrowe liczb 1, 2, 3, 4.
+
+*Napisz funkcję która wypisze wszystkie kombinacje z powtórzeniami złożone z liczb zadanych przez użytkownika oraz zadanej przez użytkownika długości.
