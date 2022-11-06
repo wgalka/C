@@ -159,10 +159,26 @@ int main(int argc, char const *argv[])
 }
 ```
 
+### <string.h>
+
+
+### [<math.h>](https://cpp0x.pl/dokumentacja/standard-C/cmath-math-h/101)
+
 
 
 ## Zadania
 
 ### Zadanie 1
 Za pomocą pętli wypisz znaki i ich kody ASCII.
+
+### Zadanie 2
+Napisz funkcję `radianToDegree()` oraz `degreeToRadian()` zamieniającą radiany na stopnie oraz stopnie na radiany. Funkcja powinna zwracać typ double.
+
+$$
+\alpha(rad) = \frac{\alpha(^\circ)*\pi}{180^\circ}
+$$
+
+$$
+\alpha(^\circ) = \frac{\alpha(rad)* 180^\circ}{\pi}
+$$
 
