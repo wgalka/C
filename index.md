@@ -4,7 +4,7 @@
 [Lab2](instructions/lab2.html) - Zmienne, Operatory, Instrukcje warunkowe, I/O\
 [Lab3](instructions/lab3.html) - Pętle i tablice.\
 [Lab4](instructions/lab4.html) - Funkcje, wskaźniki, zakres zmiennych\
-[Lab5]() <!-- - Funckje  -->\
+[Lab5](instructions/lab5.html) - Biblioteki standardowe i operacje na łańcuchach znaków.\
 [Lab6]()\
 [Lab7]()\
 [Lab8]()\
