@@ -183,7 +183,9 @@ Utwórz tablicę liter od a do z. Utwórz pętlę w której za pomocą wskaźnik
 Napisz funkcję `swap()` która przyjmuje wskaźniki do dwóch zmiennych typu float. Funkcja zamienia wartośći tych zmiennych.
 
 
-
+## Dodatkowe przykłady
+### Znalezienie wskaznika na liczbę w tablicy.
+Zadaniem jest znalezienie wskaźnika na element w 2 wierszu a 3 kolumnie a następnie zmiana wartośći tego elementu.
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -269,6 +271,55 @@ int main(int argc, char const *argv[])
 
     printtab(asd);
 
+    return 0;
+}
+```
+
+
+### Funkcje redukują ilość kodu.
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// zmienna globalna
+int asd = 10;
+
+void show(int x)
+{
+    for (int i = 0; i < x; i++)
+    {
+        printf("%i ", i);
+    }
+    printf("\n");
+}
+
+int main(int argc, char const *argv[])
+{
+    show(10);
+    show(20);
+    show(30);
+
+
+    // bez użycia funkcji kod mógł wyglądać następująco:
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%i ", i);
+    }
+    printf("\n");
+
+    for (int i = 0; i < 20; i++)
+    {
+        printf("%i ", i);
+    }
+    printf("\n");
+
+    for (int i = 0; i < 30; i++)
+    {
+        printf("%i ", i);
+    }
+    printf("\n");
+
+    printf("Wartosc zmiennej globalnej %i",asd);
     return 0;
 }
 ```

@@ -1,3 +1,1 @@
-    // *wskfor6 = 9;
-
-    // printtab(asd);
+%i\n
