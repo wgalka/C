@@ -23,19 +23,12 @@ int main(int argc, char const *argv[])
         {7, 8, 9}};
 
     int *wskfor6;
-    for (int *ptr_tab = asd; *ptr_tab; ptr_tab++)
-    {
-        if (*ptr_tab == 6)
-        {
-            wskfor6 = ptr_tab;
-            printf("%p\n", ptr_tab);
-            break;
-        }
-    }
+    
+    wskfor6 = &asd[1][2];
 
     printtab(asd);
 
-    *wskfor6 = 999;
+    *wskfor6 = 99;
 
     printtab(asd);
 
