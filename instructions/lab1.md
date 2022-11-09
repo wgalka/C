@@ -59,6 +59,12 @@ Aby zmodyfikować polecenie kompilujące kod w C należy odszukać opcję:<br>
 <br> a następnie edytować plik settings.json. Przykładowo aby wymusić kompilację kodu do standardu c99 polecenie należy zmodyfikować w nastepujący sposób:<br>
 ![stdc99](images/stdc99.png)
 
+Aby wskazać poprawną ścieżkę do kompilatora należy odszukać następujący panel ustawień:
+![gccconfig](images/customconfigc.png)
+
+A następnie podać ścieżkę do zainstalowanego kompilatora:
+![path](images/c_cpp_config_path.png)
+
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
 2. Usuń utworzone pliki z pulpitu
