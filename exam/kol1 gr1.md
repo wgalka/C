@@ -27,6 +27,7 @@ Utwórz zmienne tak aby zajmowały jak najmniej miejsca w pamięci i przechowywa
 
 ## Zadanie 3 - zmienne 2
 Utwórz globalną stałą `TAB_LEN` przechowującą wartość 20.
+Napisać w komentarzu czym różni się stała od zmiennej dynamicznej.
 
 ## Zadanie 3 - instrukcje warunkowe 1
 Utworzyć zmienną `task3_var` przechowującą liczbę całkowitą.
