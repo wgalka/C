@@ -177,7 +177,7 @@ $$
 Utwórz tablicę liter od a do z. Za pomocą wskaźników wypisz literę f.
 
 ### Zadanie 7 - `task7.exe` i `task7.c`
-Utwórz tablicę liter od a do z. Utwórz pętlę w której za pomocą wskaźników wypiszesz co n-ty element tej tablicy począwszy od 'c'.
+Utwórz tablicę liter od a do z. Utwórz pętlę w której za pomocą wskaźników wypiszesz co n-ty element(zdefiniowany przez użytkownika) tej tablicy począwszy od 'c'.
 
 ### Zadanie 8 - `swap.exe` i `swap.c`
 Napisz funkcję `swap()` która przyjmuje wskaźniki do dwóch zmiennych typu float. Funkcja zamienia wartośći tych zmiennych.

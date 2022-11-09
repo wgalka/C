@@ -4,19 +4,29 @@
 
 #include <limits.h>
 
-double stats(int tab[], char stat[]){
-    
-}
-
 int main(int argc, char const *argv[])
 
 {
 
-    /* Zadanie 1 -  task1.exe */
+    int var2;
+    scanf("%i", &var2);
+    printf("Podano: %i", var2);
+    switch (var2)
+    {
+    case 0:
+        var2 += 10;
+        break;
+    case 1:
+        var2 += 11;
+        break;
+    case 3:
+        var2 += 33;
+        break;
+    default:
+        var2 += 0;
+        break;
+    }
 
-    char tab[3][20]= {"ala", "ma","kota"};
-
-    printf("%s",tab[1]);
-
+    printf("%i", var2);
     return 0;
 }
