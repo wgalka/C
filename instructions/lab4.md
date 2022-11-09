@@ -163,7 +163,7 @@ Korzystając z dokumentacji biblioteki [string.h](https://cpp0x.pl/dokumentacja/
 - `mean` - średnią z tablicy
 
 ### Zadanie 5 - `task5.exe` i `task5.c`
-Utworzyć funkcję która może przyjmować rózne liczby parametrów liczb zmienno przecinkowych i zwraca średnią argumentów.
+Utworzyć funkcję `mystdev()` która może przyjmować rózne liczby parametrów liczb zmienno przecinkowych i zwraca średnią argumentów.
 Zmodyfikuj funkcję tak by zwracała odchylenie standardowe (zapoznaj się z dokumentacją biblioteki [math.h](https://cpp0x.pl/dokumentacja/standard-C/cmath-math-h/101) i wyszukaj odpowiednie funkcje) przekazanych argumentów według wzoru: 
 $$
 \sigma = \sqrt{\frac{1}{N}\sum_{n=1}^{N}(x_i - \overline{x})^2}
@@ -401,6 +401,85 @@ int main(int argc, char const *argv[])
 {
     double wynik = odchstd(4, 1.0, 2.0, 3.0, 4.0);
     printf("odchylenie standardowe wynosi: %lf", wynik);
+    return 0;
+}
+```
+
+
+
+Task 7
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char const *argv[])
+{
+    // utworzenie tablicy z literami od a do z (na 27 znaków poeniważ ostatni element będzie wskazywać na symbol pusty \0 - koniec łańcucha znaków)
+    char tab[27];
+    int x = 97;
+    for (size_t i = 0; i < 26; i++)
+    {
+        tab[i] = x;
+        x = x+1 ;
+    }
+    printf("%s", tab);
+
+    printf("co ktory element wypisac:");
+    int n;
+    scanf("%i", &n);
+    // Jeśli zinkrementujemy wskaźnik o 2 dostaniemy wskaźnik na 3 element tablicy
+    // zwiększając wskaźnik ptr_tab o n przegapimy znak \0 zatem w pętli należy przeskakiwać co nty krok
+    int counter = n-1;
+    for (char *ptr_tab = tab+2; *ptr_tab; ptr_tab++)
+    {
+        // Zwiększamy licznik iteracji o 1
+        counter++;
+        // Jeśli mamy już n-ta literę wypisujemy informacje i zerujemy licznik
+        if (counter == n)
+        {
+            printf("Wartosc: %c \n", *ptr_tab);
+            counter = 0;
+        } 
+    }
+    
+    return 0;
+}
+```
+
+swap
+
+```c
+#include <stdio.h>
+
+// z użyciem dodatkowej zmiennej
+void swap(float *a, float*b){
+    // ustawiam zmienna pomocniczą w której przechowam wartość a
+    float temp = *a;
+    // zapisuje pod adresem przechowywanym przez a wartość zmiennej spod adresu b
+    *a = *b;
+    // zapisuje pod adresem przechowywanym przez b wartość zmiennej a przechowywanej w temp
+    *b = temp;
+}
+
+// bez dodatkowej zmiennej
+void swap2(float *a, float*b){
+    *a = *a + *b;
+    *b = *a - *b;
+    *a = *a - *b;
+}
+
+
+int main(int argc, char const *argv[])
+{
+    float a = 4.0;
+    float b = 9.0;
+
+    swap(&a, &b);
+
+    printf("dzialanie swap a = %f b=%f\n", a,b);
+
+    swap2(&a,&b);
+    printf("dzialanie swap2 a = %f b=%f", a,b);
     return 0;
 }
 ```

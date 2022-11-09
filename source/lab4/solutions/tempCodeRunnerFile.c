@@ -1,1 +1,2 @@
-%i\n
+
+    printf("x = %s", tab);
