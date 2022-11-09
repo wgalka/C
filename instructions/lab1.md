@@ -46,7 +46,18 @@ Lab 1
 <br>![run program](images/lab0runprogram.png)
 - Zmodyfikuj program "zakomentowując" deklarację biblioteki stdlib.h (linie zaczynające się od znaków "//" są komentarzami nie mającymmi wpływu na działanie kodu. Kompilator je pomija).  
 <br>![error](images/lab0programwith_error.png)
-- Uruchom program i znajdź miejsce, w którym jest opisany błąd występujący w programie. 
+- Uruchom program i znajdź miejsce, w którym jest opisany błąd występujący w programie.
+
+
+## Konfiguracja CodeRunner
+
+Domyślnie dodatek code runner uruchamia program w trybie odczytu. Oznacza to że nie możliwym będzie odczytywanie danych z klawiatury. Aby uzyskać tę możliwość w ustawieniach VSCode należy znaleźć nastepującą opcję:<br>
+![coderunnderruninterminal](images/coderunnerruninterminal.png)
+
+Aby zmodyfikować polecenie kompilujące kod w C należy odszukać opcję:<br>
+![executormap](images/executormap.png)
+<br> a następnie edytować plik settings.json. Przykładowo aby wymusić kompilację kodu do standardu c99 polecenie należy zmodyfikować w nastepujący sposób:<br>
+![stdc99](images/stdc99.png)
 
 ## Po zakończonej pracy:
 1. Zapisz swoje rezultaty
