@@ -1,5 +1,22 @@
 ## Zadanie 1 - kompilacja
-Utwórz program nazwany dwiema pierwszymi literami imienia,  dwiema pierwszymi literami nazwiska oraz numerem albumu. np. dla Jan Kowalski z numerem albumu 1234567 - `jako1234567.exe`  
+Utwórz program nazwany dwiema pierwszymi literami imienia,  dwiema pierwszymi literami nazwiska oraz numerem albumu. np. dla Jan Kowalski z numerem albumu 1234567 - `jako1234567.exe`
+
+# Kolejne zadania podpisuj komentarzem.
+```c
+//Zadanie 1
+
+rozwiazanie;
+
+//Zadanie 2
+
+rozwiazanie;
+
+//Zadanie 3
+
+rozwiazanie;
+
+...
+```
 
 ## Zadanie 2 - zmienne
 Utwórz zmienne tak aby zajmowały jak najmniej miejsca w pamięci i przechowywały wskazane liczby:
@@ -40,8 +57,32 @@ Używając pętli while wypisz liczby parzyste aż do liczby przechowywanej w zm
 Podaj wartosc zmiennej task6_var: 6
 [0,2,4,6]
 ```
-## Zadanie 7 - funkcje
+## Zadanie 7 - funkcje 1
 
+Napisz funkcję `power()` która przyjmuje dwa artumenty:
+- a - liczba całkowita
+- b - liczba całkowita
+Funkcja powinna zwracać wartość 
+$$
+    a^b
+$$
+Przetestuj działanie funkcji na wartościach a=2 i b=4. Wypisz w konsoli wynik działania funkcji w następującej postaci:
+
+
+## Zadanie 8 - funkcje 2
+
+Utwórz funkcję `countk()` która przyjmuje tablicę znaków. Funkcja zwraca ilość wystąpień znaku `k` w tablicy.
+
+Przetestuj działanie funkcji na następujących łańcuchach:
+- "kkkk"
+- " k k "
+- " k asd kk"
+Wypisz w konsoli wyniki testów w postaci:
+```terminal
+|kkkk| zawiera 3 litery k.
+| k k | zawiera 2 litery k.
+| k asd kk| zawiera 3 litery k.
+```
 
 # Struktury
 
