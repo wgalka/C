@@ -18,12 +18,15 @@ rozwiazanie;
 ...
 ```
 
-## Zadanie 2 - zmienne
+## Zadanie 2 - zmienne 1
 Utwórz zmienne tak aby zajmowały jak najmniej miejsca w pamięci i przechowywały wskazane liczby:
 - `var1` przechowującą wartość 10 000.
 - `var2` przechowującą wartość 0.94334.
 - `var3` przechowującą pierwszą literę twojego imienia.
 - `var4` przechowującą twoje nazwisko.
+
+## Zadanie 3 - zmienne 2
+Utwórz globalną stałą `TAB_LEN` przechowującą wartość 20.
 
 ## Zadanie 3 - instrukcje warunkowe 1
 Utworzyć zmienną `task3_var` przechowującą liczbę całkowitą.
@@ -83,6 +86,13 @@ Wypisz w konsoli wyniki testów w postaci:
 | k k | zawiera 2 litery k.
 | k asd kk| zawiera 3 litery k.
 ```
+
+## Zadanie 9 - wskaźniki
+
+Utworzyć zmienną wskaźnikową `wsk1` przechowującą adres do zmiennej `var1` z zadania 1.
+Wypisz adres jaki przechowuje zmienna `wsk1`.
+Za pomocą zmiennej `wsk1` wypisz wartość pod adresem który przechowuje.
+Następnie używając wskaźnika zmień zawartość zmiennej pod adresem przechowywanym przez zmienną `wsk1` na swój numer albumu.
 
 # Struktury
 
