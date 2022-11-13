@@ -202,4 +202,4 @@ Utwórz funkcję `isbetweendates()` która przyjmuje 3 daty i zwraca jeden jeśl
 
 ### Zadanie 5 `task5.exe`
 
-Napisz funkcję obliczającą miejsca zerowe funkcji kwadratowej. Uwzględnij że funkcja może zwracać zero, jedną lub dwie wartości.
+Napisz funkcję obliczającą miejsca zerowe funkcji kwadratowej. Uwzględnij że funkcja może zwracać zero, jedną lub dwie wartości. W komentarzach opisz działanie funkcji, argumenty jakie przyjmuje oraz zaprezentuj działanie na wybranych przykładach.
