@@ -196,3 +196,5 @@ d - wyświetla pojedynczą cyfrę oznaczającą dzień 4
 dd - wyświetla dwie cyfry oznaczające dizeń np. 04
 
 Utwórz funkcję `printtime()` która działa podobnie jak funkcja `showtime()` z tą różnicą że nie przyjmuje parametrów lecz format jest zdefiniowany w stałej globalnej DATE_FORMAT.
+
+Utwórz funkcję `isbetweendates()` która przyjmuje 3 daty i zwraca jeden jeśli data podana jako pierwszy argument znajduje się w okresie pomiędzy pozostałymi dwoma argumentami. 0 w przeciwnym przypakdu.
