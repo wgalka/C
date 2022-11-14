@@ -88,8 +88,31 @@ Napisz funkcję `makeMove()` która przyjmuje symbol danego gracza na planszy i 
 - 3 - inne błędy
 W ciele funkcji zaimplementuj zapytania do użytkownika o wybranie pola które chce zająć.
 
+<details>
+<summary>Podpowiedź</summary>
+
+Za pomocą instrukcji scanf() możemy odczytać kilka wartości jednocześnie.
+
+```c
+char col;
+int row;
+printf("Podaj wartośc col i row np.  ", player);
+scanf(" %c %i", &col, &row);
+```
+
+Po odczytaniu wartości wystarczy zamienic je na indeksy (numerowane od 0) i sprawdzić odpowiednie warunki.
+</details>
+
 #### Krok 3
 Napisz funkcję `score()` która sprawdzi w pionie, poziomie i po przekątnej czy jeden z graczy wygrał, a jeżeli tak zwróci jego symbol.
+
+<details>
+<summary>Podpowiedź</summary>
+
+Należy sprawdzać czy w kolumach, wierszach, na przekątnych znajdują się takie same znaki.
+Jeśli natrafimy na znak ' ' możemy przerwać dalsze poszukiwania w kolumnie, wierszu, na przekątnej. Podobnie jesli natrafimy na symbol innego gracza.
+
+</details>
 
 #### Krok 4
 Zaimplementuj logikę gry w funkcji main.
