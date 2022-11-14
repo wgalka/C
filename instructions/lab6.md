@@ -222,7 +222,7 @@ int main(int argc, char const *argv[])
 </details>
 
 <details>
-<summary>Podpowiedź rozbudowana</summary>
+<summary>Podpowiedź v2</summary>
 
 ```c
 #include <stdlib.h>
