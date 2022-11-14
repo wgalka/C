@@ -250,6 +250,8 @@ int main(int argc, char const *argv[])
 
     int *wsk = obliczxy3(5);
     printf("Wartosc przy a=5 - x=%i y=%i\n", wsk[0],wsk[1]);
+    printf("Wartosc przy a=5 - x=%i y=%i\n", *wsk,*(wsk+1));
+    
     return 0;
 }
 ```
