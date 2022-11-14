@@ -196,11 +196,11 @@ int main(int argc, char const *argv[])
     struct patients tab[50];
 
 
-    struct patients p1 = \{"Jan", "Kowalski", 25\};
-    struct patients p2 = \{"Jan", "Kowalski", 35\};
-    struct patients p3 = \{"Jan", "Kowalski", 45\};
-    struct patients p4 = \{"Jan", "Kowalski", 55\};
-    struct patients p5 = \{"Jan", "Kowalski", 65\};
+    struct patients p1 = {"Jan", "Kowalski", 25};
+    struct patients p2 = {"Jan", "Kowalski", 35};
+    struct patients p3 = {"Jan", "Kowalski", 45};
+    struct patients p4 = {"Jan", "Kowalski", 55};
+    struct patients p5 = {"Jan", "Kowalski", 65};
     
     tab[0] = p1;
     tab[1] = p2;
