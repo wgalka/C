@@ -176,6 +176,8 @@ Wypisz dane na temat pacjentów.
 
 <details>
 <summary>Podpowiedź</summary>
+
+```c
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -215,10 +217,14 @@ int main(int argc, char const *argv[])
     
     return 0;
 }
+```
+
 </details>
 
 <details>
 <summary>Podpowiedź rozbudowana</summary>
+
+```c
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -292,6 +298,8 @@ int main(int argc, char const *argv[])
     
     return 0;
 }
+```
+
 </details>
 
 ### Zadanie 4 `mytime.exe`
