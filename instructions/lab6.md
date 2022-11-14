@@ -221,7 +221,7 @@ int main(int argc, char const *argv[])
 
 </details>
 
-<!-- <details>
+<details>
 <summary>Podpowiedź rozbudowana</summary>
 
 ```c
@@ -300,7 +300,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-</details> -->
+</details>
 
 ### Zadanie 4 `mytime.exe`
 
