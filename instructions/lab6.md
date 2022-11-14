@@ -152,7 +152,7 @@ Wygeneruj wszystkie kombinacje z powtórzeniami liczb 0 i 1. Wypisz w konsoli me
 |1  |1  |1      |1      |
 ```
 ### Zadanie 2 `task2.exe`
-Utwórz kalkulator BMI w którym użytkownik podaje swoją wagę oraz wzrost a następnie wypisana zostaje informacja według następujących przedziałów:
+Utwórz kalkulator BMI w którym użytkownik podaje swoją wagę oraz wzrost a następnie wypisana zostaje informacja według następujących przedziałów:<br>
 ![](https://www.zikodlazdrowia.org/wp-content/uploads/2020/06/bmi-scale_ziko_dla_zdrowia.png)
 
 $$
