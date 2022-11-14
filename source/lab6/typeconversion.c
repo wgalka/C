@@ -14,9 +14,9 @@ int main(int argc, char const *argv[])
     printf("y=%f\n", y);
 
     // nie wszystkie konwersje są możliwe bez uproszczeń np. konwersja float na int ucina część ułamkową. Należy na to zwracać uwagę.
-    double var1 = 0.1234546578;
+    double var1 = 5.1234546578;
     int dti = var1;
-    printf("dti=%i", x);
+    printf("dti=%i", dti);
 
     return 0;
 }
