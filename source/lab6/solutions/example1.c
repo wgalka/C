@@ -25,6 +25,7 @@ struct xy obliczxy2(int a)
 
 // sposob 3
 int * obliczxy3(int a){
+    // słowo kluczowe static sprawia że zmienna result będzie widoczna poza funkcją.
     static int result[2];
     result[0] = a+5;
     result[1] = a+10;
