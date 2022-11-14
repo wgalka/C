@@ -5,7 +5,7 @@
 [Lab3](instructions/lab3.html) - Pętle i tablice.\
 [Lab4](instructions/lab4.html) - Funkcje, wskaźniki, zakres zmiennych\
 [Lab5](instructions/lab5.html) - Biblioteki standardowe i operacje na łańcuchach znaków.\
-[Lab6]()\
+[Lab6](instructions/lab6.html) - Rzutowanie, spójniki logiczne  i struktury\
 [Lab7]()\
 [Lab8]()\
 [Lab9]()\
