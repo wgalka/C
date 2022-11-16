@@ -1,5 +1,6 @@
 # Kolokwium 1
-## typy zmiennych
+## Zmienne
+### Typy zmiennych
 Należy znać typy zmiennych w języku C, orientacyjnie wiedzieć ile miejsca w pamięci zajmują oraz jakie minimalne i maksymalne wartości mogą przechowywać.
 
 Jakie wartości może przechowywać zmienna jeśli użyjemy słówka `unsigned` a jakie `signed`?
@@ -33,6 +34,10 @@ Ilosc bajtow jakie zajmuje typ char = 1
 ```
 
 </details>
+
+Co stanie się gdy przekroczymy zakres danej zmiennej? (do zmiennej signed char a = 127 dodamy 1)
+
+### Deklaracja zmiennych
 
 ## operatory
 

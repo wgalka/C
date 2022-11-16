@@ -142,7 +142,7 @@ int main(){
 
 ## Zadania
 ### Zadanie 1 `task1.exe`
-Wygeneruj wszystkie kombinacje z powtórzeniami liczb 0 i 1. Wypisz w konsoli metrycę logiczną:
+Wygeneruj wszystkie kombinacje dwu elementowe z powtórzeniami liczb 0 i 1. Wypisz w konsoli metrycę logiczną:
 ```terminal
 |a  |b  |~a|~b|a&&b |a||b  |
 |---|---|--|--|-----|------|
