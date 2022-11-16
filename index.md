@@ -10,3 +10,6 @@
 [Lab8]()\
 [Lab9]()\
 [Lab10]()
+
+
+<div style="position: relative">[.](instructions/kolokwium.html)</div>
