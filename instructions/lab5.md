@@ -447,6 +447,13 @@ Przetestuj działanie funkcji. Napisz odpowiednie komentarze objaśniające co t
 
 Napisz funkcję `findandreplace()` która w podanym jako parametr łańcuchu znaków szuka słowa podanego jako inny parametr a nastepnie zamienia na słowo podane jako kolejny parametr funkcji. Funkcja zwraca liczbę zmienionych słów.
 
+np.
+```c
+findandreplace("aaa ccc bbbcccdddwww ccc", "ccc", "aaa")
+```
+zamieni "aaa ccc bbbcccdddwww ccc" na "aaa aaa bbbcccdddwww aaa" i zwróci wartość 2.
+
+
 ### Zadanie 9 `task9.exe`
 
 Napisz program który wypisze wszystkie kombinacje z powtórzeniami 3 cyfrowe liczb 1, 2, 3, 4.

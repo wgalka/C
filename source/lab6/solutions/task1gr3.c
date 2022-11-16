@@ -3,13 +3,21 @@
 
 int main(int argc, char const *argv[])
 {
-    for (int a = 0; a <= 1; a++)
-    {
-        for (int b = 0; b <= 1; b++)
-        {
-            printf("|%i |%i |%i  |%i  |%i  |%i  |\n",a,b, !a, !b, a&&b, a||b);
-        }
-    }
+    unsigned char a;
+
+    // printf("%i\n",sizeof(char));
+
+    a = 255;
+    printf("|%c| %i\n", a, a);
+
+    a++;
+    printf("|%c| %i\n", a, a);
+    a++;
+    printf("|%c| %i\n", a, a);
+    a++;
+    printf("|%c| %i\n", a, a);
+    a++;
+    printf("|%c| %i\n", a, a);
 
     return 0;
 }

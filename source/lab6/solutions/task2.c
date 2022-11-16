@@ -1,21 +1,25 @@
-#include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+double calculatebmi(float wzrost, float waga){
+    return waga/(wzrost*wzrost);
+}
 
 int main(int argc, char const *argv[])
 {
-    printf("Ilosc bitow w bajcie: %i\n",CHAR_BIT);
-    double a = 10.543;
-    printf("Ilosc bajtow jaka zajmuje zmienna a = %d\n", sizeof(a));
+    double wzrost, waga;
+    printf("Podaj wzrost:");
+    scanf("%i",&wzrost);
 
-    printf("Ilosc bajtow jakie zajmuje typ char = %d\n", sizeof(char));
+    printf("Podaj wage:");
+    scanf("%i",&waga);
 
+    double wynik = calculatebmi(wzrost, waga);
+    printf("BMI = %lf", wynik);
 
-    signed char b = 127;
-    b++;
-    printf("%i",b);
-    b++;
-    printf("%i",b);
-    b++;
-    printf("%i",b);
+    if (wynik < 16)
+    {
+        printf("Wygłodzenie");
+    }
     return 0;
 }
