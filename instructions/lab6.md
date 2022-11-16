@@ -144,13 +144,21 @@ int main(){
 ### Zadanie 1 `task1.exe`
 Wygeneruj wszystkie kombinacje z powtórzeniami liczb 0 i 1. Wypisz w konsoli metrycę logiczną:
 ```terminal
-|a  |b  |And(&) |OR(|)  |
-|---|---|-------|-------|
-|0  |0  |0      |0      |
-|0  |1  |0      |1      |
-|1  |0  |0      |1      |
-|1  |1  |1      |1      |
+|a  |b  |~a|~b|a&&b |a||b  |
+|---|---|--|--|-----|------|
+|0  |0  |1 |1 |0    |0     |
+|0  |1  |1 |0 |0    |1     |
+|1  |0  |0 |1 |0    |1     |
+|1  |1  |0 |0 |1    |1     |
 ```
+
+<details>
+<summary></summary>
+
+Kombinacje dwóch liczb wygenerować można w taki sam sposób jak przeglądając dwu wymiarową tablicę o wymiarach 2x2.
+
+</details>
+
 ### Zadanie 2 `task2.exe`
 Utwórz kalkulator BMI w którym użytkownik podaje swoją wagę oraz wzrost a następnie wypisana zostaje informacja według następujących przedziałów:<br>
 ![](https://www.zikodlazdrowia.org/wp-content/uploads/2020/06/bmi-scale_ziko_dla_zdrowia.png)
