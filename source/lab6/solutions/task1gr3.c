@@ -3,11 +3,11 @@
 
 int main(int argc, char const *argv[])
 {
-    for (int a = 0; a <= 3; a++)
+    for (int a = 0; a <= 1; a++)
     {
-        for (int b = 0; b <= 3; b++)
+        for (int b = 0; b <= 1; b++)
         {
-            printf("%i, %i\n",a,b);
+            printf("%i |%i |%i  |%i  |%i  |%i  |\n",a,b, !a, !b, a&&b, a||b);
         }
     }
 

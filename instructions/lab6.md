@@ -143,10 +143,10 @@ int main(){
 ## Zadania
 ### Zadanie 1 `task1.exe`
 Wygeneruj wszystkie kombinacje dwu elementowe z powtórzeniami liczb 0 i 1:
-0 0
-0 1
-1 0
-1 1
+[0 0]
+[0 1]
+[1 0]
+[1 1]
 
 Wypisz w konsoli metrycę logiczną gdzie `a` to pierwszy element z kombinacji natomiast `b` jest drugim elementem kombinacji:
 ```terminal
