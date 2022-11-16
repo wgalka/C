@@ -12,4 +12,32 @@
 [Lab10]()
 
 
-<div style="position: relative">[.](instructions/kolokwium.html)</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[.](instructions/kolokwium.html)
