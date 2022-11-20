@@ -6,7 +6,7 @@
 [Lab4](instructions/lab4.html) - Funkcje, wskaźniki, zakres zmiennych\
 [Lab5](instructions/lab5.html) - Biblioteki standardowe i operacje na łańcuchach znaków.\
 [Lab6](instructions/lab6.html) - Rzutowanie, spójniki logiczne  i struktury\
-[Lab7](instructions/lab7.html)\
+[Lab7](instructions/lab7.html) - Gra w kółko i krzyżyk.\
 [Lab8]()\
 [Lab9]()\
 [Lab10]()
