@@ -92,8 +92,6 @@ Jak zdefiniowac strukturę?
 
 Jak modyfikować i odczytywać wartości struktury?
 
-
-
 ## biblioteki
 
 <stdio.h>
