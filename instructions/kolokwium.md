@@ -41,6 +41,10 @@ Co stanie się gdy przekroczymy zakres danej zmiennej? (do zmiennej signed char 
 
 Deklaracja zmiennych statycznych, dynamicznych i konwencje nazewnictwa zmiennych.
 
+Zakres zmiennej(lokalna, globalna).
+
+Zmienne tablicowe.
+
 ## operatory
 
 
@@ -58,8 +62,49 @@ np. Wypisać elementy tablicy 3 wymiarowej za pomocą pętli:
 
 ## funkcje
 
+Definiowanie funkcji zwracających wartość różnych typów i nie zwracajacych wartości, Funkcji nie przyjmujących argumentów oraz przyjmującej różne liczby i typy argumentów.
+
+np. Utworzyć funkcje obliczającą miejsca zerowe funkcji kwadratowej o zadanych współczynnikach.
+
+Potrafić utworzyć funkcje która modyfikuje wartości poza funkcją.
+
+np. Sortuje tablicę w zmiennej globalnej.
+
 ## wskaźniki
+
+Jak definiujemy wskaźnik i co przechowuje? `*wsk`
+
+Jak odczytać wartość znajdującą się pod danym adresem w pamięci?
+
+Jak odczytać adres w pamięci danej zmiennej?
+
+np. Zamienić wartości zmiennej miejscami.
+
+Jak przechowywana jest w pamięci tablica n wymiarowa? (wskaźnik na wskaźnik)
+
+Jak działają funkcje:
+- malloc()
+- free()
 
 ## struktury
 
+Jak zdefiniowac strukturę?
+
+Jak modyfikować i odczytywać wartości struktury?
+
+
+
 ## biblioteki
+
+<stdio.h>
+Jak działa printf()
+Jak działa scanf()
+
+<math.h>
+
+<limits.h>
+
+<strings.h>
+
+<stdlib.h>
+
