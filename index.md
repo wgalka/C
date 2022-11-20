@@ -40,4 +40,4 @@
 
 
 
-[.](instructions/kolokwium.html)
+[Kolokwium 1](instructions/kolokwium.html)

@@ -39,14 +39,27 @@ Co stanie się gdy przekroczymy zakres danej zmiennej? (do zmiennej signed char 
 
 ### Deklaracja zmiennych
 
+Deklaracja zmiennych statycznych, dynamicznych i konwencje nazewnictwa zmiennych.
+
 ## operatory
+
+
 
 ## instruckje warunkowe
 
 ## pętle
+
+Umieć użyć wszystkie rodzaje pętli.
+
+np. Wypisać elementy tablicy 3 wymiarowej za pomocą pętli:
+- for
+- while
+- do while.
 
 ## funkcje
 
 ## wskaźniki
 
 ## struktury
+
+## biblioteki
