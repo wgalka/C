@@ -186,3 +186,46 @@ int main(int argc, char const *argv[])
 ```
 
 </details>
+
+### `Task3.exe`
+
+Napisz program który będzie wypisywał w konsoli spiralę np.
+
+```
+Podaj wielkość: 9
+    # # # # # # #               
+    #           #
+    #   # # #   #
+    #   #   #   #
+    #       #   #
+    # # # # #   #
+                #
+# # # # # # # # #
+```
+
+Długość lini tworzącej spiralę zwiększa się o 1.
+
+<details>
+<summary></summary>
+
+Jak obliczyć wielkość tablicy przechowującej spiralę o wielkościach: 5, 6, 7, 8?
+
+</details>
+
+<details>
+<summary></summary>
+
+Jak wyznaczyć początek rysowania spirali?
+
+</details>
+
+
+<details>
+<summary></summary>
+
+Które indeksy tablicy zmieniać poruszając się na północ, wschód, południe, zachód?
+
+</details>
+          
+ 
+      

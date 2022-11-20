@@ -3,21 +3,10 @@
 
 int main(int argc, char const *argv[])
 {
-    unsigned char a;
+    char tab[] = "ABC";
+    printf("wielkosc tablicy %i\n", sizeof(tab));
+    printf("%i ", tab[3]=='\0');
 
-    // printf("%i\n",sizeof(char));
-
-    a = 255;
-    printf("|%c| %i\n", a, a);
-
-    a++;
-    printf("|%c| %i\n", a, a);
-    a++;
-    printf("|%c| %i\n", a, a);
-    a++;
-    printf("|%c| %i\n", a, a);
-    a++;
-    printf("|%c| %i\n", a, a);
 
     return 0;
 }
