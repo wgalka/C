@@ -80,6 +80,29 @@ Nagłowki kolumn można wypisać przed wypisywaniem wartości planszy.
 Nagłówki wierszy można wypisać przed iteracją po drugim wymiarze tablicy.
 </details>
 
+##### Rozwiązanie:
+
+Tablicę można zainicjalizować jako zmienną globalną:
+
+```c
+int const TAB_SIZE = 3;
+char board[3][3] = {{'X', 'O', 'O'},
+                    {'X', 'X', 'O'},
+                    {'O', ' ', 'X'}};
+```
+
+Funkcja renderboard może wykorzystywać globalną informacje o rozmiarze tablicy by ją wypisać:
+
+```c
+renderboard(){
+    for(int i= 0; i< TAB_SIZE; i++){
+        for(int j= 0; j< TAB_SIZE; j++){
+            printf("%c", tab[i][j]);
+        }
+    }
+}
+```
+
 #### Krok 2
 Napisz funkcję `makeMove()` która przyjmuje symbol danego gracza na planszy i zwraca następujące kody:
 - 0 - jeśli ruch jest dozwolony (zajmujemy puste pole)
