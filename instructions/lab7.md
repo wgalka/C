@@ -3,10 +3,16 @@
 Gra w kółko i krzyżyk
 https://drive.google.com/drive/folders/1-ceXITf1pQ7zAF0N5p8NqOXGnKtbVl4-?usp=sharing
 
+## Pytania
+
+- 
+
 ## Zadania
 
 ### `TicTacToe.exe`
 Aktualny stan gry będzie przechowywany w 2 wymiarowej tablicy znaków.
+Stan powinien być zmienną globalną aby każda funkcja miała do niego dostęp.
+Ponadto przydatna będzie informacja o wielkośći planszy która może także być przechowywana w zmiennej globalnej.
 ```c
 char tab[3][3] = { {' ', ' ', ' '},
                    {' ', ' ', ' '},
@@ -82,7 +88,7 @@ Nagłówki wierszy można wypisać przed iteracją po drugim wymiarze tablicy.
 
 ##### Rozwiązanie:
 
-Tablicę można zainicjalizować jako zmienną globalną:
+Tablicę można zainicjalizować jako zmienną globalną podobnie rozmiar tablicy:
 
 ```c
 int const TAB_SIZE = 3;
@@ -213,7 +219,7 @@ int main(int argc, char const *argv[])
 
 ### `Task3.exe`
 
-Napisz program który będzie wypisywał w konsoli spiralę np.
+Napisz program który będzie wypisywał w konsoli spiralę o zadanej wielkości - każde kolejne ramię  np.
 
 ```
 Podaj wielkość: 9

@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int x, y;
+int x =0, y;
 int main(int argc, char const *argv[])
 {
-    printf("Adred pamięci zmiennej x", &x);
+    printf("Adres pamieci zmiennej x=%p\n", &x);
 
     while (1)
     {
-        printf("wartość x = %i", x);
+        printf("wartosc x = %i pod adresem %p\n", x, &x);
         scanf("%i",&y);
     }
     
