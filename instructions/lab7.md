@@ -91,7 +91,8 @@ char board[3][3] = { {'X', 'O', 'O'},
                     {'O', ' ', 'X'} };
 ```
 
-Funkcja renderboard może wykorzystywać globalną informacje o rozmiarze tablicy by ją wypisać:
+Rozmiar tablicy musi być nam znany aby sprawnie iterować po kolejnych wartościach.
+Funkcja renderboard może wykorzystywać globalną informacje o rozmiarze tablicy:
 
 ```c
 renderboard(){
