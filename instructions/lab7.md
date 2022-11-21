@@ -86,9 +86,9 @@ Tablicę można zainicjalizować jako zmienną globalną:
 
 ```c
 int const TAB_SIZE = 3;
-char board[3][3] = {{'X', 'O', 'O'},
+char board[3][3] = { {'X', 'O', 'O'},
                     {'X', 'X', 'O'},
-                    {'O', ' ', 'X'}};
+                    {'O', ' ', 'X'} };
 ```
 
 Funkcja renderboard może wykorzystywać globalną informacje o rozmiarze tablicy by ją wypisać:
