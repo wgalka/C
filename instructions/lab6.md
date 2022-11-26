@@ -1,5 +1,5 @@
 # PPWJC
-Rzutowanie, spójniki logiczne  i struktury
+Rzutowanie, spójniki logiczne i struktury
 
 ## Pytania
 
