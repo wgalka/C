@@ -1,5 +1,5 @@
 ## Zadanie 1 - kompilacja
-Utwórz program nazwany dwiema pierwszymi literami imienia,  dwiema pierwszymi literami nazwiska oraz numerem albumu. np. dla Jan Kowalski z numerem albumu 1234567 - `jako1234567.exe`
+Utwórz program nazwany dwiema pierwszymi literami imienia,  dwiema pierwszymi literami nazwiska oraz numerem albumu. np. dla Jan Kowalski z numerem albumu 1234567 - `jako1234567.c`
 
 # Kolejne zadania podpisuj komentarzem.
 ```c
@@ -19,15 +19,13 @@ rozwiazanie;
 ```
 
 ## Zadanie 2 - zmienne 1
-Utwórz zmienne tak aby zajmowały jak najmniej miejsca w pamięci i przechowywały wskazane liczby:
+Utwórz zmienne tak aby zajmowały jak najmniej miejsca w pamięci i przechowywały wskazane wartości:
 - `var1` przechowującą wartość 10 000.
 - `var2` przechowującą wartość 0.94334.
 - `var3` przechowującą pierwszą literę twojego imienia.
 - `var4` przechowującą twoje nazwisko.
-
-## Zadanie 3 - zmienne 2
-Utwórz globalną stałą `TAB_LEN` przechowującą wartość 20.
-Napisać w komentarzu czym różni się stała od zmiennej dynamicznej.
+- Utwórz globalną stałą `TAB_LEN` przechowującą wartość 20.
+Napisać w komentarzu czym różni się stała od zmiennej.
 
 ## Zadanie 3 - instrukcje warunkowe 1
 Utworzyć zmienną `task3_var` przechowującą liczbę całkowitą.
@@ -48,18 +46,18 @@ Wypisz końcową wartość w konsoli.
 
 ## Zadanie 5 - pętle 1
 Utworzyć zmienną `tab` przechowującą liczby: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7].
-Za pomocą pętli for wypisać zawartość tablicy.
+Za pomocą pętli for wypisać zawartość tablicy w odwrotnej kolejności.
 
 ## Zadanie 6 - pętle 2
 Utworzyć zmienną `task6_var` przechowującą liczbę całkowitą.
 Przypisać do zmiennej wartość podaną przez używkotnika.
 Przed podaniem wartości wypisz w konsoli napis "Podaj wartosc zmiennej task6_var:".
 
-Używając pętli while wypisz liczby parzyste aż do liczby przechowywanej w zmiennej `task6_var` włącznie. W konsoli powinny zostać wypisane w następującej postaci:
+Używając pętli while wypisz kolejne potęgi liczby 2 aż do liczby przechowywanej w zmiennej `task6_var` włącznie. W konsoli powinny zostać wypisane w następującej postaci:
 
 ```terminal
-Podaj wartosc zmiennej task6_var: 6
-[0,2,4,6]
+Podaj wartosc zmiennej task6_var: 64
+[0,2,4,8, 16, 32, 64]
 ```
 ## Zadanie 7 - funkcje 1
 
@@ -93,7 +91,16 @@ Wypisz w konsoli wyniki testów w postaci:
 Utworzyć zmienną wskaźnikową `wsk1` przechowującą adres do zmiennej `var1` z zadania 1.
 Wypisz adres jaki przechowuje zmienna `wsk1`.
 Za pomocą zmiennej `wsk1` wypisz wartość pod adresem który przechowuje.
-Następnie używając wskaźnika zmień zawartość zmiennej pod adresem przechowywanym przez zmienną `wsk1` na swój numer albumu.
+Następnie używając wskaźnika zmień zawartość zmiennej pod adresem przechowywanym przez zmienną `wsk1` na swój numer albumu i wypisz zawartość zmiennej `var1`.
 
-# Struktury
+## Zadanie 10
 
+Utworzyć strukturę `funkcjakwadratowa` która będzie przechowywać współczynniki równania kwadratowego a,b,c ponadto miejsca zerowe funkcji jako x1 i x2 oraz informację czy dana funkcja posiada miejsca zerowe w postaci wartości true/false.
+
+## Zadanie 11
+
+Utworzyć tablicę `task11_var` przechowującą 100 struktur `funkcjakwadratowa`. Wypełnij tablicę strukturami z losowymi wartościami a,b,c w przedziale od 0 do 10.
+
+## Zadanie 12
+
+Napisz funkcję obliczającą miejsca zerowe funkcji kwadratowej i przypisująca te wartości do struktury dla której są obliczane. Wykorzystaj funkcję by obliczyć miejsca zerowe i uzupełnić wyniki w tablicy `task11_var`. Wypisz rezultat w konsoli.
