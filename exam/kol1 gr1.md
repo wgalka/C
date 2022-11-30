@@ -38,9 +38,9 @@ Utworzyć zmienną `task4_var` przechowującą liczbę całkowitą.
 Przypisać do zmiennej wartość podaną przez używkotnika.
 Przed podaniem wartości wypisz w konsoli napis "Podaj wartosc zmiennej task4_var:".
 Za pomocą instrukcji warunkowej switch jeśli:
-- podana wartość jest równa 1 zwiększ wartość zmiennej `task4_var` o 10%.
-- podana wartość jest równa 2 zwiększ wartość zmiennej `task4_var` o 20%.
-- podana wartość jest równa 3 zwiększ wartość zmiennej `task4_var` o 30%.
+- podana wartość jest równa 10 zwiększ wartość zmiennej `task4_var` o 10%.
+- podana wartość jest równa 20 zwiększ wartość zmiennej `task4_var` o 20%.
+- podana wartość jest równa 30 zwiększ wartość zmiennej `task4_var` o 30%.
 - w przeciwnym przypadku nie modyfikuj wartości zmiennej.
 Wypisz końcową wartość w konsoli.
 
