@@ -1,2 +1,1 @@
-
-        printf("teskt");
+izeof(x));
