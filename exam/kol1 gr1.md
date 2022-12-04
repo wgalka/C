@@ -57,7 +57,7 @@ Używając pętli while wypisz kolejne potęgi liczby 2 aż do liczby przechowyw
 
 ```terminal
 Podaj wartosc zmiennej task6_var: 64
-[0,2,4,8, 16, 32, 64]
+[1,2,4,8, 16, 32, 64]
 ```
 ## Zadanie 7 - funkcje 1
 
@@ -70,6 +70,11 @@ $$
 $$
 Przetestuj działanie funkcji na wartościach a=2 i b=4. Wypisz w konsoli wynik działania funkcji w następującej postaci:
 
+```termin
+a = 3
+b = 2
+3^2 = 9
+```
 
 ## Zadanie 8 - funkcje 2
 
@@ -81,7 +86,7 @@ Przetestuj działanie funkcji na następujących łańcuchach:
 - " k asd kk"
 Wypisz w konsoli wyniki testów w postaci:
 ```terminal
-|kkkk| zawiera 3 litery k.
+|kkkk| zawiera 4 litery k.
 | k k | zawiera 2 litery k.
 | k asd kk| zawiera 3 litery k.
 ```
