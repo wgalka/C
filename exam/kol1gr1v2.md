@@ -126,3 +126,9 @@ Utworzyć tablicę `task11_var` przechowującą 100 struktur `funkcjakwadratowa`
 ## Zadanie 12 (`task10.c`, `solution10.exe`) - Oznacz rozwiązanie komentarzem `// zadanie 12`
 
 Napisz funkcję `calculate()` obliczającą miejsca zerowe funkcji kwadratowej w strukturze przekzanej jako argument funkcji. Funkcja przypisuje wartości x1, x2 i roots do struktury dla której są obliczane. Wykorzystaj funkcję by obliczyć miejsca zerowe i uzupełnić wyniki w tablicy `task11_var`. Wypisz rezultat w konsoli.
+
+# Odsyłanie rozwiązań:
+
+Pliki z rozwiązaniem należy spakować do archiwum .zip nazwanym pierwszymi literami imienia i nazwiska + numer albumu. np. `jk123456.zip` jeśli nazywasz się Jan Kowalski i posiadasz numer albumu 123456.
+
+Nastepnie za pomocą formularza należy przesłać archiwum.
