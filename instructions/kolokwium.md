@@ -51,6 +51,9 @@ Zmienne tablicowe.
 
 ## instruckje warunkowe
 
+- if
+- switch
+
 ## pętle
 
 Umieć użyć wszystkie rodzaje pętli.
