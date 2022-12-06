@@ -9,6 +9,10 @@ int main(int argc, char const *argv[])
         return 1;
     }
 
+    fseek(in, 0, SEEK_END); // seek to end of file
+    long size = ftell(in); // get current file pointer
+    fseek(in, 0, SEEK_SET); // seek back to beginning of file
+
     int x;
     int charNumber = fscanf(in, "%i", &x);
     printf("%i   %i",x, charNumber);

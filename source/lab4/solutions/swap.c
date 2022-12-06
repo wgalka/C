@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 // z użyciem dodatkowej zmiennej
 void swap(float *a, float*b){
