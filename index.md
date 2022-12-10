@@ -7,7 +7,7 @@
 [Lab5](instructions/lab5.html) - Biblioteki standardowe i operacje na łańcuchach znaków.\
 [Lab6](instructions/lab6.html) - Rzutowanie, spójniki logiczne  i struktury\
 [Lab7](instructions/lab7.html) - Gra w kółko i krzyżyk.\
-[Lab8]()\
+[Lab8](instructions/lab8.html) - Zapis i odczyt plików.\
 [Lab9]()\
 [Lab10]()
 
