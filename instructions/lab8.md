@@ -3,6 +3,8 @@ lab8 - Operacje na plikach
 
 ## Pytania
 - Jak otworzyć plik w trybie zapisu, jak w trybie odczytu, jak w trybie dodawania nowej treści?
+- W jaki sposób sprawdzić rozmiar pliku a w jaki ilość znaków w pliku?
+- Czym jest kursor?
 
 ## Przykłady
 https://pl.wikibooks.org/wiki/C/fopen
