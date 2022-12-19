@@ -23,6 +23,7 @@ bibliotek programistycznych dostępnych w języku C.
 # DOSTATECZNY
 
 ## Zadanie 1
+Mnożenie macierzy.
 
 ## Zadanie 2
 

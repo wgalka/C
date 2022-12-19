@@ -11,7 +11,15 @@
 [Lab9](instructions/lab9.html) - Unie i alokacja pamięci.
 <!-- [Lab10]() -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HY6PFDKF4H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-HY6PFDKF4H');
+</script>
 
 
 

@@ -21,6 +21,11 @@ typedef struct
 
 } var;
 
+typedef struct tablica{
+    const int size;
+    int array[];
+}tablica;
+
 bool setInt(var *ptr, int a)
 {
     ptr->type = INT;
@@ -46,6 +51,13 @@ int main(int argc, char const *argv[])
         printf("%c\n", tab[i].value._int);
     }
     
+    printf("%d\n", sizeof(var));
+     printf("%d\n", sizeof(type));
+      printf("%d\n", sizeof(tab[0].value));
 
+
+    tablica f = {.size = 5};
+     
+    printf("f= %d\n",sizeof(f));
     return 0;
 }
