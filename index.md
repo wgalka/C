@@ -8,7 +8,7 @@
 [Lab6](instructions/lab6.html) - Rzutowanie, spójniki logiczne  i struktury\
 [Lab7](instructions/lab7.html) - Gra w kółko i krzyżyk.\
 [Lab8](instructions/lab8.html) - Zapis i odczyt plików.\
-<!-- [Lab9](instructions/lab9.html) - unie i alokacja pamięci\ -->
+[Lab9](instructions/lab9.html) - unie i alokacja pamięci\
 <!-- [Lab10]() -->
 
 
