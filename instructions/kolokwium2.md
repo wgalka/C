@@ -75,7 +75,16 @@ $$
 
 A następnie zwraca obliczoną wartość.
 
+Utwórz zmienną przechowującą następujące wartości X, Y i Z:
 
+| X | Y | Z |
+|---|---|---|
+| 1 | 1 | 1 |
+| 2 | 1 | 1 |
+| 3 | 3 | 3 |
+| 1 | 2 | 3 |
+
+W funkcji main oblicz i wypisz obległości pomiędzy wszystkimi wektorami tj. pomiędzy 1 i 1, pomiędzy 1 i 2, pomiędzy 1 i 3 .... poiędzy 4 i 4.
 
 ## DOBRY
 
