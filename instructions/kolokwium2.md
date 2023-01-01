@@ -27,6 +27,11 @@ tworzeniu programów rozwiązujących zadane problemy.
 - EK_04 Potrafi tworzyć programy z wykorzystaniem standardowych 
 bibliotek programistycznych dostępnych w języku C.
 
+Ponadto jest oceniana:
+- Czytelność kodu
+- Stosowanie się do konwencji nazewnictwa
+- Znajomość mocnych i słabych stron zaimplementowanego rozwiązania (skalowalność, kosztowność obliczeniowa i pamięciowa)
+
 # Zdania
 
 ## DOSTATECZNY
@@ -85,6 +90,17 @@ Utwórz zmienną przechowującą następujące wartości X, Y i Z:
 | 1 | 2 | 3 |
 
 W funkcji main oblicz i wypisz obległości pomiędzy wszystkimi wektorami tj. pomiędzy 1 i 1, pomiędzy 1 i 2, pomiędzy 1 i 3 .... poiędzy 4 i 4.
+
+
+### Duplikowanie wybranego wiersza n razy
+
+Utwórz funkcję `duplicateRow()` która przyjmuje 4 parametry:
+- wskaźnik do tablicy jednowymiarowej zawierającej liczby zmiennoprzecinkowe
+- rozmiar tablicy
+- index elementu który ma być zduplikowany
+- ilość powrórzeń duplikowanego elementu
+
+Przetestuj działanie funkcji.
 
 ## DOBRY
 

@@ -41,3 +41,5 @@
 
 
 [Kolokwium 1](instructions/kolokwium.html)
+
+[Kolokwium 2](instructions/kolokwium2.html)
