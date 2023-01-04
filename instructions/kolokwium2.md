@@ -1,9 +1,5 @@
 # PPWJC
 
-$$
-\overline{x}=\frac{1}{N}\sum_{i=1}^{N}x_i
-$$
-
 - EK_01 Zna podstawowe pojęcia związane z programowaniem 
 komputerów. 
     - zmienna
