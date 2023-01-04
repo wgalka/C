@@ -73,11 +73,9 @@ W funkcji `main()` zainicjalizuj nastepujące tablice i przetestuj działanie fu
 ### Obliczanie odległości Euklidesa dla dwóch wektorów.
 
 Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o długości 3 jako parametry funkcji. Funkcja oblicza odległość Euklidesa pomiędzy punktami określonymi przez wartości tablic według wzoru:
-
 $$
 d(p,q)   = \sqrt {\sum _{i=1}^{n}  \left( q_{i}-p_{i}\right)^2 } 
 $$
-
 A następnie zwraca obliczoną wartość.
 
 Utwórz zmienną przechowującą następujące wartości X, Y i Z:
