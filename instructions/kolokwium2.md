@@ -99,7 +99,7 @@ Utwórz funkcję `duplicateRow()` która przyjmuje 4 parametry:
 - rozmiar tablicy
 - index elementu który ma być zduplikowany
 - ilość powrórzeń duplikowanego elementu
-
+Jeśli powtórzenie elementów przekroczy rozmiar tablicy wypisz w konsoli napis "Warning: Elements exceded size od array!".
 Przetestuj działanie funkcji.
 
 ## DOBRY
