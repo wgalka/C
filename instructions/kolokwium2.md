@@ -191,7 +191,7 @@ void print_matrix(float* tab, int col, int row){
 
 int main(int argc, char const *argv[])
 {
-    float tab[3][2] = {{1,2},{2,3}, {3,3}};
+    float tab[3][2] = { {1,2},{2,3}, {3,3} };
 
     print_matrix(tab, 2,3);
 
