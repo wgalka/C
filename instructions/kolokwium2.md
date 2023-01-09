@@ -161,7 +161,7 @@ W metodzie `main()`:
 ## https://blog.etrapez.pl/rozwiazywanie-ukladow-rownan-metoda-macierzy-odwrotnej/
 
 
-
+```c
 #include <stdio.h>
 
 
@@ -200,3 +200,4 @@ int main(int argc, char const *argv[])
     print_matrix(tab, 2,3);
     return 0;
 }
+```
