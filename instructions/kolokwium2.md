@@ -165,7 +165,7 @@ W metodzie `main()`:
 ## https://blog.etrapez.pl/rozwiazywanie-ukladow-rownan-metoda-macierzy-odwrotnej/
 
 
-```C
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
