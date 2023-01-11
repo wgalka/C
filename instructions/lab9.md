@@ -210,7 +210,7 @@ Utwórz struktórę `var` która będzie przechowywać typ zmiennej. Oraz warto�
 
 ### Zadanie 3
 
-Utwórz funckję `setInt()` `setFloat()` `setChar()` które przyjmują dwa jarumenty, wskaźnik do zmiennej `var` i wartość zmiennej. Funkcje ustawiają odpowienio wartości zmiennej var.
+Utwórz funckję `setInt()` `setFloat()` `setChar()` które przyjmują dwa arumenty, wskaźnik do zmiennej `var` i wartość zmiennej. Funkcje ustawiają odpowienio wartości zmiennej var.
 
 ### Zadanie 4
 

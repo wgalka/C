@@ -92,7 +92,7 @@ Utwórz zmienną przechowującą następujące wartości X, Y i Z:
 W funkcji main oblicz i wypisz obległości pomiędzy wszystkimi wektorami tj. pomiędzy 1 i 1, pomiędzy 1 i 2, pomiędzy 1 i 3 .... poiędzy 4 i 4.
 
 
-### Duplikowanie wybranego wiersza n razy
+### Duplikowanie wybranego elementu n razy
 
 Utwórz funkcję `duplicateRow()` która przyjmuje 4 parametry:
 - wskaźnik do tablicy jednowymiarowej zawierającej liczby zmiennoprzecinkowe
@@ -101,6 +101,10 @@ Utwórz funkcję `duplicateRow()` która przyjmuje 4 parametry:
 - ilość powrórzeń duplikowanego elementu
 Jeśli powtórzenie elementów przekroczy rozmiar tablicy wypisz w konsoli napis "Warning: Elements exceded size od array!".
 Przetestuj działanie funkcji.
+
+### Sprawdzanie czy łańcuchy znaków są takie same
+
+Utwórz funkcję `compare()` która przyjmuje dwie tablice o takiej samej długości zawierające znaki oraz liczbę znaków. 
 
 ## DOBRY
 
