@@ -104,7 +104,7 @@ Przetestuj działanie funkcji.
 
 ### Sprawdzanie czy łańcuchy znaków są takie same
 
-Utwórz funkcję `compare()` która przyjmuje dwie tablice o takiej samej długości zawierające znaki oraz liczbę znaków. 
+Utwórz funkcję `compare()` która przyjmuje dwie tablice o takiej samej długości zawierające znaki oraz liczbę znaków. Funkcja zwraca 0 jeśli słowa są takie same lub ilość liter którymi się różnią.
 
 ## DOBRY
 
