@@ -89,17 +89,9 @@ Napisz funkcję main która przetestuje działanie zaimplementowanych wcześniej
 
 ### EK_3
 
-Utwórz strukturę `Array` przechowującą:
-- liczbę kolumn macierzy
-- liczbę wierszy macierzy
-- wskaźnik na wskaźniki przechowujące liczby **zmiennoprzecinkowe**
+Utwórz strukturę `Array` przechowującą dane niezbędne do wykonywania działań na macierzy takich jak odczytywanie wierszy i kolumn.
 
-Utwórz funkcję `initArray()` która zwraca instancję struktury `Array` i przyjmuje następujące parametry:
-- liczba wierszy macierzy
-- liczba kolumn macierzy
-Funkcja tworzy nową instancję struktury `Array` do której przypisuje liczbę wierszy i kolumn.
-Następnie rezerwuje w pamięci miejsce na przechowanie dwuwymiarowej tablicy i przypisuje wskaźnik do tego miejsca w odpowiednie pole struktury `Array`.
-Kompletna instancja jest zwracana przez funkcję.
+Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej liczbie wierszy i kolumn przekazanych jako parametry funkcji.
 
 Utwórz funkcję `printArray()` która przyjmuje jako parametr strukturę `Array`.
 Funkcja wypisuje zawartość tablicy z przekazanej struktury w następującym formacie:
@@ -113,16 +105,16 @@ Funkcja wypisuje zawartość tablicy z przekazanej struktury w następującym fo
 Utwórz funckję `fillArray()` która przyjmuje instancję klasy `Array` i prosi użytkownika o wypełnienie zawartości tablicy.
 Przykładowa sesja:
 ```terminal
-Array[0][0] = 1
-Array[0][1] = 1
-Array[1][0] = 1
-Array[1][1] = 1
-Array[2][0] = 11
-Array[2][1] = 1
+Array[0][0] = 2.0
+Array[0][1] = 4.42
+Array[1][0] = 5.2
+Array[1][1] = 6.0
+Array[2][0] = 9
+Array[2][1] = 22.4
 ```
 
 Utwórz funkcję `multiplyArrays()` przyjmującą dwie instancje struktury `Array`. W ciele funkcji zaimplementuj mnożenie macierzy. Uwzględnij nastepujące aspekty:
-- kiedy możliwe jest mnożenie macierzy przez macierz
+- kiedy możliwe jest mnożenie macierzy przez macierz, jeśli mnożenie nie jest możliwe wypisz odpowiedni komunikat i zwróć puste pola struktury `Array`.
 - funkcja ma zwrócić nową macierz będącą wynikiem mnożenia tych macierzy
 
 W metodzie `main()`:
@@ -134,7 +126,23 @@ W metodzie `main()`:
 
 ### EK_4
 
-Zapisz wyniki 
+Zapisz wynik mnożenia macierzy w pliku tekstowym `wyniki.txt` w postaci:
+
+```csv
+1.00    2.00    3.00
+4.00    5.00	2.00
+
+X
+
+1.00	4.00
+3.00	1.00
+5.00	4.00
+
+=
+
+22.00	18.00
+29.00	29.00
+```
 
 
 
