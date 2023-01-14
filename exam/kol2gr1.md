@@ -137,6 +137,9 @@ W metodzie `main()`:
 Zapisz wyniki 
 
 
+
+<details>
+
 # Efekt EK_03:
 ## DST: 
 Student potrafi poprawnie przygotować programy rzędu 20-50  linii kodu, rozwiązujące proste problemy,  wykorzystując  do  tego  celu  niektóre  z  poznanych  struktur  danych  oraz  konstrukcje programistyczne dostępne w języku C.
@@ -155,3 +158,5 @@ Student potrafi poprawnie przygotować programy rzędu 20-50 linii kodu, rozwią
 Student  potrafi  poprawnie  przygotować  programy  rzędu  20-50  linii  kodu,  rozwiązujące średniozaawansowane  problemy,  wykorzystując  możliwości  standardowychbibliotek programistycznych dostępnych w języku C używanych na zajęciach.
 ## BDB:  
 Student  potrafi  poprawnie  przygotować  programy  rzędu  50-100  linii  kodu,  rozwiązujące średniozaawansowane  problemy,  wykorzystując  możliwości  standardowych  bibliotek programistycznych dostępnych w języku C, także takich, które student poznawał samodzielnie
+
+</details>
