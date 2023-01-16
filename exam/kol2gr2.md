@@ -16,7 +16,7 @@ Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej
 ['a', '1', 'g', 'c', 'c']
 ```
 
-Przetestuj działanie funkcji na wybranych przykładach.
+Przetestuj działanie funkcji na wybranych 3 przykładach.
 ### EK_4
 
 W metodzie main napisz program który zapisze wyniki z poprzedniego zadania do pliku wyniki.txt
