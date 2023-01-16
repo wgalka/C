@@ -1,5 +1,7 @@
 # Kolokwium 2
 
+Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`.
+
 ## Dostateczny
 
 ### EK_3
