@@ -4,7 +4,7 @@
 
 ### EK_3
 
-Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela wybrany element n razy. Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!". 
+Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela wybrany element(wartość przekazana jako parametr funkcji) n razy. Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!". 
 
 Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej formacie:
 
