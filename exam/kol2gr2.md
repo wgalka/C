@@ -2,7 +2,7 @@
 
 Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki skapkować w archiwum .zip i przesłać za pomocą formularza.
 
-{% include kol2header.md %}
+{% include exam\kol2header.md %}
 
 ## Dostateczny
 
