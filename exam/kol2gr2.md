@@ -48,7 +48,7 @@ $$
 
 A następnie zwraca obliczoną wartość.
 
-Utwórz zmienną przechowującą następujące macierze
+Utwórz zmienne przechowujące następujące macierze
 
 ```terminal
 | 0.00 | 0.10 |
@@ -62,7 +62,18 @@ Utwórz zmienną przechowującą następujące macierze
 | 2.00 | 2.10 | 1.10 |
 ```
 
-W funkcji main oblicz i wypisz obległości pomiędzy wszystkimi wektorami tj. pomiędzy 1 i 1, pomiędzy 1 i 2, pomiędzy 1 i 3 .... poiędzy 3 i 3. Dla każdej z macierzy.
+Napisz funkcję `calculate_distances()` która oblicza i wypisuje odległości pomiędzy wszystkimi wierszami macierzy przekazanej jako argument funkcji tj. pomiędzy 1 i 1 wierszem, pomiędzy 1 i 2 wierszem, pomiędzy 1 i 3 wierszem .... poiędzy 3 i 3 wierszem.
+
+przykładowy rezultat:
+
+```terminal
+row 1 row 1 = 0.00
+row 1 row 2 = 3.32
+...
+row 3 row 3 = 3.5.2
+```
+
+Wywołaj funkcję `calculate_distances()` dla każdej z testowych macierzy tak aby uzyskać wyniki.
 
 ### EK_4
 
