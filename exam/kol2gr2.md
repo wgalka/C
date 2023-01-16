@@ -2,7 +2,7 @@
 
 Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki skapkować w archiwum .zip i przesłać za pomocą formularza.
 
-<div style="background-color=#FFFAFA">
+<div style="background-color: #FFFAFA">
 
 ## Dostateczny
 
@@ -22,7 +22,7 @@ Przetestuj działanie funkcji na wybranych przykładach.
 W metodzie main napisz program który zapisze wyniki z poprzedniego zadania do pliku wyniki.txt
 
 </div>
-<div style="background-color=#FFFAF0">
+<div style="background-color: #FFFAF0">
 
 ## Dobry
 
@@ -64,7 +64,7 @@ W funkcji main oblicz i wypisz obległości pomiędzy wszystkimi wektorami tj. p
 Zmodyfikuj program tak aby obliczone wyniki zostały zapisane do pliku `wyniki.txt`.
 
 </div>
-<div style="background-color=#F5F5DC">
+<div style="background-color: #F5F5DC">
 
 ## Bardzo dobry
 
