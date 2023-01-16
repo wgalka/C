@@ -8,7 +8,15 @@ Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane
 
 ### EK_3
 
-Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji). Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!". 
+Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji). Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!".
+
+np.: duplikuję element pod indeksem 2 dwa razy.
+
+```terminal
+['a', '1', 'g', 'c', 'c', '\0', '\0', '\0', '\0']
+
+['a', '1', 'g', 'g', 'g', 'c', 'c', '\0', '\0']
+```
 
 Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej formacie:
 
