@@ -16,7 +16,7 @@ Utwórz funkcję `detArray()` przyjmującą instancje struktury `Array`. W ciele
 $$
 a_{jk} = a_{jk} - a_{ji}/a_{ii} * a_{ik}
 $$
-- jeśli w podanym wzorze a[i,i] == 0 (dzielenie przez 0) wypisz stosony komunikat.
+- jeśli w podanym wzorze a[i,i] == 0 (dzielenie przez 0) wypisz stosowny komunikat.
 
 gdzie poszczególne indeksy zmieniają się według sekwencji:
 - i = 1,...,n-1
