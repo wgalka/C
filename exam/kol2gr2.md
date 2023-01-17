@@ -1,82 +1,10 @@
 # Kolokwium 2
 
-Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
-
-
-## Dostateczny
-
-### EK_3
-
-Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji). Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!".
-
-np.: duplikuję element pod indeksem 2 dwa razy.
-
-```terminal
-['a', '1', 'g', 'c', 'c', '\0', '\0', '\0', '\0']
-
-['a', '1', 'g', 'g', 'g', 'c', 'c', '\0', '\0']
-```
-
-Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej formacie:
-
-```terminal
-['a', '1', 'g', 'c', 'c']
-```
-
-Przetestuj działanie funkcji na wybranych 3 przykładach.
-### EK_4
-
-W metodzie main napisz program który zapisze wyniki z poprzedniego zadania do pliku wyniki.txt
-
-## Dobry
-
-### EK_3
-Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy(macierz powinna być alokowana dynamicznie z użyciem odpowiednich funkcji) liczb zmiennoprzecinkowych w następującej postaci:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
-```
-
-Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o dowolnej długości jako parametry funkcji. Funkcja oblicza odległość Euklidesową pomiędzy punktami określonymi przez wartości tablic według wzoru:
-
-$$
-d(p,q)=\sqrt{\sum_{i=1}^{n}\left(q_{i}-p_{i}\right)^2} 
-$$
-
-A następnie zwraca obliczoną wartość.
-
-Utwórz zmienne przechowujące następujące macierze testowe:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
-```
-
-```terminal
-| 0.00 | 0.10 | 5.10 |
-| 1.00 | 1.10 | 8.10 |
-| 2.00 | 2.10 | 1.10 |
-```
-
-Napisz funkcję `calculate_distances()` która oblicza i wypisuje odległości pomiędzy wszystkimi wierszami macierzy przekazanej jako argument funkcji tj. pomiędzy 1 i 1 wierszem, pomiędzy 1 i 2 wierszem, pomiędzy 1 i 3 wierszem .... poiędzy 3 i 3 wierszem.
-
-przykładowy rezultat:
-
-```terminal
-row 1 row 1 = 0.00
-row 1 row 2 = 3.32
-...
-row 3 row 3 = 3.5.2
-```
-
-Wywołaj funkcję `calculate_distances()` dla każdej z testowych macierzy tak aby uzyskać wyniki.
-
-### EK_4
-
-Zmodyfikuj program tak aby obliczone wyniki zostały zapisane do pliku `wyniki.txt`.
+Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami proszę nazwać w zależności od wybranego zadania, odpowiednio:
+- `dst.c` i `dst.exe` dla oceny 3
+- `db.c` i `db.exe`. dla oceny 4
+- `bdb.c` i `bdb.exe` dla oceny 5
+Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
 
 ## Bardzo dobry
 
@@ -160,6 +88,82 @@ X
 22.00	18.00
 29.00	29.00
 ```
+
+## Dobry
+
+### EK_3
+Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy(macierz powinna być alokowana dynamicznie z użyciem odpowiednich funkcji) liczb zmiennoprzecinkowych w następującej postaci:
+
+```terminal
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 |
+```
+
+Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o dowolnej długości jako parametry funkcji. Funkcja oblicza odległość Euklidesową pomiędzy punktami określonymi przez wartości tablic według wzoru:
+
+$$
+d(p,q)=\sqrt{\sum_{i=1}^{n}\left(q_{i}-p_{i}\right)^2} 
+$$
+
+A następnie zwraca obliczoną wartość.
+
+Utwórz zmienne przechowujące następujące macierze testowe:
+
+```terminal
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 |
+```
+
+```terminal
+| 0.00 | 0.10 | 5.10 |
+| 1.00 | 1.10 | 8.10 |
+| 2.00 | 2.10 | 1.10 |
+```
+
+Napisz funkcję `calculate_distances()` która oblicza i wypisuje odległości pomiędzy wszystkimi wierszami macierzy przekazanej jako argument funkcji tj. pomiędzy 1 i 1 wierszem, pomiędzy 1 i 2 wierszem, pomiędzy 1 i 3 wierszem .... poiędzy 3 i 3 wierszem.
+
+przykładowy rezultat:
+
+```terminal
+row 1 row 1 = 0.00
+row 1 row 2 = 3.32
+...
+row 3 row 3 = 3.5.2
+```
+
+Wywołaj funkcję `calculate_distances()` dla każdej z testowych macierzy tak aby uzyskać wyniki.
+
+### EK_4
+
+Zmodyfikuj program tak aby obliczone wyniki zostały zapisane do pliku `wyniki.txt`.
+
+
+## Dostateczny
+
+### EK_3
+
+Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji). Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!".
+
+np.: duplikuję element pod indeksem 2 dwa razy.
+
+```terminal
+['a', '1', 'g', 'c', 'c', '\0', '\0', '\0', '\0']
+
+['a', '1', 'g', 'g', 'g', 'c', 'c', '\0', '\0']
+```
+
+Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej formacie:
+
+```terminal
+['a', '1', 'g', 'c', 'c']
+```
+
+Przetestuj działanie funkcji na wybranych 3 przykładach.
+### EK_4
+
+W metodzie main napisz program który zapisze wyniki z poprzedniego zadania do pliku wyniki.txt
 
 
 <details>

@@ -1,91 +1,10 @@
 # Kolokwium 2
 
-Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
-
-## Dostateczny
-
-### EK_3
-
-Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy liczb zmiennoprzecinkowych w następującej postaci:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
-```
-
-Funkcja może wypisać zawartość macierzy o dowolnym rozmiarze.
-
-```terminal
-| 0.00 | 0.10 | 0.50 |
-| 1.00 | 1.10 | 1.40 |
-| 2.00 | 2.10 | 2.10 |
-| 2.00 | 2.10 | 2.10 |
-| 1.00 | 1.10 | 1.40 |
-```
-
-Napisz funkcję `matrix_mean()` która zwraca średnią wartość elementów macierzy.
-
-### EK_4
-
-Przetestuj działanie funkcji na nastepujących macierzach:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 | 
-| 2.00 | 2.10 | 
-```
-
-```terminal
-| 1.00 | 3.00 |
-| 2.00 | 5.00 |
-```
-
-```terminal
-| 1.00 | 3.00 | 10.00 |
-| 2.00 | 5.00 | 9.00  |
-```
-
-Napisz program który zapisze w pliku `wyniki.txt` macierz a pod nią średnią wartość z tej macierzy dla wszystkich testowanych przypadków np.:
-```csv
-| 1.00 | 3.00 | 10.00 |
-| 2.00 | 5.00 | 9.00  |
-
-mean: 10.00
-```
-
-## Dobry
-
-### EK_3
-
-Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy(macierz powinna być alokowana dynamicznie z użyciem odpowiednich funkcji) liczb zmiennoprzecinkowych w następującej postaci:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
-```
-
-Napisz funkcję `free_matrix()` która zwalnia dynamicznie przydzieloną pamięć do przechowania macierzy.
-
-Napisz funkcję `duplicate_row()` która duplikuje wybrany wiersz `n` razy i podmienia macierz na nową - większą np. duplikując 2 wiersz 2 razy otrzymamy:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
-
-
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
-```
-
-### EK_4
-
-Napisz funkcję main która przetestuje działanie zaimplementowanych wcześniej funkcji i wyniki zapisze w pliku `wyniki.txt`
+Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami proszę nazwać w zależności od wybranego zadania, odpowiednio:
+- `dst.c` i `dst.exe` dla oceny 3
+- `db.c` i `db.exe`. dla oceny 4
+- `bdb.c` i `bdb.exe` dla oceny 5
+Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
 
 ## Bardzo dobry
 
@@ -146,6 +65,92 @@ X
 29.00	29.00
 ```
 
+
+## Dobry
+
+### EK_3
+
+Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy(macierz powinna być alokowana dynamicznie z użyciem odpowiednich funkcji) liczb zmiennoprzecinkowych w następującej postaci:
+
+```terminal
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 |
+```
+
+Napisz funkcję `free_matrix()` która zwalnia dynamicznie przydzieloną pamięć do przechowania macierzy.
+
+Napisz funkcję `duplicate_row()` która duplikuje wybrany wiersz `n` razy i podmienia macierz na nową - większą np. duplikując 2 wiersz 2 razy otrzymamy:
+
+```terminal
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 |
+
+
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 |
+```
+
+### EK_4
+
+Napisz funkcję main która przetestuje działanie zaimplementowanych wcześniej funkcji i wyniki zapisze w pliku `wyniki.txt`
+
+
+## Dostateczny
+
+### EK_3
+
+Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy liczb zmiennoprzecinkowych w następującej postaci:
+
+```terminal
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 |
+```
+
+Funkcja może wypisać zawartość macierzy o dowolnym rozmiarze.
+
+```terminal
+| 0.00 | 0.10 | 0.50 |
+| 1.00 | 1.10 | 1.40 |
+| 2.00 | 2.10 | 2.10 |
+| 2.00 | 2.10 | 2.10 |
+| 1.00 | 1.10 | 1.40 |
+```
+
+Napisz funkcję `matrix_mean()` która zwraca średnią wartość elementów macierzy.
+
+### EK_4
+
+Przetestuj działanie funkcji na nastepujących macierzach:
+
+```terminal
+| 0.00 | 0.10 |
+| 1.00 | 1.10 |
+| 2.00 | 2.10 | 
+| 2.00 | 2.10 | 
+```
+
+```terminal
+| 1.00 | 3.00 |
+| 2.00 | 5.00 |
+```
+
+```terminal
+| 1.00 | 3.00 | 10.00 |
+| 2.00 | 5.00 | 9.00  |
+```
+
+Napisz program który zapisze w pliku `wyniki.txt` macierz a pod nią średnią wartość z tej macierzy dla wszystkich testowanych przypadków np.:
+```csv
+| 1.00 | 3.00 | 10.00 |
+| 2.00 | 5.00 | 9.00  |
+
+mean: 10.00
+```
 
 
 <details>
