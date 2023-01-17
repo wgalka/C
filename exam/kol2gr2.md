@@ -1,6 +1,6 @@
 # Kolokwium 2
 
-Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki skapkować w archiwum .zip i przesłać za pomocą formularza.
+Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
 
 
 ## Dostateczny
@@ -39,7 +39,7 @@ Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy(
 | 2.00 | 2.10 |
 ```
 
-Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o dowolnej długości jako parametry funkcji. Funkcja oblicza odległość Euklidesa pomiędzy punktami określonymi przez wartości tablic według wzoru:
+Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o dowolnej długości jako parametry funkcji. Funkcja oblicza odległość Euklidesową pomiędzy punktami określonymi przez wartości tablic według wzoru:
 
 $$
 d(p,q)=\sqrt{\sum_{i=1}^{n}\left(q_{i}-p_{i}\right)^2} 
@@ -47,7 +47,7 @@ $$
 
 A następnie zwraca obliczoną wartość.
 
-Utwórz zmienne przechowujące następujące macierze
+Utwórz zmienne przechowujące następujące macierze testowe:
 
 ```terminal
 | 0.00 | 0.10 |
@@ -82,12 +82,13 @@ Zmodyfikuj program tak aby obliczone wyniki zostały zapisane do pliku `wyniki.t
 
 ### EK_3
 
-Utwórz strukturę `Array` przechowującą dane niezbędne do wykonywania działań na macierzy takich jak odczytywanie wierszy i kolumn oraz wyznacznik macierzy.
+Utwórz strukturę `Array` przechowującą macierz. Struktura powinna zawierać dane niezbędne do iteracji po komórkach macierzy oraz wyznacznik macierzy.
 
 Utwórz funkcję `detArray()` przyjmującą instancje struktury `Array`. W ciele funkcji zaimplementuj przekształcenie macierzy do uzyskania postaci górnej trójkątnej według wzoru:
 $$
-a[j,k] = a[j,k] - a[j,i]/a[i,i] * a[i,k] \text{ if a[i,i] != 0 jeśli a[i,i] == 0 zwróć wyjątek}
+a_{jk} = a_{jk} - a_{ji}/a_{ii} * a_{ik}
 $$
+- jeśli w podanym wzorze a[i,i] == 0 (dzielenie przez 0) wypisz stosony komunikat.
 
 gdzie poszczególne indeksy zmieniają się według sekwencji:
 - i = 1,...,n-1

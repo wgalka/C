@@ -1,6 +1,6 @@
 # Kolokwium 2
 
-Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki skapkować w archiwum .zip i przesłać za pomocą formularza.
+Wybrać jedno z poniższych zadań. Rozwiązanie nazwać nazwą oceny za wybrane zadanie. Przykładowe nazwy plików z rozwiązaniem `dst.c` i `dst.exe` lub `db.c` i `db.exe`. Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
 
 ## Dostateczny
 
@@ -91,7 +91,7 @@ Napisz funkcję main która przetestuje działanie zaimplementowanych wcześniej
 
 ### EK_3
 
-Utwórz strukturę `Array` przechowującą dane niezbędne do wykonywania działań na macierzy takich jak odczytywanie wierszy i kolumn.
+Utwórz strukturę `Array` przechowującą macierz. Struktura ma zawierać również dane niezbędne do odczytania wartości komórek macierzy.
 
 Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej liczbie wierszy i kolumn przekazanych jako parametry funkcji.
 
@@ -116,7 +116,7 @@ Array[2][1] = 22.4
 ```
 
 Utwórz funkcję `multiplyArrays()` przyjmującą dwie instancje struktury `Array`. W ciele funkcji zaimplementuj mnożenie macierzy. Uwzględnij nastepujące aspekty:
-- kiedy możliwe jest mnożenie macierzy przez macierz, jeśli mnożenie nie jest możliwe wypisz odpowiedni komunikat i zwróć puste pola struktury `Array`.
+- kiedy możliwe jest mnożenie macierzy przez macierz, jeśli mnożenie nie jest możliwe wypisz odpowiedni komunikat i zwróć puste pola struktury `Array`(dwie macierze można pomnożyć tylko wtedy gdy liczba kolumn macierzy A jest równa liczbie wierszy macierzy B).
 - funkcja ma zwrócić nową macierz będącą wynikiem mnożenia tych macierzy
 
 W metodzie `main()`:
