@@ -1,6 +1,6 @@
 # Kolokwium 2
 
-Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami proszę nazwać w zależności od wybranego zadania, odpowiednio:
+Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami nazwać w zależności od wybranego zadania, odpowiednio:
 - `dst.c` i `dst.exe` dla oceny 3
 - `db.c` i `db.exe`. dla oceny 4
 - `bdb.c` i `bdb.exe` dla oceny 5
