@@ -60,13 +60,13 @@ W metodzie `main()`:
 4.00        5.00        5.00
 1.00        2.00        4.00
 ```
--3.00
+
 ```
 1.00        2.00        3.00
 1.00        2.00        2.00
 1.00        2.00        3.00
 ```
-0.00
+
 ```
 1.00        2.00        3.00      5.00
 4.00        5.00        5.00      1.00
@@ -89,66 +89,97 @@ det = 0.00
 
 ```
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Dobry
 
 ### EK_3
-Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy(macierz powinna być alokowana dynamicznie z użyciem odpowiednich funkcji) liczb zmiennoprzecinkowych w następującej postaci:
+Napisz funkcję `allocate_2d_array()` która dynamicznie alokuje miejsce w pamięci na macierz liczb zmiennoprzecinkowych o rozmiarze przekazanym jako parametry funkcji. Funkcja zwraca wskaźnik na tę macierz.
+
+Napisz funkcję `free_2d_array()` która zwalnia miejsce w pamięci macierzy przekazanej jako parametr funkcji.
+W komentarzu opisz za co odpowiadają parametry funkcji jeśli ich nazwa tego nie sugeruje.
+
+Napisz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy w następującej postaci:
 
 ```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
+| 0.00      | 0.10      |
+| 1.00      | 4331.10   |
+| 2.00      | 42.10     |
 ```
 
-Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o dowolnej długości jako parametry funkcji. Funkcja oblicza odległość Euklidesową pomiędzy punktami określonymi przez wartości tablic według wzoru:
+Utwórz funkcję `euclidDistance()` która przyjmuje dwie tablice o dowolnej długości jako parametry funkcji. Funkcja oblicza odległość Euklidesową na podstawie wartości tablic według wzoru:
 
 $$
 d(p,q)=\sqrt{\sum_{i=1}^{n}\left(q_{i}-p_{i}\right)^2} 
 $$
 
-A następnie zwraca obliczoną wartość.
+Utwórz funkcję `distnaceMatrix()` która oblicza odległości pomiędzy kolejnymi wierszami macierzy przekazanej jako parametr funkcji i wpisuje do nowej macierzy obliczone wartości. np. mając macierz:
 
-Utwórz zmienne przechowujące następujące macierze testowe:
-
-```terminal
-| 0.00 | 0.10 |
-| 1.00 | 1.10 |
-| 2.00 | 2.10 |
+```
+| 0.00      | 0.00      |
+| 0.00      | 1.00      |
+| 0.00      | 2.00      |
 ```
 
-```terminal
-| 0.00 | 0.10 | 5.10 |
-| 1.00 | 1.10 | 8.10 |
-| 2.00 | 2.10 | 1.10 |
+wynikiem działania będzie macierz 3x3 gdzie w komórce [1,1] jest odległośc pomiędzy 1 a 1 wierszem,w komórce [1,2] odległość pomiędzy 1 a 2 wierszem, w komórce ...
+w komórce [3,3] odległośc pomiędzy 3 a 3 wierszem:
+
+```
+| 0.00      | 1.00      | 2.00      |
+| 1.00      | 0.00      | 1.00      |
+| 2.00      | 1.00      | 0.00      |
 ```
 
-Napisz funkcję `calculate_distances()` która oblicza i wypisuje odległości pomiędzy wszystkimi wierszami macierzy przekazanej jako argument funkcji tj. pomiędzy 1 i 1 wierszem, pomiędzy 1 i 2 wierszem, pomiędzy 1 i 3 wierszem .... poiędzy 3 i 3 wierszem.
+W metodzie main() utwórz następujące menu:
 
-przykładowy rezultat:
-
-```terminal
-row 1 row 1 = 0.00
-row 1 row 2 = 3.32
-...
-row 3 row 3 = 3.5.2
+```
+1. Wprowadz macierz
+2. Wyswietl macierz
+3. Macierz odleglosci
+4. Wyjscie
 ```
 
-Wywołaj funkcję `calculate_distances()` dla każdej z testowych macierzy tak aby uzyskać wyniki.
+Po wybraniu opcji 1 program pyta użytkownika o rozmiar macierzy, alokuje miejsce na tę macierz a następnie użytkownik wypełnia macierz danymi.
+
+```
+Wybrano 1 - Wprowadz macierz.
+Wprowadz liczbe wierszy: 2
+Wprowadz luczbe kolumn: 2
+tab[1][1] = 1
+tab[1][2] = 3
+tab[2][1] = 3
+tab[2][2] = 2
+```
+
+Po wybraniu opcji 2 program wyświetla macierz za pomocą funkcji print_matrix()
+
+Po wybraniu opcji 3 program wyświetla macierz odległości macierzy przechowywanej aktualnie w pamięci.
+
+Program powinien działać aż do momentu wybrania opcji wyjście. Pamięć powinna być zwalniana w odpowiednim momencie.
 
 ### EK_4
 
-Zmodyfikuj program tak aby obliczone wyniki zostały zapisane do pliku `wyniki.txt`.
+Zmodyfikuj program tak aby historia działań użytkownika została zapisana do pliku `wyniki.txt`.
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Dostateczny
 
 ### EK_3
 
-Napisz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji). Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!".
+Utwórz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji) za tym elementem. Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!" i zwiększ rozmiar tablicy tak by przechowywała wszystkie elementy.
 
-np.: duplikuję element pod indeksem 2 dwa razy.
+np.: duplikuję element pod indeksem 2, 2 razy.
 
 ```terminal
 ['a', '1', 'g', 'c', 'c', '\0', '\0', '\0', '\0']
@@ -156,7 +187,7 @@ np.: duplikuję element pod indeksem 2 dwa razy.
 ['a', '1', 'g', 'g', 'g', 'c', 'c', '\0', '\0']
 ```
 
-Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej formacie:
+Utwórz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej formacie:
 
 ```terminal
 ['a', '1', 'g', 'c', 'c']
@@ -165,7 +196,13 @@ Napisz funkcję `print_array()` która wypisze elementy tablicy w podanym niżej
 Przetestuj działanie funkcji na wybranych 3 przykładach.
 ### EK_4
 
-W metodzie main napisz program który zapisze wyniki z poprzedniego zadania do pliku wyniki.txt
+Zmodyfikuj program tak aby rezultat działania programu został zapisany w pliku wyniki.txt w następującej postaci:
+
+```terminal
+['a', '1', 'g', 'c', 'c']
+duplikuj 3 element 2 razy
+['a', '1', 'g', 'g', 'g', 'c', 'c']
+```
 
 
 <details>
