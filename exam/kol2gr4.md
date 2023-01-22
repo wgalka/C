@@ -38,7 +38,13 @@ Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomoc�
 ## Dostateczny
 
 ### EK_3
-Napisz 
+Utwórz funkcję `palindrom()` która sprawdzi czy znaki przechowywane w tablicy są palindromem(słowo lub ciąg znaków, który czytany od przodu i od tyłu brzmi tak samo) a następnie zwróci wartość true jeśli są lub false jeśli nie są. Funkcja przyjmuje tablicę dowolnej długości i przy sprawdznaiu pomija puste znaki. np.
+
+```
+[a, b, a, 0\] true
+[a, b, b, a] true
+[a, b, c, a] false
+```
 ### EK_4
 
 
