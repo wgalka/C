@@ -1,6 +1,6 @@
 # Kolokwium 2
 
-Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami proszę nazwać w zależności od wybranego zadania, odpowiednio:
+Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami nazwać w zależności od wybranego zadania, odpowiednio:
 - `dst.c` i `dst.exe` dla oceny 3
 - `db.c` i `db.exe`. dla oceny 4
 - `bdb.c` i `bdb.exe` dla oceny 5
@@ -65,9 +65,7 @@ Array[2][1] = 22.4
 W metodzie `main()`:
 - Utwórz dwie zmienne o typie `Array`.
 - Za pomocą funkcji `initArray()` utwórz macierze o wymiarach 3x2 oraz 2x3
-- Wywołaj funkcję `fillArray()` by wypełnić macierze wartościami
-- Wywołaj funkcję `multiplyArrays()` przekazując utworzone macierze
-- Wypisz wynik mnożenia macierzy w konsoli (funkcja `printArray()`)
+- Wywołaj funkcję `fillArray()` by wypełnić macierze wartościami. Po wypełnieniu wartości powinien zostać obliczony wyznacznik macierzy.
 
 ### EK_4
 
@@ -77,7 +75,7 @@ Zapisz wynik mnożenia macierzy w pliku tekstowym `wyniki.txt` w postaci:
 1.00    2.00    3.00
 4.00    5.00	2.00
 
-X
+
 
 1.00	4.00
 3.00	1.00
