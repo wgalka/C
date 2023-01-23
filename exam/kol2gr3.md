@@ -1,9 +1,9 @@
 # Kolokwium 2
 
 Wybrać jedno z poniższych zadań. Pliki z rozwiązaniami nazwać w zależności od wybranego zadania, odpowiednio:
-- `dst.c` i `dst.exe` dla oceny 3
-- `db.c` i `db.exe`. dla oceny 4
-- `bdb.c` i `bdb.exe` dla oceny 5
+- `dst_gr3.c` i `dst.exe` dla oceny 3
+- `db_gr3.c` i `db.exe`. dla oceny 4
+- `bdb_gr3.c` i `bdb.exe` dla oceny 5
 Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomocą formularza.
 
 ## Bardzo dobry
