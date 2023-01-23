@@ -87,6 +87,11 @@ det = -3.00
 1.00        2.00        3.00
 det = 0.00
 
+1.00        2.00        3.00      5.00
+4.00        5.00        5.00      1.00
+Obliczenie wyznacznika jest mozliwe dla macierzy kwadratowej
+det = 0.00
+
 ```
 
 <br>
