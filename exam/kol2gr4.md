@@ -170,7 +170,7 @@ Zmodyfikuj program tak aby wynik działania programu został zapisany do pliku w
 ## Dostateczny
 
 ### EK_3
-Utwórz funkcję `palindrom()` która sprawdzi czy znaki przechowywane w tablicy są palindromem(słowo lub ciąg znaków, który czytany od przodu i od tyłu brzmi tak samo) a następnie zwróci wartość true jeśli są lub false jeśli nie są. Funkcja przyjmuje tablicę dowolnej długości i przy sprawdznaiu pomija puste znaki. np.
+Utwórz funkcję `palindrom()` która sprawdzi czy znaki przechowywane w tablicy są palindromem(słowo lub ciąg znaków, który czytany od przodu i od tyłu brzmi tak samo) a następnie zwróci wartość true jeśli są lub false jeśli nie są. Funkcja przyjmuje tablicę dowolnej długości i przy sprawdznaiu pomija puste znaki z końca tablicy. np.
 
 ```
 [a, b, a, 0\] true
