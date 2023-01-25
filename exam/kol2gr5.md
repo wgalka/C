@@ -189,7 +189,7 @@ Zmodyfikuj program tak aby historia działań użytkownika została zapisana do 
 
 ### EK_3
 
-Utwórz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji) za tym elementem. Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Warning: number of elements exceed Array size!" i zwiększ rozmiar tablicy tak by przechowywała wszystkie elementy.
+Utwórz funkcję `duplicate_element()` która w tablicy jednowymiarowej znaków powiela element pod wskazanym indexem(wartość przekazana jako parametr funkcji) n razy(wartość przekazana jako parametr funkcji) za tym elementem. Jeśli ilość elementów przekroczy rozmiar tablicy wypisz "Error: number of elements exceed Array size!" i zakończ działanie funkcji.
 
 np.: duplikuję element pod indeksem 2, 2 razy.
 

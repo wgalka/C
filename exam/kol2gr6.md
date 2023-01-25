@@ -196,23 +196,30 @@ Utwórz funkcję `print_palindrom()` która przyjmuje jako argument tablicę o d
 [a, b, b, a] true
 ```
 
-Przetestuj działanie funkcji `print_palindrom()` na następujących tablicach:
-
+Napisz program który odczytuje od użytkownika znaki z klawiatury a następnie sprawdza czy wpisane przez niego znaki są palindromem. Program powinien odczytywać znaki do momentu wybrania opcji zakończenia wpisywania znaków.
 ```
-[k, a, j, a, k]
-```
-
-```
-[1, 2, 3, 3, 2, 1]
-```
-
-```
-[k, 1, u]
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 1
+podaj znak: b
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 0
+[a, b, a] true
 ```
 
 ### EK_4
-Zmodyfikuj program tak aby wynik działania programu został zapisany do pliku wyniki.txt
-
+Zmodyfikuj program tak aby wynik działania programu został zapisany do pliku wyniki.txt. Za każdym razem gdy uruchamiamy program historia jest dołączana na końcu pliku
+```
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 1
+podaj znak: b
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 0
+[a, b, a] true
+```
 
 
 <details>
