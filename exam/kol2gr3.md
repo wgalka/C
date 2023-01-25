@@ -14,7 +14,7 @@ Utwórz strukturę `Array` przechowującą macierz o dowolnym rozmiarze. Struktu
 
 Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej liczbie wierszy i kolumn przekazanych jako parametry funkcji.
 
-Utwórz funkcję `detArray()` przyjmującą instancje struktury `Array`. Funkcja powinna zwracać wyznacnzik macierzy który można obliczyć w następujący sposób:
+Utwórz funkcję `detArray()` przyjmującą instancje struktury `Array`. Funkcja powinna zwracać wartość obliczoną w następujący sposób:
 
 Przekształcenie macierzy do uzyskania postaci górnej trójkątnej według wzoru:
 $$
@@ -27,7 +27,7 @@ Poszczególne indeksy zmieniają się według sekwencji:
 2. j = i+1,...,n
 3. k = i+1,...,n
 
-Po przekształceniu możliwe jest obliczenie wyznacznika macierzy mnożąc elementy na przekątnej. Poniżej liczbą 1 zaznaczono elementy z których trzeba policzyć iloczyn w przypadku macierzy 4x4.
+Po przekształceniu pomnożyć elementy na przekątnej. Poniżej liczbą 1 zaznaczono elementy z których trzeba policzyć iloczyn w przypadku macierzy 4x4.
 
 ```terminal
 [1 0 0 0]
@@ -89,7 +89,7 @@ det = 0.00
 
 1.00        2.00        3.00      5.00
 4.00        5.00        5.00      1.00
-Obliczenie wyznacznika jest mozliwe dla macierzy kwadratowej
+Obliczenie wartości jest mozliwe dla macierzy kwadratowej
 det = 0.00
 
 ```
