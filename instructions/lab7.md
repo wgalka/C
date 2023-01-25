@@ -215,6 +215,55 @@ int main(int argc, char const *argv[])
 }
 ```
 
+```c
+ // +------+
+    // |      | pointer to pointer to T 
+    // +------+
+    //     |
+    //     v
+    // +------+------+------+
+    // |      |      |      | pointers to T 
+    // +------+------+------+
+    //     |      |      |     +-------------+-------------+-------------+
+    //     |      |      +---->|             |             |             | elements of type T
+    //     |      |            +-------------+-------------+-------------+ 
+    //     |      |     +-------------+-------------+
+    //     |      +---->|             |             | elements of type T
+    //     |            +-------------+-------------+ 
+    //     |
+    //     v
+    // +-------------+-------------+-------------+-------------+
+    // |             |             |             |             | elements of type T
+    // +-------------+-------------+-------------+-------------+ 
+    double **tab2;
+    tab2 = malloc(row * sizeof(double *));
+    for (int i = 0; i < 3; i++)
+    {
+        tab2[i] = calloc(col,sizeof(double));
+    }
+
+    // pzypisujemy wartości
+    tab2[0][0] = 0.0;
+    tab2[0][1] = 0.1;
+    tab2[1][0] = 1.0;
+    tab2[1][1] = 1.1;
+    tab2[2][0] = 2.0;
+    tab2[2][1] = 2.1;
+
+    // dla 3d array
+    int ***tab3d;
+    tab3d = malloc(2*sizeof(double **));
+    for (int i = 0; i < 2; i++)
+    {
+        tab3d[i] = malloc(2*sizeof(double *));
+        for (size_t j = 0; j < 2; j++)
+        {
+            tab3d[i][j] = calloc(2,sizeof(double));
+        }
+        
+    }
+```
+
 </details>
 
 ### `Task3.exe`

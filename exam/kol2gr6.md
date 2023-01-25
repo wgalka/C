@@ -15,9 +15,10 @@ Utwórz strukturę `Array` przechowującą macierz. Struktura ma zawierać równ
 Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej liczbie wierszy i kolumn przekazanych jako parametry funkcji.
 
 Utwórz funkcję `printArray()` która przyjmuje jako parametr strukturę `Array`.
-Funkcja wypisuje zawartość macierzy w następującym formacie:
+Funkcja wypisuje zawartość macierzy w następującym formacie(kolumny podpisane kolejnymi lierami alfabetu):
 
 ```terminal
+A           B           C
 2.00        2.00        2.00
 2.00        2.00        2.00
 12.00       12.00       12.00
@@ -38,22 +39,26 @@ W metodzie `main()`:
 - Za pomocą funkcji `initArray()` utwórz macierze o wymiarach 2x3, 3x2, 3x3 oraz 4x2 z mastępującymi wartościami
 
 ```
+A       B       C
 1.00    2.00    3.00
 4.00    5.00	2.00
 ```
 ```
+A       B
 1.00	4.00
 3.00	1.00
 5.00	4.00
 ```
 
 ```
+A       B       C
 1.00    2.00    3.00
 4.00    5.00	2.00
 4.00    5.00	2.00
 ```
 
 ```
+A       B       C       D
 1.00    2.00    3.00    4.00
 4.00    5.00	2.00    1.00
 ```
@@ -70,29 +75,37 @@ W metodzie `main()`:
 Zmodyfikuj program aby wynik mnożenia macierzy został zapisany w pliku tekstowym `wyniki.txt` w postaci:
 
 ```csv
+A       B       C
 1.00    2.00    3.00
 4.00    5.00	2.00
 X
+A       B
 1.00	4.00
 3.00	1.00
 5.00	4.00
 =
+A       B
 22.00	18.00
 29.00	29.00
 
+A       B       C
 1.00    2.00    3.00
 4.00    5.00	2.00
 X
+A       B       C
 1.00    2.00    3.00
 4.00    5.00	2.00
 4.00    5.00	2.00
 =
+A       B       C
 21.00   27.00   13.00
 32.00   43.00   26.00
 
+A       B       C
 1.00    2.00    3.00
 4.00    5.00	2.00
 X
+A       B       C       D
 1.00    2.00    3.00    4.00
 4.00    5.00	2.00    1.00
 =
@@ -123,7 +136,7 @@ Utwórz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy
 | 2.0000      | 42.1000   |
 ```
 
-Utwórz  funkcję `sort_by_column()` która sortuje tablicę przekazaną jako argument funkcji malejąco według wartości w wybranej kolumnie. Kolumnę według której ma odbyć się sortowanie powinna być przekazana jako arguemtn funkcji. np.
+Utwórz  funkcję `sort_by_column()` która sortuje tablicę przekazaną jako argument funkcji rosnąco według wartości w wybranej kolumnie. Kolumnę według której ma odbyć się sortowanie powinna być przekazana jako arguemtn funkcji. np.
 
 ```
 przed sotrowaniem
@@ -133,16 +146,16 @@ przed sotrowaniem
 | 3.0000    | 1.0000    | 3.0000    |
 
 po sortowaniu z wyborem 2 kolumny
-| 4.0000    | 7.0000    | 1.0000    |
-| 3.0000    | 4.0000    | 3.0000    |
-| 1.0000    | 3.0000    | 5.0000    |
 | 3.0000    | 1.0000    | 3.0000    |
+| 1.0000    | 3.0000    | 5.0000    |
+| 3.0000    | 4.0000    | 3.0000    |
+| 4.0000    | 7.0000    | 1.0000    |
 
 po sortowaniu z wyborem 1 kolumny
-| 4.0000    | 7.0000    | 1.0000    |
-| 3.0000    | 1.0000    | 3.0000    |
-| 3.0000    | 4.0000    | 3.0000    |
 | 1.0000    | 3.0000    | 5.0000    |
+| 3.0000    | 4.0000    | 3.0000    |
+| 3.0000    | 1.0000    | 3.0000    |
+| 4.0000    | 7.0000    | 1.0000    |
 ```
 
 Utwórz macierz za pomocą funkcji allocate_2d_array() a następnie wypełnij ją następującymi wartościami
@@ -170,7 +183,7 @@ Zmodyfikuj program tak aby wynik działania programu został zapisany do pliku w
 ## Dostateczny
 
 ### EK_3
-Utwórz funkcję `palindrom()` która sprawdzi czy znaki przechowywane w tablicy są palindromem(słowo lub ciąg znaków, który czytany od przodu i od tyłu brzmi tak samo) a następnie zwróci wartość true jeśli są lub false jeśli nie są. Funkcja przyjmuje tablicę dowolnej długości i przy sprawdznaiu pomija puste znaki z końca tablicy. np.
+Utwórz funkcję `palindrom()` która sprawdzi czy znaki przechowywane w tablicy są palindromem(słowo lub ciąg znaków, który czytany od przodu i od tyłu brzmi tak samo) a następnie zwróci wartość true jeśli są lub false jeśli nie są. Funkcja przyjmuje tablicę dowolnej długości i przy sprawdznaiu pomija puste znaki. np.
 
 ```
 [a, b, a, 0\] true
@@ -183,23 +196,30 @@ Utwórz funkcję `print_palindrom()` która przyjmuje jako argument tablicę o d
 [a, b, b, a] true
 ```
 
-Przetestuj działanie funkcji `print_palindrom()` na następujących tablicach:
-
+Napisz program który odczytuje od użytkownika znaki z klawiatury a następnie sprawdza czy wpisane przez niego znaki są palindromem. Program powinien odczytywać znaki do momentu wybrania opcji zakończenia wpisywania znaków.
 ```
-[k, a, j, a, k]
-```
-
-```
-[1, 2, 3, 3, 2, 1]
-```
-
-```
-[k, 1, u]
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 1
+podaj znak: b
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 0
+[a, b, a] true
 ```
 
 ### EK_4
-Zmodyfikuj program tak aby wynik działania programu został zapisany do pliku wyniki.txt
-
+Zmodyfikuj program tak aby wynik działania programu został zapisany do pliku wyniki.txt. Za każdym razem gdy uruchamiamy program historia jest dołączana na końcu pliku
+```
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 1
+podaj znak: b
+Czy chcesz wpisac znak? 1
+podaj znak: a
+Czy chcesz wpisac znak? 0
+[a, b, a] true
+```
 
 
 <details>
