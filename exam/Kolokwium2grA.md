@@ -108,6 +108,8 @@ Przetestuj działanie funkcji sort_by_column() na następujących przypadkach:
 
 ## 5.0
 
+Utwóz program `bdb_mnozeniemacierzy`
+
 1. Utwórz strukturę `Array` przechowującą dynamicznie alokowaną macierz dwuwymiarową liczb zmiennoprzecinkowych. Struktura powinna zawierać dane o wielkości macierzy.
 
 2. Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej **liczbie wierszy i kolumn przekazanych jako parametry funkcji**. Domyślnie macierz jest wypełniona wartościami 0.
