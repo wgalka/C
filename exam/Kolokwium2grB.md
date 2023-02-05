@@ -213,3 +213,64 @@ Po wybraniu opcji 3 program wyświetla macierz odległości macierzy przechowywa
 Program powinien działać aż do momentu wybrania opcji wyjście. Pamięć powinna być zwalniana w odpowiednim momencie.
 
 ## 5.0
+
+Utwóz program `bdb_TicTacToe`
+
+1. Utwórz strukturę `Array` przechowującą dynamicznie alokowaną kwadratową macierz dwuwymiarową znaków. Struktura powinna zawierać dane o wielkości macierzy.
+
+2. Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej **liczbie wierszy i kolumn przekazanych jako parametry funkcji**. Domyślnie macierz jest wypełniona wartościami `\0`.
+
+3. Utwórz funkcję `freeArray()` która przyjmuje jako parametr **wskaźnik do struktury Array**. Funkcja dealokuje miejsce przechowujące dynamicznie przydzielone miejsce na macierz. Jeśli wszystko przebiegnie pomyślnie **funkcja zwraca wartość true**.
+
+4. Utwórz funkcję `makeMove()` która przyjmuje jako parametr strukturę `Array` numer wiersza, numer kolumny oraz symbol gracza. Jeśli ruch jest poprawny(nie przekraczamy zakresu tablicy oraz pole jest wolne - zawiera symbol \0) funkcja wpisuje symbol w odpowiednie miejsce i zwraca 1. W przeciwnym wypadku funkcja zwraca -1. Jesli tablica jest cała zapełniona funkcja zwraca 2(remis)
+
+5. Utwórz funkcję `printArray()` która przyjmuje jako parametr strukturę `Array`.
+Funkcja wypisuje zawartość macierzy w następującym formacie:
+
+```terminal
+X O X X
+X X   X
+X     X
+      O
+```
+
+5. Utwórz funkcję `checkBoard()` przyjmującą instancje struktury `Array`. W ciele funkcji zaimplementuj sprawdzenie czy jeden z graczy wypełnił wiersz, kolumnę lub przekątną swoim symbolem. Jeśli tak funkcja zwraca ten symbol.
+
+6. W metodzie `main()`utwórz menu w którym użytkownik jest pytany o:
+- wielkość planszy
+- liczbę graczy, następnie każdy z graczy wybiera swój symbol.
+Gra toczy się do momentu jesli jeden z graczy zapełni wiersz, kolumnę,przekątną lub kończy remisem jeśli niemożliwe jest wykonanie ruchu.
+
+Przykładowa sesja:
+```
+Podaj wielkosc planszy: 2
+Podaj ilosc graczy: 2
+Podaj symbol Gracz 1: X
+Podaj symbol Gracz 2: X
+Symbol zajęty, Podaj symbol Gracz 2: O
+===========================================
+   
+   
+===========================================
+Ruch gracza X
+Podaj numer wiersza i kolumny(np. 1 1): 1 1
+===========================================
+X  
+   
+===========================================
+Ruch gracza O
+Podaj numer wiersza i kolumny(np. 1 1): 2 1
+===========================================
+X  
+O  
+===========================================
+Ruch gracza X
+Podaj numer wiersza i kolumny(np. 1 1): 1 2
+===========================================
+X X 
+O  
+===========================================
+Wygrywa Gracz X!!!
+
+Koniec programu
+```
