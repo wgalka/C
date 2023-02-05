@@ -6,7 +6,7 @@ Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomoc�
 ## 3.0
 Utwórz program `dst_palindrom`.
 
-1. Utwórz funkcję `checkPalindrom()` która przyjmuje łańcuch znaków(**tablica** znaków zakończona pustym znakiem). Funkcja zlicza ile znaków jest na właściwej pozycji by utworzyć palindrom(słowo czytane od przodu i od tyłu brzmiące tak samo) i zwraca tę liczbę. Jeśli łańcuch znaków jest palindromem wtedy zwraca liczbę liter w słowie. np.
+Utwórz funkcję `checkPalindrom()` która przyjmuje łańcuch znaków(**tablica** znaków zakończona pustym znakiem). Funkcja zlicza ile znaków jest na właściwej pozycji by utworzyć palindrom(słowo czytane od przodu i od tyłu brzmiące tak samo) i zwraca tę liczbę. Jeśli łańcuch znaków jest palindromem wtedy zwraca liczbę liter w słowie. np.
 
 - **ala** zwróci liczbę 3
 - **kajak** - 5 znaków
@@ -15,7 +15,7 @@ Utwórz program `dst_palindrom`.
 - b**bb**a - 2 znaki
 
 
-2. W metodzie `main()` napisz program który sprawdza działanie funkcji na poniższych przykładach:
+W metodzie `main()` napisz program który sprawdza działanie funkcji na poniższych przykładach:
 ```
 "kajak" funkcja ma zwrócić 5
 "Ala alA" funkcja ma zwrócić 7
@@ -23,7 +23,41 @@ Utwórz program `dst_palindrom`.
 "  ala  " funkcja ma zwrócić 7
 ```
 
+W dalszej części metody `main()` po wyświetleniu przypadków testowych dopisz fragment który będzie pytał użytkownika o wybranie opcji z poniższego menu:
+```
+1. Wprowadź słowo.
+2. Wyjście z programu.
+```
+Program powinien działać do momentu wybrania opcji wyjście z programu.
+Po wybraniu opcji wprowadź słowo, odczytywane jest słowo wprowadzone od użytkownika (maksymalnie 100 znaków). Następnie program sprawdza czy znaki wprowadzone przez użytkownika są palindromem za pomocą utworzonej funkcji i wypisuje rezultat. Przykładowa sesja:
+
+```
+"kajak" - 5 palindrom
+"Ala alA" - 7 palindrom
+" zrzegorz " - 6
+"  ala  " - 7 palinfrom
+
+1. Wprowadz slowo.
+2. Wyjscie z programu.
+Wybierz opcje: 1
+Wprowadz slowo: alaska
+alaska - 0
+
+1. Wprowadz slowo.
+2. Wyjscie z programu.
+Wybierz opcje: 1
+Wprowadz slowo: ala
+ala - 3 palindrom
+
+1. Wprowadz slowo.
+2. Wyjscie z programu.
+Wybierz opcje: 2
+
+Zakońćzenie działania programu.
+```
+
 ## 4.0
+Utwórz program `db_sortowanie`.
 
 Utwórz funkcję `allocate_2d_array()` która dynamicznie alokuje miejsce w pamięci na macierz liczb zmiennoprzecinkowych o rozmiarze przekazanym jako parametry funkcji. Funkcja zwraca wskaźnik na tę macierz.
 
@@ -60,7 +94,8 @@ po sortowaniu z wyborem 1 kolumny
 | 4.0000    | 7.0000    | 1.0000    |
 ```
 
-Utwórz macierz za pomocą funkcji allocate_2d_array() a następnie wypełnij ją następującymi wartościami
+Utwórz macierz za pomocą funkcji `allocate_2d_array()` a następnie wypełnij ją następującymi wartościami:
+
 ```
 | 1.0000    | 3.0000    | 5.0000    |
 | 3.0000    | 4.0000    | 3.0000    |
