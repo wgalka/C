@@ -82,7 +82,7 @@ $$
 f(x) = \sqrt[3]{(3x^3+x^+1)^4}
 $$
 
-Pozbywamy się ułamka:
+Pozbywamy się ułamka (wzory przydatne przy liczeniu pochodnych):
 
 $$
 f(x) = (3x^3+x^2+1)^{\frac{4}{3}}
