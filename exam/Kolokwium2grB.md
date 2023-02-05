@@ -216,7 +216,7 @@ Program powinien działać aż do momentu wybrania opcji wyjście. Pamięć powi
 
 Utwóz program `bdb_TicTacToe`
 
-1. Utwórz strukturę `Array` przechowującą dynamicznie alokowaną kwadratową macierz dwuwymiarową znaków. Struktura powinna zawierać dane o wielkości macierzy.
+1. Utwórz strukturę `Array` przechowującą dynamicznie alokowaną kwadratową macierz przechowującą znaki. Struktura powinna zawierać dane o wielkości macierzy.
 
 2. Utwórz funkcję `initArray()` która zwraca instancję struktury `Array`. Funkcja tworzy nową instancję struktury `Array` i przechowuje macierz o określonej **liczbie wierszy i kolumn przekazanych jako parametry funkcji**. Domyślnie macierz jest wypełniona wartościami `\0`.
 
