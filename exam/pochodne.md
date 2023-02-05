@@ -1,7 +1,7 @@
 Właściwości pochodnych oraz wzory na pochodne.
 ![](https://static.docsity.com/documents_first_pages/2020/07/16/7458de6d69b0072f0b22ec52baf0ff9e.png)
 
-# 1
+# zadanie 1
 
 $$
 f(x) = \frac{4x^3 + x^2 +2}{x^2 + 1}
