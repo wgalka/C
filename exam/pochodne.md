@@ -1,6 +1,10 @@
 Właściwości pochodnych oraz wzory na pochodne.
 ![](https://static.docsity.com/documents_first_pages/2020/07/16/7458de6d69b0072f0b22ec52baf0ff9e.png)
 
+Wzory na liczenie pochodnych
+
+![](https://www.matemaks.pl/grafika/studia/pochodne/wzory_na_liczenie_pochodnych.gif)
+
 # zadanie 1
 
 $$
@@ -71,3 +75,35 @@ $$
 </details>
 
 ## zadanie 2
+
+$$
+f(x) = \sqrt[3]{(3x^3+x^+1)^4}
+$$
+
+Pozbywamy się ułamka:
+
+$$
+f(x) = (3x^3+x^2+1)^{\frac{4}{3}}
+$$
+
+Korzystamy ze wzoru na liczenie pochodnych (f(g(x)))':
+
+$$
+(f(g(x)))' = f'(g(x))g'(x)
+$$
+
+W naszym przypadku g(x) będzie równe:
+
+$$
+g(x) = 3x^3+x^2+1
+$$
+
+Oblicz g'(x) i podstaw równania do wzoru na liczenie pochodnych.
+
+<details>
+
+$$
+f'(x) = \frac{4}{3}(3x^3+x^2+1)^{\frac{1}{3}} (9x^2+2x)
+$$
+
+</details>
