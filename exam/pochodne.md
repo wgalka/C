@@ -1,9 +1,10 @@
 Właściwości pochodnych oraz wzory na pochodne.
-![](https://static.docsity.com/documents_first_pages/2020/07/16/7458de6d69b0072f0b22ec52baf0ff9e.png)
+
+![wzory2](https://static.docsity.com/documents_first_pages/2020/07/16/7458de6d69b0072f0b22ec52baf0ff9e.png)
 
 Wzory na liczenie pochodnych
 
-![](https://www.matemaks.pl/grafika/studia/pochodne/wzory_na_liczenie_pochodnych.gif)
+![wzory](https://www.matemaks.pl/grafika/studia/pochodne/wzory_na_liczenie_pochodnych.gif)
 
 # zadanie 1
 
