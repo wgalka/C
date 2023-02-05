@@ -8,7 +8,7 @@ Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomoc�
 
 
 ## 4.0
-Utwórz program `db_sortowanie`.
+Utwórz program `db_macierzodleglosci`.
 
 Napisz funkcję `allocate_2d_array()` która dynamicznie alokuje miejsce w pamięci na macierz liczb zmiennoprzecinkowych o rozmiarze przekazanym jako parametry funkcji. Funkcja zwraca wskaźnik na tę macierz.
 
