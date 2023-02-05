@@ -9,6 +9,10 @@ $$
 
 Należy wykorzystać właściwość pochodnych oznaczoną wzorem 5. W miejsca f`(x) obliczamy pochodną korzystając ze wzorów na pochodne.
 
+$$
+(\frac{f(x)}{g(x)})' = \frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}
+$$
+
 
 Licznik oznaczymy jako f(x) i obliczamy pochodną tej funkcji czyli f'(x). 
 $$
@@ -49,4 +53,15 @@ $$
 
 </details>
 
-Ostatecznie należy podstawić obliczone wzory do równania właściwości pochodnych oznaczonego wzorem 5.
+Ostatecznie należy podstawić obliczone wzory do równania właściwości pochodnych oznaczonego wzorem 5 co będzie rozwiązaniem zadania.
+
+$$
+f'(x) = \frac{f'(x)g(x)-f(x)g'(x)}{g(x)^2}
+$$
+
+Po podstawieniu należy uprościć równanie
+
+$$
+f'(x) = \frac{(12x^2+2x)(x^2 +1)-(4x^3 + x^2 +2)(2x) } {(x^2 + 1)^2} =
+\frac{(2 x + 12 x^2 + 2 x^3 + 12 x^4)-(8 x^4 + 2 x^3 + 4 x) }{(x^2 + 1)^2}=\frac{4 x^4 + 12 x^2 - 2 x}{(x^2 + 1)^2}
+$$
