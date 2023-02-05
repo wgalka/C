@@ -61,7 +61,13 @@ $$
 
 Po podstawieniu należy uprościć równanie
 
+<details>
+
 $$
 f'(x) = \frac{(12x^2+2x)(x^2 +1)-(4x^3 + x^2 +2)(2x) } {(x^2 + 1)^2} =
 \frac{(2 x + 12 x^2 + 2 x^3 + 12 x^4)-(8 x^4 + 2 x^3 + 4 x) }{(x^2 + 1)^2}=\frac{4 x^4 + 12 x^2 - 2 x}{(x^2 + 1)^2}
 $$
+
+</details>
+
+## zadanie 2
