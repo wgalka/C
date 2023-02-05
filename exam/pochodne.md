@@ -5,7 +5,7 @@ Właściwości pochodnych oraz wzory na pochodne.
 Wzory na liczenie pochodnych
 https://www.matemaks.pl/grafika/studia/pochodne/wzory_na_liczenie_pochodnych.gif
 
-![wzory](https://www.matemaks.pl/grafika/studia/pochodne/wzory_na_liczenie_pochodnych.gif)
+![wzory](https://eduinf.waw.pl/inf/prg/009_kurs_avr/images_t/0010.p7.gif)
 
 # zadanie 1
 
