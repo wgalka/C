@@ -148,6 +148,7 @@ $$
 
 
 # reguła de l'Hospitala
+
 $$
 \lim_{x\to0} = \frac{2x - e^x}{x^2-3x}
 $$
