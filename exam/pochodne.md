@@ -145,3 +145,26 @@ Korzystamy z 5 Właściwości pochodnych
 $$
 f'(x) = \frac{(2x+\frac{1}{2}x^{-\frac{1}{2}})x^{\frac{1}{3} }- (x^2+ x^{\frac{1}{2}})(\frac{1}{3}x^{-\frac{2}{3}})}{(x^{\frac{1}{3}})^2}
 $$
+
+
+# reguła de l'Hospitala
+$$
+\lim_{x\to0} = \frac{2x - e^x}{x^2-3x}
+$$
+
+Podstawiamy za x 0 i obliczamy
+
+$$
+\lim_{x\to0} = \frac{2*0 - e^0}{0^2-3*0}= \frac{0}{0}
+$$
+
+Otrzymaliśmy symbol nieoznaczony.
+Reguła de l'Hospitala polega na obliczeniu pochodnej. Zatem z wyrażenia należy obliczyć pochodną a następnie znów podstawić 0 by policzyć granicę funkcji.
+
+$$
+f(x) = \frac{2x - e^x}{x^2-3x}
+$$
+
+$$
+f'(x) = ???
+$$
