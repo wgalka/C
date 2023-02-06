@@ -109,3 +109,39 @@ f'(x) = \frac{4}{3}(3x^3+x^2+1)^{\frac{1}{3}} (9x^2+2x)
 $$
 
 </details>
+
+## Zadanie 3
+$$
+f(x) = sin(-2x^3)cos(x^2)
+$$
+
+Wykorzystujemy 4 właściwość pochodnych oraz wzór 10,11 oraz ostatni wzór na liczenie pochodnych jak ostatnio.
+
+$$
+f'(x) = cos(-2x^3)(-6x^2)(cos(x^2)) + sin(-2x^3)(-sin(x^2)(2x))
+$$
+
+
+## Zadanie 4
+
+$$
+f(x) = e^{cos(1 + x^3)}
+$$
+
+Korzystamy z ostatniego wzoru na liczenie pochodnych wzorów na pochodne :7,11, 2
+
+$$
+f'(x)= e^{cos(1 + x^3)} (-sin(1+x^3)) * 3x^2
+$$
+
+## Zadanie 5
+
+$$
+f(x) = \frac{ x^2+ \sqrt{x}}{\sqrt[3]{x}} = \frac{ x^2+ x^{\frac{1}{2}}}{x^{\frac{1}{3}}}
+$$
+
+Korzystamy z 5 Właściwości pochodnych
+
+$$
+f'(x) = \frac{(2x+\frac{1}{2}x^{-\frac{1}{2}})x^{\frac{1}{3} }- (x^2+ x^{\frac{1}{2}})(\frac{1}{3}x^{-\frac{2}{3}})}{(x^{\frac{1}{3}})^2}
+$$
