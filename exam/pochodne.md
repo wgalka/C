@@ -159,7 +159,9 @@ $$
 $$
 
 Otrzymaliśmy symbol nieoznaczony.
-Reguła de l'Hospitala polega na obliczeniu pochodnej z licznika i mianownika.
+Reguła de l'Hospitala zakłada że obliczając granicę funkcji dla  pochodna z licznika/pochodna z mianownika będzie ona równa granicy oryginalnej funkcji. Można ją stosować przy pewnych założeniach:
+https://pre-epodreczniki.open.agh.edu.pl/tiki-index.php?page=Regu%C5%82a+de+l%27Hospitala
+
 $$
 \lim_{x\to0} = \frac{f(x)}{g(x)} = \frac{f'(x)}{g'(x)}
 $$
@@ -172,3 +174,57 @@ $$
 $$
 g(x) = x^2-3x
 $$
+Zatem należy obliczyć granicę funkcji z f'(x)/g'(x)
+
+# Zadanie 7
+
+$$
+f(x) = 4x^3- 3x^2 + 1
+$$
+
+Należy obliczyć pochodzną funkcji. Otrzymamy równanie kwadratowe z którego łatwo obliczyć miejsca zerowe funkcji.
+
+<details>
+
+$$
+f'(x) =  12x^2 - 6x
+$$
+
+$$
+x1 = 0
+$$
+
+$$
+x2 = \frac{1}{2}
+$$
+
+</details>
+
+Miejsca zerowe będą miejscami gdzie funkcja osiąga swoje maksimum lub minimum i zmienia się jej monotoniczność.Należy zastanowić się czy wartości będą rosnąć czy maleć. Można obliczyć sobie kilka wartości przed miejscami zerowymi aby to sprawdzić.
+
+<details>
+Jeśli za x podstawimy -1 to otrzymamy -9 podstawiając -2 otrzymamy jeszcze mniej zatem funkcja jest rosnąca w tym przedziale. Bo im bardziej przesuwamy wartości w prawo tym są one większe.
+
+$$
+(-\infty, 0) - rosnąca
+$$
+
+W punkcie 0 funkcja osiąga swoje maksimum(bo funkcja rośnie) i zmienia monotoniczność. Zatem po przekroczeniu 0 funkcja maleje.
+
+$$
+(0, \frac{1}{2}) - malejąca
+$$
+
+W punkcie 1/2 znów funkcja zmienia monotoniczność.
+
+$$
+(\frac{1}{2}, +\infty) - rosnąca
+$$
+
+Dla sprawdzenia można obliczyć kilka wartości funkcji
+
+</details>
+
+
+
+
