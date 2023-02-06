@@ -41,7 +41,7 @@ Po wybraniu opcji wprowadź słowo, odczytywane jest słowo wprowadzone od użyt
 2. Wyjscie z programu.
 Wybierz opcje: 1
 Wprowadz slowo: alaska
-alaska - 0
+alaska - 2
 
 1. Wprowadz slowo.
 2. Wyjscie z programu.
