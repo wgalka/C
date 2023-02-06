@@ -159,12 +159,16 @@ $$
 $$
 
 Otrzymaliśmy symbol nieoznaczony.
-Reguła de l'Hospitala polega na obliczeniu pochodnej. Zatem z wyrażenia należy obliczyć pochodną a następnie znów podstawić 0 by policzyć granicę funkcji.
+Reguła de l'Hospitala polega na obliczeniu pochodnej z licznika i mianownika.
+$$
+\lim_{x\to0} = \frac{f(x)}{g(x)} = \frac{f'(x)}{g'(x)}
+$$
+
 
 $$
-f(x) = \frac{2x - e^x}{x^2-3x}
+f(x) = 2x - e^x
 $$
 
 $$
-f'(x) = ???
+g(x) = x^2-3x
 $$
