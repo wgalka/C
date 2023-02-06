@@ -174,3 +174,31 @@ X
 22.00	18.00
 29.00	29.00
 ```
+
+Utwórz menu umożliwiające uzytkownikowi stworzenie dwóch macierzy, wypełnienie ich wartościami a następnie wyświetlenie wyniku mnożenia tych macierzy.
+
+```
+Podaj liczbe kolumn: 2
+Podaj liczbe wierszy: 2
+[1][1] = 1
+[1][2] = 1
+[2][1] = 1
+[2][2] = 1
+
+1.00 1.00
+1.00 1.00
+
+Podaj liczbe kolumn: 2
+Podaj liczbe wierszy: 2
+[1][1] = 1
+[1][2] = 1
+[2][1] = 1
+[2][2] = 1
+
+1.00 1.00
+1.00 1.00
+
+Wynik mnozenia
+1.00 1.00
+1.00 1.00
+```
