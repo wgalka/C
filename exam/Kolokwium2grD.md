@@ -62,11 +62,18 @@ $$
 x_2=\frac{-b+\sqrt{\Delta }}{2a} 
 $$
 
-Jeśli $$\Delta>0$$, to równanie kwadratowe ma dwa rozwiązania.
+Jeśli:
+$$
+\Delta>0 - \text{równanie kwadratowe ma dwa rozwiązania}
+$$ 
 
-Jeśli $$\Delta=0$$, to równanie kwadratowe ma jedno rozwiązanie.
+$$
+\Delta=0 - \text{równanie kwadratowe ma jedno rozwiązanie}
+$$
 
-Jeśli $$\Delta<0$$, to równanie kwadratowe nie ma rozwiązań.
+$$
+\Delta<0 -\text{równanie kwadratowe nie ma rozwiązań}
+$$
 
 ## 4.0
 Utwórz program `db_sortowanie_wiersz`.
