@@ -44,6 +44,30 @@ Delta: 0.00
 x = -1.00
 ```
 
+Przydatne wzory:
+
+$$
+ax^2+bx+c=0
+$$
+
+$$
+\Delta =b^2-4ac
+$$
+
+$$
+ x_1=\frac{-b-\sqrt{\Delta }}{2a}\\[6pt]
+$$
+
+$$
+x_2=\frac{-b+\sqrt{\Delta }}{2a} 
+$$
+
+Jeśli Δ>0, to równanie kwadratowe ma dwa rozwiązania.
+
+Jeśli Δ=0, to równanie kwadratowe ma jedno rozwiązanie.
+
+Jeśli Δ<0, to równanie kwadratowe nie ma rozwiązań.
+
 ## 4.0
 Utwórz program `db_sortowanie_wiersz`.
 
