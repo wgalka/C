@@ -156,7 +156,11 @@ $$
 Podstawiamy za x 0 i obliczamy
 
 $$
-\lim_{x\to0} = \frac{2*0 - e^0}{0^2-3*0} = \frac{0}{0}
+\lim_{x\to0} = \frac{2*0 - e^0}{0^2-3*0} 
+$$
+
+$$
+\lim_{x\to0}= \frac{0}{0}
 $$
 
 Otrzymaliśmy symbol nieoznaczony.
