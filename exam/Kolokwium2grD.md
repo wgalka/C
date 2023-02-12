@@ -6,7 +6,7 @@ Po zakończeniu kolokwium pliki spakować w archiwum .zip i przesłać za pomoc�
 ## 3.0
 Utwórz program `dst_quadraticfunction`.
 
-Utwórz funckję `printRoots()` która przyjmuje współczynniki a,b,c fukcji kwadratowej. Współczynniki mogą być liczbami dziesiętnymi oraz być ujemne.
+Utwórz funckję `printRoots()` która przyjmuje współczynniki a,b,c fukcji kwadratowej. Współczynniki mogą być liczbami dziesiętnymi oraz być ujemne. Funkcja ma obliczać miejsca zerowe fukcji kwadratoj.
 Funkcja powinna wypisywać informację w konsoli w następującej postaci:
 Przykład gdy jako argument funckji przekazano wartości -2, 3, 1
 ```
