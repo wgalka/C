@@ -91,7 +91,7 @@ Utwórz funkcję `print_matrix()` która wypisuje w konsoli zawartość macierzy
 2.0000      42.1000   
 ```
 
-Utwórz  funkcję `sort_by_column()` która sortuje tablicę przekazaną jako argument funkcji rosnąco według wartości we wskazanym wierszu. Wiersz według którego ma odbyć się sortowanie powinien być przekazany jako **argument funkcji**. np.
+Utwórz  funkcję `sort_by_row()` która sortuje tablicę przekazaną jako argument funkcji rosnąco według wartości we wskazanym wierszu. Wiersz według którego ma odbyć się sortowanie powinien być przekazany jako **argument funkcji**. np.
 
 ```
 przed sotrowaniem
