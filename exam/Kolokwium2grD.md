@@ -62,11 +62,11 @@ $$
 x_2=\frac{-b+\sqrt{\Delta }}{2a} 
 $$
 
-Jeśli Δ>0, to równanie kwadratowe ma dwa rozwiązania.
+Jeśli $\Delta>0$, to równanie kwadratowe ma dwa rozwiązania.
 
-Jeśli Δ=0, to równanie kwadratowe ma jedno rozwiązanie.
+Jeśli $\Delta=0$, to równanie kwadratowe ma jedno rozwiązanie.
 
-Jeśli Δ<0, to równanie kwadratowe nie ma rozwiązań.
+Jeśli $\Delta<0$, to równanie kwadratowe nie ma rozwiązań.
 
 ## 4.0
 Utwórz program `db_sortowanie_wiersz`.
