@@ -55,7 +55,7 @@ $$
 $$
 
 $$
- x_1=\frac{-b-\sqrt{\Delta }}{2a}\\[6pt]
+ x_1=\frac{-b-\sqrt{\Delta }}{2a}
 $$
 
 $$
