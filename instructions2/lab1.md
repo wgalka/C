@@ -312,6 +312,25 @@ if (/* condition */)
     /* code */
 }
 ```
+**Operatory porównania**
+Uzupełnij tabelkę.
+
+|Symbol  | Działanie                       |
+|--------|---------------------------------|
+| ==     | .                                |
+| !=     | .                                | 
+| <      | .                                |
+| >      |  .                               |
+| <=     | .                                |
+| >=     | .                                |
+
+```c
+int a = 16;
+float b = 16;
+bool result = a == b;
+printf("a == b - %i",a==b)
+```
+Przetestuj działanie powyższych operatorów. Wyniki wypisz w standardowym wyjściu.
 
 Przetestuj działanie instrukcji `if` oraz `switch` przez napisanie programu który prosi użytkownika o wpisanie liczby a nastepnie sprawdza czy podana liczba jest podzielna przez 2 i wypisuje odpowiednią informacje.
 
