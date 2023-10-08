@@ -316,11 +316,11 @@ if (/* condition */)
 Przetestuj działanie instrukcji `if` oraz `switch` przez napisanie programu który prosi użytkownika o wpisanie liczby a nastepnie sprawdza czy podana liczba jest podzielna przez 2 i wypisuje odpowiednią informacje.
 
 Napisz program który prosi użytkownika o podanie pierwszej wartości liczbowej, wybranie działania przez wpisanie:
- + - dodawanie
- - - odejmowanie
- * - mnożenie
- / - dzielenie
- Następnie drugiej wartości liczbowej po której akcepracji w konsoli pojawi się wynik działania.
+"+" - dodawanie
+"-" - odejmowanie
+"*" - mnożenie
+"/" - dzielenie
+Następnie drugiej wartości liczbowej po której akcepracji w konsoli pojawi się wynik działania.
 
 
 
