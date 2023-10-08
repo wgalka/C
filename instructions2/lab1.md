@@ -343,7 +343,15 @@ Następnie drugiej wartości liczbowej po której akcepracji w konsoli pojawi si
 
 
 
+### BMI.exe
+Napisz program w języku C, który obliczy wskaźnik masy ciała (BMI) dla użytkownika na podstawie jego wagi (w kilogramach) i wzrostu (w metrach). Program powinien następnie ocenić stan zdrowia użytkownika na podstawie wartości BMI i wyświetlić odpowiedni komunikat.
 
+Oto przykład kategorii BMI i ich ocen:
+
+BMI < 18.5: Niedowaga
+18.5 <= BMI < 25.0: W normie
+25.0 <= BMI < 30.0: Nadwaga
+BMI >= 30.0: Otyłość
 
  #### Uwaga!
  Działanie każdego programu należy przetestować. W programie kalkulator przykładowo należy sprawdzić co się stanie gdy spróbujemy dzielić przez 0. Pomyśl czy w programie występują inne sytuacje powodujące błędy i spróbuj je naprawić.
