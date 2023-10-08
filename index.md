@@ -1,6 +1,8 @@
-## PPWJC
+## PWJC
 
-[Lab1](instructions/lab1.html) - Konfiguracja środowiska\
+[Lab1](instructions2/lab1.html) 
+
+<!--[Lab1](instructions/lab1.html) - Konfiguracja środowiska\
 [Lab2](instructions/lab2.html) - Zmienne, Operatory, Instrukcje warunkowe, I/O\
 [Lab3](instructions/lab3.html) - Pętle i tablice.\
 [Lab4](instructions/lab4.html) - Funkcje, wskaźniki, zakres zmiennych\
@@ -8,7 +10,7 @@
 [Lab6](instructions/lab6.html) - Rzutowanie, spójniki logiczne  i struktury\
 [Lab7](instructions/lab7.html) - Gra w kółko i krzyżyk.\
 [Lab8](instructions/lab8.html) - Zapis i odczyt plików.\
-[Lab9](instructions/lab9.html) - Unie i alokacja pamięci.
+[Lab9](instructions/lab9.html) - Unie i alokacja pamięci. -->
 <!-- [Lab10]() -->
 
 
