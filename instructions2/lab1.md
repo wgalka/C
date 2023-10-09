@@ -14,18 +14,17 @@ Czym jest IDE (Zintegrowane środowisko programistyczne) i w jaki sposób ułatw
 3. Czym jest zmienna i jak je deklarować?
 4. Jakie znasz typy zmiennych w języku C?
 5. Jak działa dyrektywa `#include`?
-6. Zadanie biblioteki `<stdio.h>` i `stdlib.h`
+6. Zadanie biblioteki `<stdio.h>`, `<stdlib.h>` i `<limits.h>`.
 
 ### Notatki
+
+Zmienna w języku C jest to symboliczna nazwa, która jest używana do przechowywania danych w pamięci komputera. Zmienne pozwalają programiście przechowywać, manipulować i operować na różnych rodzajach danych, takich jak liczby, tekst czy wartości logiczne. Każda zmienna ma typ, który określa, jakie rodzaje danych można w niej przechowywać, oraz lokalizację w pamięci, gdzie są przechowywane te dane.
+
+#### Deklaracja zmiennej
 
 Deklaracja zmiennej wygląda następująco `[typ zmiennej] [nazwa zmiennej];
 np.:
 
-```c
-int zmienna1;
-```
-
-Tak zainicjowana zmienna obecnie odnosi się do danego miejsca w pamięci komputera w którym bity pamięci są w "losowym stanie".
 
 ```c
 #include <stdio.h> 
@@ -33,11 +32,12 @@ Tak zainicjowana zmienna obecnie odnosi się do danego miejsca w pamięci komput
 
 int main(int argc, char const *argv[]) // każdy program musi mieć punkt startu którym domyślnie jest funkcja main.
 {
-    int a;
-    printf("Wartość zmiennej a: %i",a);
+    int a; // Deklaracja zmiennej a typu całkowitego.
+    printf("Wartość zmiennej a: %i",a); // Funkcja printf() służy do wypisywania wartości zmiennej w konsoli. Za ciąg znaków %i zostanie podstawiona wartość przecowywana przez zmienną a.
     return 0;
 }
 ```
+Tak zadeklarowana zmienna obecnie odnosi się do danego miejsca w pamięci komputera w którym bity pamięci są w "losowym stanie" a więc nie jesteśmy w stanie przewidzieć jaka wartość jest obecnie przechowywana.
 
 ```bash
 > 2658304
@@ -49,12 +49,23 @@ Przy kolejnych uruchomieniach programu możemy dostać inny wynik:
 > 3563520
 ```
 
+#### Inicjalizacja zmiennej
+
 Aby ustawić ciąg bitów w pamięci a tym samym aby nasza zmienna przechowywała wartości przez nas zdefiniowane używamy operatora przypisania `=`.
 
 ```c
-int a = 3; // W pamięci zostaną ustawione odpowiednio bity dla liczby 3.
-printf("Wartość zmiennej a: %i",a);
+#include <stdio.h> 
+#include <stdlib.h>
+
+int main(int argc, char const *argv[]) // każdy program musi mieć punkt startu którym domyślnie jest funkcja main.
+{
+    int a = 3; // Inicjalizacja zmiennej a typu całkowitego.
+    printf("Wartość zmiennej a: %i",a); // Funkcja printf() służy do wypisywania wartości zmiennej w konsoli. Za ciąg znaków %i zostanie podstawiona wartość przecowywana przez zmienną a.
+    return 0;
+}
 ```
+
+#### Typy danych w języku C
 
 Podstawowe typy zmiennych i literały pozwalające je definiwoać:
 
@@ -186,6 +197,9 @@ int main(int argc, char const *argv[])
 
 Stałe definiujemy dopisując przed definicją zmiennej `const` lub dytektywą `#define`. Wartości stałej w przeciwieństwie do zmiennej dynamicznej nie możemy pomownie przypisać.
 ```c
+int main(int argc, char const *argv[])
+{
+
 int a = 12;
 const B = 54;
 
@@ -193,8 +207,11 @@ const B = 54;
 a = 43;
 
 // nie dozwolone jest przypisanie nowej wartości stałej
-// B = 66;
+B = 66; // Po zakomentowaniu tej linii program się skompiluje.
+}
 ```
+
+#### Tablice
 
 Zmienne tablicowe przechowują w nastepujących po sobie adresach pamięci zmienne określonego typu. W ten sposób możemy definiować łańcuchy znaków.
 
@@ -208,7 +225,7 @@ string[4] = 'o';
 string[5] = ' ';
 string[6] = 'C';
 printf("%c", string[6]); // Wypisanie znaku na 7 miejscu w tablicy.
-printf("%s",string);
+printf("%s",string); // Wypisanie całej tablicy.
 ```
 
 Literał ułatwiający przypisanie wartości do kolejnych elementów tablicy(wynik działania programu będzie taki sam jak poprzedniego):
