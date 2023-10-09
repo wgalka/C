@@ -187,7 +187,7 @@ int main(int argc, char const *argv[])
 
     // Long double
     puts("Long Double");
-    double ld1 = 3.14159265359;
+    long double ld1 = 3.14159265359;
     printf("ld1 = %Lf lub zaokraglajac ld1 = %.2Lf ld1 = %.3Lf\n\n", ld1, ld1, ld1);
 
     return 0;
