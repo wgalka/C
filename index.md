@@ -1,5 +1,6 @@
 ## PWJC
 
+[Konfiguracja GCC](instructions/lab1.md)
 [Lab1](instructions2/lab1.html) 
 
 <!--[Lab1](instructions/lab1.html) - Konfiguracja środowiska\
