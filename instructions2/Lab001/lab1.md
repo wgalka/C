@@ -1,6 +1,96 @@
 # Laboratorium 1
 
-## Wstęp
+## Pierwszy program
+
+Aby utworzyć nowy projekt w Visual Studio Code należy utworzyć nowy folder który będzie zawierał wszystkie pliki projektu. Można to zrobić na wiele sposobów. Jednym z nich jest stworzenie folderu na pulpicie, kliknięcie prawym przyciskiem myszy na folder i wybranie z menu kontekstowego opcji `open with code`.
+
+![open with code image](img/open_with_code.png)
+
+Po otwarciu ukaże się interfejs programu.
+- Kolorem zielonym oznaczono drzewo projektu. U góry(po najechaniu na pasek z nazwą) dostępne są opcje utworzenia nowego folderu wewnątrz projektu a także plików. 
+- Kolorem czerwonym oznaczono zakładkę umożliwiającą zainstalowanie rozszerzeń(pluginów) do programu.
+- Kolorem żółtym opcję menu umożliwiającą otworzenie nowego terminala. **Tworząc nowy terminal z otwartym projektem(folderem) domyślnie będzie on otwarty w katalogu głównym projektu.** Jeśli nie jest należy za pomocą komendy `cd` (system windows) przejść do katalogu z którego pliki będziemy kompilować lub uruchamiać.
+
+![VSCode interface](img/vs_code_interface.png)
+
+ Zwykle pliki źródłowe zawierające kod programu w języku C mają rozszerzenie ".c". Na przykład, "main.c", "utils.c", "mylibrary.c". Przy wybieraniu nazwy dla plików:
+ - **unikaj używania spacji i znaków specjalnych w nazwach plików i katalogów**, ponieważ mogą one powodować problemy w niektórych narzędziach i systemach operacyjnych.
+ - **stosuj opisowe i zrozumiałe nazwy plików, które odzwierciedlają ich zawartość i przeznaczenie**. To ułatwi pracę z projektem innym programistom.
+
+ Aby utworzyć plik ze wspomnianego wcześniej menu znajdującego się w drzewie katalogu wybierz ikonkę kartki ze znakiem "+". Następnie wpisz nazwę pliku(pamiętaj o rozszerzeniu pliku - ".c") i zatwierdź wciskając enter.
+ 
+ ![Alt text](img/file_creation.png)
+
+ Wyspecjalizowane pluginy ułatwiają pracę programisty. Poniżej lista przykładowych pluginów:
+
+- Material Icon Theme zawiera ikony dla wielu języków programowania, frameworków i typów plików, co ułatwia rozpoznawanie zawartości projektu. Możesz dostosować ten plugin do swoich potrzeb, wybierając różne zestawy ikon i konfigurując ich wygląd.
+
+ ![Alt text](image.png)
+
+ - C/C++ Extension Pack to zestaw rozszerzeń dla środowiska Visual Studio Code (VS Code). Oferuje narzędzia takie jak IntelliSense(sugesttie kodu, dokumentacja, **sprawdzanie poprawności składni**), debugowanie(narzędzie do analizy kodu w celu wyszukiwania błędów tzw. "bugów") itp.
+
+ ![Alt text](image-1.png)
+
+ ### Zadanie 1
+
+ Utworzyć nowy projekt o nazwie [nr. albumu]LAB001. W projekcie utworzyć plik `myfirstapp.c` z następującą zawartością:
+
+ ```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Hello, World!\n");
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+ ```
+
+ ## Kompilacja
+
+ 
+Kompilacja w języku C to proces przekształcania kodu źródłowego napisanego w języku C na kod maszynowy lub plik wykonywalny, który może być uruchomiony na komputerze. Popularnym narzędziem do kompilacji plików w języku C jest program MinGW zawierający implementację GCC(GNU Compiler Collection - darmowy i otwarty kompilator). 
+
+[**MinGW Download**](https://sourceforge.net/projects/mingw/)
+
+**Konfiguracja MinGW dla systemów Windows:** 
+
+- Zainstalować kompilator języka C. Np. Pakiet [MinGW](https://sourceforge.net/projects/mingw/) zawierający kompilator GCC dla Windows. 
+:warning: Zwróć uwagę na lokalizację zainstalowania pakietu. Będzie ona potrzebna przy kolejnych krokach.
+<br>![mingw_path](img/lab0mingwpath.png)
+- Podczas instalacji w jednym z kroków należy zaznaczyć pakiety które chcemy zainstalować.(wszystkie)
+<br>![mingw_packages](img/lab0mingwpickpackages.png)
+- Po wybraniu pakietów należy kliknąć **installation > Apply Changes** i potwierdzić wybór.
+<br>![](img/lab0mingwinstallpackages.png)
+- Aby mieć dostęp do narzędzia GCC z terminala cmd lub powershell ścieżka do pliku musi znajdować się w zmiennych systemowych. Sprawdź, czy polecenie jest dostępne wpisując w terminalu `gcc`. **Jeśli w terminalu pojawia się następujący komunikat pomiń następny krok.** 
+<br>![cmd_gcc](img/lab0mingwcheckgcc.png)
+- Jeśli polecenie gcc nie jest dostępne w menu start znajdź opcję "edit the system enviroment variables" lub w polskiej wersji systemu "edytuj zmienne środowiskowe".  
+<br>![windows_env_variables](img/lab0edit_env_variables.png)
+    - W kolejnym oknie wybierz "Enviroment Variables" lub "Zmienne środowiskowe" (przycisk powinien znajdować się w tym samym miejscu niezależnie od wersji systemu Windows)
+    <br>![windows_env_avariables2](img/lab0edit_env_var2.png)
+    - Odszukaj zmieną Path i wciśnij edit.
+    <br>![path](img/lab0path.png) 
+    - W oknie edit kliknij **New** a potem **Browse** i znajdź lokalizację pliku gcc.exe (folder bin w folderze, gdzie został zainstalowany MinGW). Przykładowo, jeśli MinGW został zainstalowany w lokalizacji C:\Applications\MinGW wpis do Path powinien wyglądać następująco
+    <br>![new_path](img/lab0new_path.png)
+    - Potwierdź wciskając ok i ponownie przetestuj polecenie gcc w terminalu CMD lub PowerShell. Powinien pojawić się następujący komunikat  
+    <br>![cmd_gcc](img/lab0mingwcheckgcc.png)
+
+Po zainstalowaniu i konfiguracji można użyć narzędzia do kompilacji. W tym celu należy uruchomić konsolę systemu, przejść do folderu w którym znajduje się program a następnie wywołać polecenie: `gcc [ścieżka do pliku]`. Po wykonaniu polecenia w folderze gdzie został uruchomiony terminal powinien pojawić się plik wykonywalny `a.exe`.
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
+
+Jeśli chcemy skompilować plik i nadać mu własną nazwę w narzędziu do kompilacji należy zdefiniować flagę `-o` po której podajemy nazwę pliku wyjściowego `gcc [ścieżka do pliku].c -o [ścieżka do pliku wyjściowego].exe`(.exe dla systemu windows).
+
+Skompilowany program można uruchomić na dwa sposoby. Pierwszy to otworzenie folderu i uruchomienie programu poprzez dwukrotne kliknięcie w ikonę. Drugie to uruchomie programu w terminalu. Domyślnie VSCode zabrania uruchamiania plików bez podania ścieżki względnej do obecnego folderu ".\". Zatem program można uruchomić komendą: `.\[ścieżka do programu].exe` 
+
+### Zadanie 2
+
+Skompiluj program `myfirstapp.c` do pliku `myfirstapp.exe`. Następnie uruchom program.
+
+
 
 ### Pytania
 
