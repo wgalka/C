@@ -132,9 +132,7 @@ printf("Hello, World!\n");
 
 Wypisze na standardowym wyjściu napis "Hello, World!" a następnie przejdzie do nowej linni. Przejście do nowej linii zdefiniowane jest przez znak "\n" na końcu łańcucha znaków. Znaki są kodowane za pomocą tablicy ASCII w której jest zakodowanych 127 wartości.
 
-<table>
-<tr>
-<td>| Znak | Wartość liczbowa |
+| Znak | Wartość liczbowa |
 | --------- | ------- |
 |     NUL   |    0    |
 |     SOH   |    1    |
@@ -198,12 +196,7 @@ Wypisze na standardowym wyjściu napis "Hello, World!" a następnie przejdzie do
 |      ;    |   59    |
 |      <    |   60    |
 |      =    |   61    |
-|      >    |   62    |</td>
-
-<td>
-| Znak | Wartość liczbowa |
-| --------- | ------- |
-
+|      >    |   62    |
 |      ?    |   63    |
 |      @    |   64    |
 |      A    |   65    |
@@ -269,12 +262,6 @@ Wypisze na standardowym wyjściu napis "Hello, World!" a następnie przejdzie do
 |      }    |  125    |
 |      ~    |  126    |
 |    DEL    |  127    |
-
-</td>
-</tr>
-</table>
-
-
 
 ### Zadanie 3
 
