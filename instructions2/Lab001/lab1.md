@@ -84,13 +84,209 @@ Po zainstalowaniu i konfiguracji można użyć narzędzia do kompilacji. W tym c
 
 Jeśli chcemy skompilować plik i nadać mu własną nazwę w narzędziu do kompilacji należy zdefiniować flagę `-o` po której podajemy nazwę pliku wyjściowego `gcc [ścieżka do pliku].c -o [ścieżka do pliku wyjściowego].exe`(.exe dla systemu windows).
 
+Kompilator jest w stanie wychwycić niektóre z błędów np.:
+- Błędy składniowe: To najbardziej podstawowe błędy, takie jak niezamknięte nawiasy, brak średników na końcu instrukcji, nieprawidłowe nazwy zmiennych czy funkcji
+- Błędy semantyczne: To błędy związane z niewłaściwym wykorzystaniem języka. Mogą obejmować próby operacji na zmiennych o niewłaściwym typie danych, wywoływanie nieistniejących funkcji, błędy zasięgu zmiennych itp.
+
+Pierwszy napotkany problem przy kompilacji zostanie zazwyczaj wypisany jako komunikat.
+Przykładowo jeśli wykorzystując funkcję `printf()` bez dołączenia biblioteki która zawiera jej implementację (`#include <stdio.h>`) otrzymamy następujący komunikat sugerujący dodanie dyrektywy.
+
+![Alt text](image-4.png)
+
 Skompilowany program można uruchomić na dwa sposoby. Pierwszy to otworzenie folderu i uruchomienie programu poprzez dwukrotne kliknięcie w ikonę. Drugie to uruchomie programu w terminalu. Domyślnie VSCode zabrania uruchamiania plików bez podania ścieżki względnej do obecnego folderu ".\". Zatem program można uruchomić komendą: `.\[ścieżka do programu].exe` 
 
 ### Zadanie 2
 
 Skompiluj program `myfirstapp.c` do pliku `myfirstapp.exe`. Następnie uruchom program.
 
+## Wypisywanie tekstu w standarwodym wyjściu
 
+**Analiza działania programu**
+
+Dyrektywa #include w języku C służy do dołączania plików nagłówkowych do programu. Podczas kompilacji **Linker odszukuje w plikach nagłówkowych implementację funkcji zdefiniowanych w plikach z rozszerzeniem ".h" i "wkleja" w wyznaczone miejsce aby utworzyć plik który finalnie będzie kompilowany**. Linker może optymalizować kod np. przez eliminowanie nieużywanych funkcji lub zmiennych.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+```
+
+**Funkcja `main()` jest punktem startowym w programie.** Wewnątrz niej w bloku oznaczonym znakami "{}" będą zawarte instrukcje dla komputera np. deklaracja zmiennej czy wywołanie funkcji wypisującej tekst na ekranie. **`int` przed nazwą funkcji oznacza że dana funkcja zwraca wartość całkowitą**. **Z funkcji wartość zwracamy za pomocą instrukcji `return [wartość zwracana];`**. Funkcja `main()` która zwraca wartość **0 oznacza "Fałsz" - działanie programu przebiegło pomyślnie** i nie wystąpił żaden problem. **Wartośći inne niż 0 będą oznaczać "Prawda" a więc podcza działania napotkano problem**.
+```c
+int main()
+{return 0;}
+```
+
+Pierwszą instrukcją w bloku funkcji `main()` jest funkcja `printf()` z biblioteki **`stdio.h`(Standard Input Output)**. Funkcja ta ma następującą postać w dokumentacji:
+
+`int printf(const char *format, ...);`
+
+- `int` oznacza że funkcja zwraca liczbę całkowitą. Liczba ta będzie ilością znaków wypisanych na standardowym wyjściu(w konsoli). Jeśli nie uda się wypisać znaków zwracana jest liczba ujemna.
+- `const char *format` wskaźnik na łańcuch znaków który ma zostać wypisany w konsoli. W owym łańcuchu funkcja będzie szukać kombinacji znaków w postaci `%[litera]` w których miejsce będą podstawiane wartości przekazane do funkcji.
+- ` ...` oznacza że do funkcji możemy przekazać nieskończoną liczbę wartości. Należy pamiętać że ilość wartośći przekazanych do funkcji powinna odpowiadać ilości wystąpień `%[litera]` w formatce(pierwszy z argumentów funckji).
+
+Zatem linia w programie:
+
+```c
+printf("Hello, World!\n");
+```
+
+Wypisze na standardowym wyjściu napis "Hello, World!" a następnie przejdzie do nowej linni. Przejście do nowej linii zdefiniowane jest przez znak "\n" na końcu łańcucha znaków. Znaki są kodowane za pomocą tablicy ASCII w której jest zakodowanych 127 wartości.
+
+<table>
+<tr>
+<td>| Znak | Wartość liczbowa |
+| --------- | ------- |
+|     NUL   |    0    |
+|     SOH   |    1    |
+|     STX   |    2    |
+|     ETX   |    3    |
+|     EOT   |    4    |
+|     ENQ   |    5    |
+|     ACK   |    6    |
+|     BEL   |    7    |
+|      BS   |    8    |
+|     TAB   |    9    |
+|      LF   |   10    |
+|      VT   |   11    |
+|      FF   |   12    |
+|      CR   |   13    |
+|      SO   |   14    |
+|      SI   |   15    |
+|     DLE   |   16    |
+|     DC1   |   17    |
+|     DC2   |   18    |
+|     DC3   |   19    |
+|     DC4   |   20    |
+|     NAK   |   21    |
+|     SYN   |   22    |
+|     ETB   |   23    |
+|     CAN   |   24    |
+|      EM   |   25    |
+|     SUB   |   26    |
+|     ESC   |   27    |
+|      FS   |   28    |
+|      GS   |   29    |
+|      RS   |   30    |
+|      US   |   31    |
+|     Space |   32    |
+|      !    |   33    |
+|      "    |   34    |
+|      #    |   35    |
+|      $    |   36    |
+|      %    |   37    |
+|      &    |   38    |
+|      '    |   39    |
+|      (    |   40    |
+|      )    |   41    |
+|      *    |   42    |
+|      +    |   43    |
+|      ,    |   44    |
+|      -    |   45    |
+|      .    |   46    |
+|      /    |   47    |
+|      0    |   48    |
+|      1    |   49    |
+|      2    |   50    |
+|      3    |   51    |
+|      4    |   52    |
+|      5    |   53    |
+|      6    |   54    |
+|      7    |   55    |
+|      8    |   56    |
+|      9    |   57    |
+|      :    |   58    |
+|      ;    |   59    |
+|      <    |   60    |
+|      =    |   61    |
+|      >    |   62    |</td>
+
+<td>
+| Znak | Wartość liczbowa |
+| --------- | ------- |
+
+|      ?    |   63    |
+|      @    |   64    |
+|      A    |   65    |
+|      B    |   66    |
+|      C    |   67    |
+|      D    |   68    |
+|      E    |   69    |
+|      F    |   70    |
+|      G    |   71    |
+|      H    |   72    |
+|      I    |   73    |
+|      J    |   74    |
+|      K    |   75    |
+|      L    |   76    |
+|      M    |   77    |
+|      N    |   78    |
+|      O    |   79    |
+|      P    |   80    |
+|      Q    |   81    |
+|      R    |   82    |
+|      S    |   83    |
+|      T    |   84    |
+|      U    |   85    |
+|      V    |   86    |
+|      W    |   87    |
+|      X    |   88    |
+|      Y    |   89    |
+|      Z    |   90    |
+|      [    |   91    |
+|      \    |   92    |
+|      ]    |   93    |
+|      ^    |   94    |
+|      _    |   95    |
+|      `    |   96    |
+|      a    |   97    |
+|      b    |   98    |
+|      c    |   99    |
+|      d    |  100    |
+|      e    |  101    |
+|      f    |  102    |
+|      g    |  103    |
+|      h    |  104    |
+|      i    |  105    |
+|      j    |  106    |
+|      k    |  107    |
+|      l    |  108    |
+|      m    |  109    |
+|      n    |  110    |
+|      o    |  111    |
+|      p    |  112    |
+|      q    |  113    |
+|      r    |  114    |
+|      s    |  115    |
+|      t    |  116    |
+|      u    |  117    |
+|      v    |  118    |
+|      w    |  119    |
+|      x    |  120    |
+|      y    |  121    |
+|      z    |  122    |
+|      {    |  123    |
+|      |    |  124    |
+|      }    |  125    |
+|      ~    |  126    |
+|    DEL    |  127    |
+
+</td>
+</tr>
+</table>
+
+
+
+### Zadanie 3
+
+
+
+
+int main()
+{
+   
+   system("PAUSE");
+   return EXIT_SUCCESS;
+}
 
 ### Pytania
 
