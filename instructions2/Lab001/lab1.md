@@ -178,5 +178,193 @@ C:\Users\Admin\>dir
                 2 Dir(s)  123,456,789,012 bytes free
 ```
 
+### Zadanie 4
+
+Komenda powłoki systemowej `cls` czyści okno konsoli w systemach Windows. Funkcja `system()` może wywoływać polecenia powłoki. Napisz program który:
+
+1. wyczyści okno terminala
+2. Wypisze na ekranie:
+
+```
+ Hello World!
+ Press any key to continue ...
+```
+
+3. Po wciśnięciu klawisza podmieni napis World na twoje imię. i nazwisko. W konsoli będzie widoczny tylko:
+
+```
+ Hello Jan Kolwaski!
+ Press any key to continue ...
+```
+
+## Zmienne
+
+Zmienna w języku C to symboliczna nazwa, która jest używana do przechowywania danych o określonym typie. Zmienne tworzymy w następujący sposób `[typ] [alias];` gdzie:
+
+- [typ] to jeden z typów zdefiniowanych w języku C. Podstawowe typy to:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{ 
+    // to jest komentarz. Nie wpływa on na działanie programu.
+    int integerVariable; // liczba całkowita
+    float floatingPointNumber; // liczba zmiennoprzecinkowa
+    char charVariable; // znak
+    double doublePrecisionFloatingPointNumber; // liczba zmiennoprzecinkowa o podwójnej precyzji
+}
+```
+
+Aby wypisać wartość przechowaywaną przez zmienną można wykorzystać funkcję `printf()`. Poniżej przykład wypisujący wartość zmiennych różnych typów. Zauważ że wartość przechowywana przez zmienną zostaje podstawiona w miejsce `%[litera]`.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int integerVariable;
+    float floatingPointNumber;
+    char charVariable;
+    double doublePrecisionFloatingPointNumber;
+
+    printf("Liczba calkowita %i \n", integerVariable);
+    printf("Liczba zmiennoprzecinkowa %.2f \n", floatingPointNumber); // .2 oznacza że zostaną wyświetlone 2 znaki po przecinku.
+    // możemy wypisać wszystko za pomocą jednego wywołania funkcji printf(). Za %c zostanie podstawiony znak a za %lf
+    printf("Znak %c \nLiczba zmiennoprzecinkowa o podwojnej precyzji %lf\n", charVariable, doublePrecisionFloatingPointNumber);
+}
+```
+
+Powyższe programy przy każdym uruchomieniu będą wypisywać różne wartości. Dzieje się tak ponieważ przy **deklaracji** jej wartość będzie taka jak w danej chwili były ustawione bity w pamięci komputera. Współczesne kompilatory potrafią wyzerować wartość przy deklarowaniu zmiennej tak aby miała wartość 0. Aby przypisać do zmiennej wartość używa się operatora przypisania `=`. Jeśli użyjemy operatora przypisania przy deklaracji zmiennej, nazywamy to **inicjalizacją** (przypisanie początkowej wartośći).
+**Zainicjalizować lub zadeklarować zmienną o tej samej nazwie, w tym samym zakresie dostępności zmiennej możemy tylko raz.**
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    // inicjalizacja zmiennych różnych typów
+    int integerVariable = 1234;
+    float floatingPointNumber = 4.15;
+    char charVariable = 'y';
+    double doublePrecisionFloatingPointNumber = 4.123;
+
+    //deklaracja zmiennych
+    int a;
+    float b;
+    char c;
+    double d; 
+}
+```
+
+W czasie działania programu wartośći przechowywane przez **zmienne możemy modyfikować wielokrotnie używając nazwy danej zmiennej oraz operatora przypisania `=`**. 
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int var1 = 1234;
+    printf("Zmienna przed modyfikacja: %i\n", var1);
+
+    var1 = 4321;
+    printf("Zmienna po modyfikacji: %i\n", var1);
+
+
+    var1 = 44;
+    printf("Zmienna po kolejnej modyfikacji: %i\n", var1);
+}
+```
+
+**Konwencja nazewnictwa zmiennych**
+- Nazwy zmiennych powinny być opisowe i odzwierciedlać ich przeznaczenie. np. `height` zamiast `x`
+- Użyj notacji camelCase w której pierwsze słowo zaczyna się małą literą, a każde kolejne słowo z wielkiej. np. `numberOfElements`.
+- Nie nadawaj zmiennym nazw, które są słowami zarezerwowanymi w języku C (np. int, while, for, itp.).
+- Używaj nazw zmiennych w języku angielskim.
+
+Niekiedy istnieje potrzeba utworzenia zmiennej której wartość raz przypisana nie może ulec zmianie. Takie zmienne nazywamy **stałymi**. Konwencja nazewnictwa stałych nakazuje aby nazwa była zapisana wielkimi literami, a kolejne słowa tworzące nazwę aby były oddzielane znakiem "_". Aby zadeklarować stałą w programie należy użyć słówka kluczowego `const` przed typem zmiennej. np.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    const int LIGHT_SPEED = 299792458;
+
+    // Próba modyfikacji stałej spowoduje błąd kompilacji
+    // LIGHT_SPEED = 299792458000000;
+}
+```
+
+### Zadanie 5
+
+Utwórz program koledzy.exe który przechowuje w następujących zmiennych:
+- `name` - twoje imię
+- `surname` - twoje nazwisko
+- `age` - twój wiek
+- `albumNumber` - twój numer albumu
+- `PI_VALUE` - wartość liczby pi(stała wartość - constant)
+
+Następnie program wypisuje w standardowym wyjściu te informacje.
+Zmień wartości zmiennych `name`, `surname`, `age` oraz `album number` na wartości odpowiadające danym kolegi siedzącego po prawej stronie. Następnie wypisz te dane w konsoli.
+
+Zmodyfikuj kolejny raz wartości zmiennych `name`, `surname`, `age` oraz `album number` na wartości odpowiadające danym kolegi siedzącego po lewej stronie. Następnie wypisz te dane w konsoli.
+
+Przykładowe wyjście:
+```
+Student:
+Jan Kolwalski lat: 20 nr. albumu: 1234567
+
+Prawa strona:
+Jan Baran lat: 20 nr. albumu: 1234568
+
+Lewa strona:
+Jakub Baran lat: 20 nr. albumu: 1271830
+```
+
+## Biblioteka <limits.h>
+
+Biblioteka `<limits.h>` jest częścią standardowej biblioteki języka C i zawiera zestaw **stałych** związanych z ograniczeniami typów danych całkowitych, takich jak int, long, short, itp. W limits.h znajdziesz stałe, które określają zakresy wartości tych typów, a także inne charakterystyki. Zakresy te mogą się różnić w zależności od systemu operacyjnego czy kompilatora.
+Poniżej przykład wypisujący maksymalną i minimalną wartość dla typu `int`.
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+#include <limits.h>
+int main(int argc, char const *argv[])
+{
+    // Typy całkowite
+    puts("Integer");
+    int maximumValue = INT_MAX;    // Biblioteka limits.h zawiera stałe np INT_MAX zawierające maksymalną wartość typu int
+    signed minimumValue = INT_MIN; // Słówko kluczowe signed definiuje że typ może przechowywać dodatnie i ujemne wartości.
+    printf("Wartosc w systemie | minimalna: %i \t\tmaksymalna %i\n", maximumValue, minimumValue);
+    printf("Standard C         | minimalna: %i \t\tmaksymalna %i\n", -32767, 32767);
+}
+```
+
+Limity zmiennych wymuszone przez standard można znaleźć w dokumencie opisującym standard: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2310.pdf
+
+W rozdziale `5.2.4.2 Numerical limits` opisano limity dla typów liczbowych.
+
+### Zadanie 6
+
+Utwórz program `limityzmiennych.exe` w którym wypiszesz wszystkie zakresy typów zmiennych w systemie oraz według standardu.
+
+Dla niektórych z typów aby poprawnie wypisać ich wartości potrzebne będzie skorzystanie z dokumentacji funkcji `printf()` której opis znajduje się pod adresem https://pl.wikibooks.org/wiki/C/printf
+
+Przykładowo aby wypisać typ `long int` według dokumentacji 
+
+![Alt text](image-6.png)
+
+oraz 
+
+![Alt text](image-7.png)
+
+Zatem aby wypisać wartość zmiennej typu `long int` należy użyć formatki w postaci `%li`.
 
 

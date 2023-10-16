@@ -4,9 +4,11 @@
 
 int main()
 {
+    system("cls");
     printf("Hello World! ");
     system("PAUSE");
-    printf("\b\b\bWojtek");
+    system("cls");
+    printf("Hello Wojtek!");
     system("PAUSE");
     return EXIT_SUCCESS;
 }
