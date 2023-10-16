@@ -1,4 +1,4 @@
-# Laboratorium 1
+# Programowanie w Języku C. Lab. 1
 
 ## Pierwszy program
 
