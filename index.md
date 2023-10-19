@@ -4,10 +4,11 @@
 
 [Lab1](instructions2/Lab001/lab1.html)
 
-[Lab2](instructions2/Lab002/lab2.html) 
+*[Lab2](instructions2/Lab002/lab2_o.html)*
 
-[Lab2.1](instructions2/Lab002/lab3.html) 
+*[Lab2.1](instructions2/Lab002/lab3_o.html)* 
 
+[Lab2](instructions2/Lab002/Lab2.html)
 
 
 <!--[Lab1](instructions/lab1.html) - Konfiguracja środowiska\
