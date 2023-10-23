@@ -60,7 +60,28 @@ int main()
 
 **funkcja scanf()**
 
-Funkcja 
+Funkcja `scanf()` przyjmuje następujące argumenty `scanf([format], [wskaźnik do zmiennych w których zostaną zapisane wartości])` i jej zadaniem jest zapisanie wartości wpisanej przez użytkownika pod wskazany adres w pamięci. Ważne jest tu wskazanie poprawnego typu w łańcuchu znaków wskazującym format.
+Wskazanie typu odczytywanych danych jest bardzo podobne do funkcji `printf()`. Dostępne opcje można znaleźć pod tym linkiem: [link](https://pl.wikibooks.org/wiki/C/scanf#:~:text=wska%C5%BAnik%20na%20wchar_t.-,Format,-%5Bedytuj%5D).
+
+Poniżej kod programu który odczytuje znaki ze standardowego wejścia za pomocą funkcji scanf() w której też odbywa się konwersja do liczby całkowitej oraz przypisanie przekonwertowanej wartości do zmiennej a. Na koniec wartość zmiennej a zostaje wypisana.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a;
+
+    printf("Podaj wartosc a:");
+    scanf("%i", &a); //
+    printf("wartosc a wynosi: %i", a);
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+```
+
 
 
 ## Tablice
@@ -170,14 +191,19 @@ int main()
 
 ### Zadanie 1
 
-Utwórz tablicę przechowującą `string`(ciąg znaków) "777" i wypisz zawartość tablicy. Następnie zmień jej zawartość na `string` "ada".
+utwórz tablicę przechowującą liczby 7, 8, 9 i Wypisz wszystkie jej elementy.
 
-Utwórz drugą tablicę przechowującą liczby 7, 8, 9 i Wypisz wszystkie jej elementy.
+
+Utwórz drugą tablicę przechowującą `string`(ciąg znaków) "Ada ma kota." i wypisz zawartość tablicy.
+Program odczytuje od użytkownika indeks a potem znak który zostaje wpisany w dane miejsce pod danym indeksem.
+
+**Wfunkcji scanf() aby pobrać znak należy wpisać " %c"**
 
 ```
-777
-ada
 789
+Podaj indeks: 1
+Podaj znak: l
+Ala ma kota.
 ```
 
 
@@ -216,10 +242,33 @@ int main()
 }
 ```
 
-**Operatory matematyczne**
+**Operatory arytmetyczne**
 
-Operatory 
+|Symbol | Działanie                       |
+|-------|---------------------------------|
+| +     | dodawanie |
+| -     |  odejmowanie                        |
+| *     |  mnożenie                     |
+| /     |  dzielenie                        |
+| %     |  reszta z dzielenia (modulo)                       |
 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 3;
+    int b = 5;
+    printf("%i + %i = %i\n", a, b, a + b);
+    printf("%i - %i = %i\n", a, b, a - b);
+    printf("%i * %i = %i\n", a, b, a * b);
+    printf("%i / %i = %i\n", a, b, a / b);
+    printf("%i %% %i = %i\n", a, b, a % b);
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+```
 
 
 ## Pętle
@@ -229,7 +278,7 @@ W języku C pętla to konstrukcja, która umożliwia wielokrotne wykonywanie okr
 Pętlę w programie definiujemy w następujący sposób `for([inicjalizacja];[warunek końcowy];[aktualizacja]){[kod który ma się wykonać wielokrotnie]}`
 - **[inicjalizacja]** - tutaj należy zadeklarować stan początkowy zmiennej np. `int i = 0`
 - **[warunek końcowy]** - wyrażenie zwracające wartość logiczną true(liczby większe od 0) lub false(liczba 0) które będzie sprawdzać czy należy już zakończyć działanie pętli np. `i<10` będzie sprawdzać czy `i` jest mniejsze od 10. Jeśli będzie to wyrażenie zwróci wartość 1 po czym wykona się blok kodu zdefiniowany w `{}`. Jeśli warunek zwróci wartość 0 to działanie pętli zostanie przerwane.
-- **[aktualizacja]** - aktualizacja wartośći zmiennej prowadząca to tego aby warunek końcowy został osiągnięty. Najczęściej jest to zwiększanie wartości zmiennej i o 1. Najczęściej aktualizacja to np. `i++`.
+- **[aktualizacja]** - aktualizacja wartośći zmiennej prowadząca to tego aby warunek końcowy został osiągnięty. Najczęściej jest to zwiększanie wartości zmiennej i o 1. Najczęściej aktualizacja to np. `i= i+1`.
 
 Przykładowa pętla wypisująca wartości od 1 do 5:
 
@@ -240,7 +289,7 @@ Przykładowa pętla wypisująca wartości od 1 do 5:
 int main()
 {
     int i; // inicjalizacja zmiennej
-    for (i = 1; i < 6; i++)
+    for (i = 1; i < 6; i=i+1)
     // przed wykonaniem kodu sprawdzany jest warunek końcowy - czy zmienna i jest mniejsza od 6.
     {
         printf("%i", i); // wypisanie wartości zmiennej i.

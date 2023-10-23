@@ -8,7 +8,9 @@
 
 *[Lab2.1](instructions2/Lab002/lab3_o.html)* 
 
-[Lab2](instructions2/Lab002/Lab2.html)
+[lab3](instructions/lab4.html)
+
+<!-- [Lab2](instructions2/Lab002/Lab2.html) -->
 
 
 <!--[Lab1](instructions/lab1.html) - Konfiguracja środowiska\
