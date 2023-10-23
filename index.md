@@ -1,5 +1,7 @@
 ## PWJC
 
+
+
 [Konfiguracja GCC](instructions/lab1.md)
 
 [Lab1](instructions2/Lab001/lab1.html)
@@ -27,3 +29,36 @@
 
 [Kolokwium 2](instructions/kolokwium2.html)
  -->
+
+## New
+[Lab1](instructions2/Lab001/lab1.html)
+
+[Lab2](instructions2/Lab002/Lab2.html)
+
+~~[Lab3](instructions2/Lab003/lab3.html)~~
+
+~~[Lab4](instructions2/Lab003/lab4.html)~~
+
+~~[Lab5](instructions2/Lab003/lab5.html)~~
+
+~~[Lab6](instructions2/Lab003/lab6.html)~~
+
+## Archive
+
+~~[Lab1](instructions/lab1.html)~~
+
+~~[Lab2](instructions/lab2.html)~~
+
+~~[Lab3](instructions/lab3.html)~~
+
+~~[Lab4](instructions/lab4.html)~~
+
+~~[Lab5](instructions/lab5.html)~~
+
+~~[Lab6](instructions/lab6.html)~~
+
+~~[Lab7](instructions/lab7.html)~~
+
+~~[Lab8](instructions/lab8.html)~~
+
+~~[Lab9](instructions/lab9.html)~~
