@@ -18,7 +18,6 @@ plugins:
     - jekyll-remote-theme
 
 # remote_theme: just-the-docs/just-the-docs
-remote_theme: poole/lanyon
 # theme: just-the-docs
   
 
