@@ -31,7 +31,7 @@ Po otwarciu ukaże się interfejs programu.
 
  ![Alt text](image-1.png)
 
- ### Zadanie 1
+### Zadanie 1
 
  Utworzyć nowy projekt o nazwie [nr. albumu]LAB001. W projekcie utworzyć plik `myfirstapp.c` z następującą zawartością:
 
@@ -47,7 +47,7 @@ int main()
 }
  ```
 
- ## Kompilacja
+## Kompilacja
 
 Kompilacja w języku C to proces przekształcania kodu źródłowego napisanego w języku C na kod maszynowy lub plik wykonywalny, który może być uruchomiony na komputerze. Popularnym narzędziem do kompilacji plików w języku C jest program MinGW zawierający implementację GCC(GNU Compiler Collection - darmowy i otwarty kompilator). 
 
