@@ -13,12 +13,8 @@
 #   - ISSUE_TEMPLATE.md
 #   - PULL_REQUEST_TEMPLATE.md
 
-highlighter: rouge
+# highlighter: rouge
 
 
 # markdown: GFM
 markdown: GFM
-kramdown:
-  auto_id_prefix: true
-  input: GFM
-  syntax_highlighter: rouge
