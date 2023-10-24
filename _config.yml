@@ -17,7 +17,7 @@ highlighter: rouge
 
 
 # markdown: GFM
-markdown: kramdown
+markdown: GFM
 kramdown:
   auto_id_prefix: true
   input: GFM
