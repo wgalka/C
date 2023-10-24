@@ -332,11 +332,11 @@ int main(int argc, char const *argv[])
 #include <stdio.h>
 #include <stdlib.h>
 
-int max_tab(int tab[])
+int max_tab(int tab[], int size)
 {
-    printf("Tablica tab ma wielkosc - %i elementy\n", sizeof(tab));
+    printf("Tablica tab ma wielkosc - %i elementy\n", size);
     int max_elem = tab[0];
-    for (size_t i = 0; i < sizeof(tab); i++)
+    for (size_t i = 0; i < size; i++)
     {
         if (max_elem < tab[i])
         {
@@ -349,7 +349,7 @@ int max_tab(int tab[])
 int main(int argc, char const *argv[])
 {
     int x[] = {1, 23, 4, 6};
-    int b = max_tab(x);
+    int b = max_tab(x, 4);
     printf("Maksymalny element w tablicy x to %i", b);
     return 0;
 }
