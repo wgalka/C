@@ -22,7 +22,7 @@ plugins:
 # theme: just-the-docs
   
 
-markdown: GFM
+# markdown: GFM
 # markdown: GFM
 
 
