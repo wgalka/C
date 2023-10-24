@@ -16,5 +16,5 @@
 # markdown: GFM
 markdown: kramdown
 kramdown:
-  auto_ids: true
+  auto_id_prefix: true
   input: GFM
