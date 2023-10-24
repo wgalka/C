@@ -232,7 +232,6 @@ int main(int argc, char const *argv[])
 }
 ```
 
-
 lub
 
 ```c
@@ -275,8 +274,8 @@ int main(int argc, char const *argv[])
 }
 ```
 
-
 ### Funkcje redukują ilość kodu.
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -323,9 +322,6 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
-
-
-###
 
 ```c
 
