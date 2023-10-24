@@ -25,13 +25,13 @@ plugins:
 # markdown: GFM
 # markdown: GFM
 
-
-
-markdown: GFM
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
 kramdown:
+  math_engine: mathjax
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
