@@ -25,7 +25,12 @@ plugins:
 markdown: GFM
 # markdown: GFM
 
+
+
+markdown: kramdown
 kramdown:
+    input: GFM
+    syntax_highlighter: rouge
     syntax_highlighter_opts:
         block:
             line_numbers: true
