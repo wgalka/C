@@ -63,5 +63,3 @@
 ~~[Lab8](instructions/lab8.html)~~
 
 ~~[Lab9](instructions/lab9.html)~~
-
-<a href=instructions/lab9.html class="button-85" role="button">lab9</a>
