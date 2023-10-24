@@ -15,10 +15,5 @@
 
 # markdown: GFM
 markdown: kramdown
-# kramdown:
-#   # input: Kramdown
   auto_ids: true
   input: GFM
-#   math_engine: mathjax
-#   syntax_highlighter: rouge
-#   syntax_highlighter: coderay  
