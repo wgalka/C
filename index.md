@@ -12,6 +12,8 @@
 
 [lab3](instructions/lab4.html)
 
+[lab4](instructions/lab5.html)
+
 <!-- [Lab2](instructions2/Lab002/Lab2.html) -->
 
 
