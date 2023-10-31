@@ -64,3 +64,6 @@
 ~~[Lab8](instructions/lab8.html)~~
 
 ~~[Lab9](instructions/lab9.html)~~
+
+
+[kolokwium](kolikwium.html)
