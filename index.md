@@ -66,4 +66,4 @@
 ~~[Lab9](instructions/lab9.html)~~
 
 
-[kolokwium](kolikwium.html)
+[kolokwium](kolokwium.html)
