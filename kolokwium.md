@@ -1,4 +1,43 @@
-### Zadanie 1 `mytime.exe`
+
+### Zadanie 1 - `x.exe`
+Napisz program który:
+- Prosi użytkownika o podanie cyfry
+- Sprawdza czy cyfra jest nieparzysta
+    -Jeśli cyfra jest Parzysta program prosi użytkownika o podanie cyfry aż w końcu otrzyma poprawną wartość.
+- Jeśli cyfra jest poprawna wypisuje w konsoli znak X złożony ze znaków X
+
+Przykładowe wyjście programu
+```
+Wprowadz liczbe: 2
+Wprowadz liczbe nieparzysta!
+Wprowadz liczbe: 5
+X   X
+ X X
+  X
+ X X
+X   X
+```
+Przykładowe wyjście przy wpisaniu liczby 3:
+
+```
+Wprowadz liczbe: 3
+X X
+ X
+X X
+```
+
+### Zadanie 2 - `forexcercise.exe`
+Utwórz program który wypisuje liczby od 0 do 20.
+
+Utwórz program który wypisuje liczby od 5 do 25.
+
+Utwórz program który wypisuje liczby od 20 do 0.
+
+Utwórz program który wypisuje począwszy od 1 co 3 kolejną liczbę do wartości 50.
+
+Utwórz program który wypisuje 100 liczb podzielnych przez 5.
+
+### Zadanie 3 `mytime.exe`
 
 Utwórz strukturę `date` przechowującą: rok, miesiąc, numer dnia w miesiącu, godzinę, liczbę minut, liczbę sekund.
 
@@ -23,7 +62,7 @@ Utwórz funkcję `printtime()` która działa podobnie jak funkcja `showtime()` 
 Utwórz funkcję `isbetweendates()` która przyjmuje 3 daty i zwraca jeden jeśli data podana jako pierwszy argument znajduje się w okresie pomiędzy pozostałymi dwoma argumentami. 0 w przeciwnym przypakdu.
 
 
-### Zadanie 2 `task2.exe`
+### Zadanie 4 `task2.exe`
 Napisz program który poprosi użytkownika o podanie nazwy pliku do odczytania, znaku który mamy zamienić i znaku na ktróry ma zostaż zamieniony wybrany znak. Po wpisaniu program powinien wyświetlić edytowaną treść w konsoli oraz zapisać zmiany w pliku.
 
 Program ma:
