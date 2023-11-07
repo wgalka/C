@@ -12,7 +12,7 @@
 
 [lab3](instructions2/Lab003/lab3.html)
 
-<a href=instructions2/Lab004/lab4.html class="button-55" role="button">LAB4</button>
+<a href=instructions2/Lab004/lab4.html class="button-55" role="button">LAB4</a>
 
 <!-- [lab4](instructions2/Lab004/lab4.html) -->
 
