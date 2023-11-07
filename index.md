@@ -2,17 +2,19 @@
 
 
 
-[Konfiguracja GCC](instructions/lab1.md)
+[Konfiguracja GCC](instructions/lab1.html)
 
 [Lab1](instructions2/Lab001/lab1.html)
 
-*[Lab2](instructions2/Lab002/lab2_o.html)*
+[Lab2](instructions2/Lab002/lab2_o.html)
 
 *[Lab2.1](instructions2/Lab002/lab3_o.html)* 
 
-[lab3](instructions/lab4.html)
+[lab3](instructions2/Lab003/lab3.html)
 
-[lab4](instructions/lab5.html)
+<a href=instructions2/Lab004/lab4.html class="button-55" role="button">LAB4</button>
+
+<!-- [lab4](instructions2/Lab004/lab4.html) -->
 
 <!-- [Lab2](instructions2/Lab002/Lab2.html) -->
 
@@ -32,7 +34,7 @@
 [Kolokwium 2](instructions/kolokwium2.html)
  -->
 
-## New
+<!-- ## New
 [Lab1](instructions2/Lab001/lab1.html)
 
 [Lab2](instructions2/Lab002/Lab2.html)
@@ -63,7 +65,4 @@
 
 ~~[Lab8](instructions/lab8.html)~~
 
-~~[Lab9](instructions/lab9.html)~~
-
-
-[kolokwium](kolokwium.html)
+~~[Lab9](instructions/lab9.html)~~ -->

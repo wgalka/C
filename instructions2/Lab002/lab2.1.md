@@ -1,5 +1,5 @@
 # PPWJC 
-Lab 3
+Lab 2.1
 
 ## Pytania
 
