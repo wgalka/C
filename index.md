@@ -8,7 +8,7 @@
 
 [Lab2](instructions2/Lab002/lab2_o.html)
 
-*[Lab2.1](instructions2/Lab002/lab3_o.html)* 
+*[Lab2.1](instructions2/Lab002/lab2.1.html)* 
 
 [lab3](instructions2/Lab003/lab3.html)
 
