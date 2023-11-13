@@ -158,12 +158,11 @@ Wypisz w konsoli metrycę logiczną gdzie `a` to pierwszy element z kombinacji n
 |1  |1  |0 |0 |1    |1     |
 ```
 
-<details>
-<summary></summary>
 
-Kombinacje dwóch liczb wygenerować można w taki sam sposób jak przeglądając dwu wymiarową tablicę o wymiarach 2x2.
 
-</details>
+*Kombinacje dwóch liczb wygenerować można w taki sam sposób jak przeglądając dwu wymiarową tablicę o wymiarach 2x2.*
+
+
 
 ### Zadanie 2 `task2.exe`
 Utwórz kalkulator BMI w którym użytkownik podaje swoją wagę oraz wzrost a następnie wypisana zostaje informacja według następujących przedziałów:<br>
@@ -188,8 +187,6 @@ Jan Kolwaski 35 lat 180cm 90kg - nadwaga
 ```
 Wypisz dane na temat pacjentów.
 
-<details>
-<summary>Podpowiedź</summary>
 
 ```c
 #include <stdlib.h>
@@ -233,10 +230,6 @@ int main(int argc, char const *argv[])
 }
 ```
 
-</details>
-
-<details>
-<summary>Podpowiedź v2</summary>
 
 ```c
 #include <stdlib.h>
@@ -313,8 +306,6 @@ int main(int argc, char const *argv[])
     return 0;
 }
 ```
-
-</details>
 
 ### Zadanie 4 `mytime.exe`
 
