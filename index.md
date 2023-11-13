@@ -7,7 +7,8 @@
     }
 
     .container-lg {
-        border-radius: 50px 20px;
+        border-radius: 20px 50px;
+        padding: 10px;
         height:100vh;
         background-color: #FEFEFE;
     }
