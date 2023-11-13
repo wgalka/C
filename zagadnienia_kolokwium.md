@@ -2,7 +2,20 @@
 
 ## Zmienne
 
-Jak tworzyć zmienne.
+Jak tworzyć zmienne:
+
+`<typ> <nazwa>;`
+
+<hr>
+
+Deklaracja a inicjalizacja - czym się różnią:
+
+```
+int a; // Deklaracja
+int b = 54; // inicjalizacja
+```
+
+<hr>
 
 Typy zmiennych:
 
@@ -12,7 +25,11 @@ Typy zmiennych:
 
 - `long long`
 
+<hr>
+
 Definiowanie stałych `const` lub #define
+
+<hr>
 
 Nazwy zmiennych jak definiować:
  - alias musi składaćsię z liter
@@ -22,43 +39,75 @@ Nazwy zmiennych jak definiować:
 - nie używamy polskich znaków przy tworzeniu aliasów(najlepiej wykorzystywać angielskie nazwy)
 - aliasy tworzymy zaczynajac z małej litery i wykorzystujemy jedną z przyjętych konwencji konsekwentnie w całym programie np.: camelCase snake_case
 
+<hr>
+
 Zakresy zmienncyh jak sprawdzić <limits.h> <float.h>
+
+<hr>
 
 Co się stanie gdy przekroczymy zakres zmiennej?
 
+<hr>
+
 Jak sprawdzić rozmiar zmiennej: sizeof()
+
+int *a;
+
+char *b;
+
+float *c;
+
+printf("%i", sizeof(a) == sizeof(b))
+
+<hr>
+
+Zakres dostępności zmiennej
+
+<hr>
 
 ### tablice
 
 Jak definiować tablice jedno wymiarotwe:
 
 `<typ danych które przechowuje> <alias>[<rozmiar tablicy>]`
-
+<hr>
 Czym jest alias do zmiennej tablicowej? Jak wypisać kolejne elementy tablicy? Jak wypisać wartość aliasu so zmiennej tablicowej?
+
+<hr>
 
 Jak definiwoać talblice wielowymiarowe?
 
-
 `<typ danych które przechowuje> <alias>[<rozmiar tablicy>] [<rozmiar tablicy>]`
 
+<hr>
+
 Co przechowuje tablica znaków zdefiniowana w poniższy sposób w pamięci komputera?
+
 `char tab[]= "tablica znakow";`
 
+<hr>
 
 ### wskaźniki
 
 czym są wskaźniki?
 
-Jak deciniujemy wskażnik?
+<hr>
+
+Jak definiujemy zmienną wskaźnikową?
 
 `<typ na jaki będziemy wskazywać> *<alias>;`
 
+<hr>
+
 Jak wypisać wskaźnik?
 
-printf("%p", alias do wskaźnika);
+`printf("%p", alias do wskaźnika);`
+
+<hr>
 
 Jak przypisać wartość do zmiennej wskaźnikowej?
 
+```c
 int b = 42;
 int *a;
 
@@ -66,7 +115,10 @@ a = &b;
 *a = 77;
 
 printf("%i", b);
+```
 
+
+<hr>
 
 ## Instrukcje warunkowe
 

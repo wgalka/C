@@ -466,6 +466,7 @@ int main(int argc, char const *argv[])
 {
     // utworzenie tablicy z literami od a do z (na 27 znaków poeniważ ostatni element będzie wskazywać na symbol pusty \0 - koniec łańcucha znaków)
     char tab[27];
+    tab[26] = '\0'; //  ostatni element to znak pusty
     int x = 97;
     for (size_t i = 0; i < 26; i++)
     {
