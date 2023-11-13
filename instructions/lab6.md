@@ -345,9 +345,6 @@ Utwórz funkcję `isbetweendates()` która przyjmuje 3 daty i zwraca jeden jeśl
 
 Napisz funkcję obliczającą miejsca zerowe funkcji kwadratowej. Uwzględnij że funkcja może zwracać zero, jedną lub dwie wartości. W komentarzach opisz działanie funkcji, argumenty jakie przyjmuje oraz zaprezentuj działanie na wybranych przykładach.
 
-<details>
-<summary>Podpowiedź </summary>
-
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -400,4 +397,3 @@ int main(int argc, char const *argv[])
 }
 ```
 
-</details>
