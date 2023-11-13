@@ -16,6 +16,8 @@
 
 <a href="instructions2/Lab005/lab5.html" class="button-55">LAB5</a>
 
+<!-- [lab6](instructions2/Lab006/lab6.html) -->
+
 <!-- [lab4](instructions2/Lab004/lab4.html) -->
 
 <!-- [Lab2](instructions2/Lab002/Lab2.html) -->
