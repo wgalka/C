@@ -1,6 +1,13 @@
-body {
-    background: rgb(0, 81, 255);
-    background: linear-gradient(55deg, rgba(0, 81, 255, 1) 0%, rgba(255, 0, 0, 1) 52%, rgba(254, 255, 0, 1) 100%);
+@media only screen(min-width:1200px) {
+
+    body {
+        background: rgb(0, 81, 255);
+        background: linear-gradient(55deg, rgba(0, 81, 255, 1) 0%, rgba(255, 0, 0, 1) 52%, rgba(254, 255, 0, 1) 100%);
+    }
+
+    div {
+        background-color: #FEFEFE;
+    }
 }
 
 
