@@ -70,3 +70,6 @@
 ~~[Lab8](instructions/lab8.html)~~
 
 ~~[Lab9](instructions/lab9.html)~~ -->
+
+
+*[Zagadnienia kolokwium1](zagadnienia_kolowkium.html)*
