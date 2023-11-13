@@ -32,11 +32,6 @@
 [Lab7](instructions/lab7.html) - Gra w kółko i krzyżyk.\
 [Lab8](instructions/lab8.html) - Zapis i odczyt plików.\
 [Lab9](instructions/lab9.html) - Unie i alokacja pamięci. -->
-<!-- 
-[Kolokwium 1](instructions/kolokwium.html)
-
-[Kolokwium 2](instructions/kolokwium2.html)
- -->
 
 <!-- ## New
 [Lab1](instructions2/Lab001/lab1.html)
