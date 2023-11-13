@@ -7,6 +7,7 @@
     }
 
     .container-lg {
+        height:100vh;
         background-color: #FEFEFE;
     }
 }
