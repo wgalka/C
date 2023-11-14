@@ -416,7 +416,7 @@ Wartość zmiennej podaje użytkownik. Wypisz informację o ilości znaków w zm
 
 ### Zadanie 4 `task4.exe`
 
-Napisz funkcję `countwords()` która wypisze ilość słów w łańcuchu znaków wedle zadanego separatora.
+Napisz funkcję `countwords()` która wypisze ilość słów w łańcuchu znaków wedle zadanego separatora. Weź pod uwagę przypadki gdy separatorem jest znak spacji występuje kilka znaków spacji obok siebie np. "ALA      MA KOTA" powinna zwrócić 3.
 
 *Napisz funkcję `countcharacters()` która wypisze informacje na temat ile w podanym jako parametr łańcuchu znaków znajduje się znaków specjalnych, cyfr, liter.
 
