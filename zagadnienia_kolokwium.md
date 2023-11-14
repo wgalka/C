@@ -108,19 +108,58 @@ Jak wypisać wskaźnik?
 Jak przypisać wartość do zmiennej wskaźnikowej?
 
 ```c
-int b = 42;
-int *a;
+int b = 42; // zmienna
+
+int *a; // wskaźnik
+printf("%i", a);
 
 a = &b;
-*a = 77;
+printf("%p", &b);
+printf("%p", a);
 
+*a = 77;
+printf("%i", *a);
 printf("%i", b);
 ```
-
 
 <hr>
 
 ## Instrukcje warunkowe
+
+```c
+if(print()){
+
+}
+```
+
+
+
+```c
+int myprintf(char tab[]){
+    for(int i=0;tab[i] != 0;i++){
+        printf("%c", tab[i]);
+    }
+}
+
+int myprintf(char * tab){
+    for(int i=0;tab[i] != 0;i++){
+        printf("%c", tab[i]);
+    }
+}
+
+int myprintf(char * tab){
+    for(char *i = tab;*i;i++){
+        printf("%c", *i);
+    }
+}
+
+int main(){
+
+    char tab[] = "abc\0";
+    return 0;
+}
+```
+
 
 ## Pętle
 

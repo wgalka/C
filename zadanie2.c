@@ -13,3 +13,29 @@
 //   X
 //  X X
 // X   X
+
+
+
+int myprintf(char tab[]){
+    for(int i=0;tab[i] != 0;i++){
+        printf("%c", tab[i]);
+    }
+}
+
+int myprintf(char * tab){
+    for(int i=0;tab[i] != 0;i++){
+        printf("%c", tab[i]);
+    }
+}
+
+int myprintf(char * tab){
+    for(char *i = tab;*i;i++){
+        printf("%c", *i);
+    }
+}
+
+int main(){
+
+    char tab[] = "abc\0";
+    return 0;
+}

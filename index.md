@@ -84,4 +84,4 @@
 ~~[Lab9](instructions/lab9.html)~~ -->
 
 
-*[Zagadnienia kolokwium1](zagadnienia_kolowkium.html)*
+*[Zagadnienia kolokwium1](zagadnienia_kolokwium.html)*
