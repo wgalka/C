@@ -168,3 +168,5 @@ int main(){
 ## Struktury i unie
 
 ## Biblioteki standardowe
+
+## Dynamiczna alokacja pamięci

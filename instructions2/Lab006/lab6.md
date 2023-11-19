@@ -198,7 +198,7 @@ int main(int argc, char const *argv[])
 
 ## Zadania
 
-Chcemy utworzyć tablicę która przyjmuje wartości różnego typu. Następnie funkcję która będzie wypisywała zawartość tablicy.
+Chcemy utworzyć tablicę która moze przechowywać znaki, liczby całkowite i zmienno przecinkowe. Następnie funkcję która będzie wypisywała zawartość tablicy.
 
 ### Zadanie 1
 
