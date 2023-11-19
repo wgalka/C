@@ -1,12 +1,13 @@
 # PPWJC
 
-Lab6 - unie, dynamiczna alokacja pamięci.
+Unie i dynamiczna alokacja pamięci.
 
 ## Pytania
 
 - Czym jest enum?
 - Czym różni się struktura od uni?
 - W jaki sposób/ do czego możemy wykorzystać dynamiczne alokowanie pamięci?
+- jak odczytać i zmienić wartość pola w uni i strukturze?
 
 ## Przykłady
 
@@ -41,7 +42,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-Unie mają rozmiar równy największemu z przechowywanych typów. W pamięci wartości pól uni będą przechowywane we wspólnym bloku pamięci podczas gdy struktury będą miały zalokowane miejsca w pamieci dla poszczeólnych pól.
+Unie mają rozmiar równy największemu z przechowywanych typów. W pamięci wartości pól uni będą przechowywane we wspólnym bloku pamięci podczas gdy struktury będą miały zalokowane miejsca w pamieci dla każdego z pól. Unie w tym samym momencie mogą przechowywać tylko wartość jednego ze zdefiniowanych pól(watyość jest przechowywana we wspólnym bloku pamięci).
 
 ```c
 #include <stdio.h>
@@ -91,7 +92,7 @@ int main(int argc, char const *argv[])
     union myunion x; // deklaracja uni za pomocą pełnej definicji
     shortname x1; // seklaracja uni za pomocą krótkiej definicji
 
-    x.a = 'a';
+    x.a = 'a'; // przypisanie wartości do pola umi. W ten sposób możliwy jest też odczyt wartości.
     x1.a = 'a';
     return 0;
 }
@@ -147,7 +148,7 @@ Funkcje malloc() i calloc() rezerwują w pamięci określoną ilość miejsca. M
 
 int *alocateTabMalloc(int a)
 {
-    int rozmiar_tablicy = a * sizeof(int); // ilość elementów * rozmiar jednego elementu
+    int rozmiar_tablicy = a * sizeof(int); // ilość elementów razy rozmiar jednego elementu
     int *ptr = malloc(rozmiar_tablicy);
     return ptr;
 }
@@ -198,7 +199,7 @@ int main(int argc, char const *argv[])
 
 ## Zadania
 
-Chcemy utworzyć tablicę która moze przechowywać znaki, liczby całkowite i zmienno przecinkowe. Następnie funkcję która będzie wypisywała zawartość tablicy.
+Chcemy utworzyć tablicę która moze przechowywać znaki, liczby całkowite i zmienno przecinkowe. Następnie funkcję która będzie wypisywała zawartość tablicy. Poniższe zadania tworzą jeden program.
 
 ### Zadanie 1
 
@@ -206,23 +207,26 @@ Utwórz typ wyliczeniowy `var_type` zawierający wartości INT, FLOAT, CHAR.
 
 ### Zadanie 2
 
-Utwórz struktórę `var` która będzie przechowywać typ zmiennej. Oraz wartość zmiennej. Typ zmiennej jest typem wyliczeniowym natomiast na przehcoywanie wartoścu utwórz unie o typach takich jak w poprzednim zadaniu.
+Utwórz unię `var_value` mogącą przechowywać typy INT, FLOAT, CHAR. 
 
 ### Zadanie 3
 
-Utwórz funckję `setInt()` `setFloat()` `setChar()` które przyjmują dwa arumenty, wskaźnik do zmiennej `var` i wartość zmiennej. Funkcje ustawiają odpowienio wartości zmiennej var.
+Utwórz struktórę `var` która będzie przechowywać typ zmiennej. Oraz wartość zmiennej. Typ zmiennej jest typem wyliczeniowym natomiast do przechowywania wartości wykorzystywana jest unia.
 
 ### Zadanie 4
 
-Utwórz tablicę zawierającą 10 wartości typu `var`.
-Wypełnij tablicę wartości najpierw liczbami od 1 do 10.
-Wypełnij tablicę wartościami A, B, C, D ...
+Utwórz funckję `setInt()` `setFloat()` `setChar()` które przyjmują dwa arumenty, wskaźnik do zmiennej `var` i wartość zmiennej. Funkcje ustawiają odpowienio wartości zmiennej var.
 
 ### Zadanie 5
 
-Utwóz funkcję varToString() która zwraca wskaźnik do łańcucha znaków. Np. jeśli var przechowuje wartość 100 to varToString() pwoinna zwrócić wskaźnik na tablicę przechowującą napis "100". Wykorzystaj funkcję [`sprintf()`](https://www.tutorialspoint.com/c_standard_library/c_function_sprintf.htm)
+Utwórz tablicę zawierającą 10 wartości typu `var`.
+Wypełnij tablicę luczbami od 1 do 5 a pozostałe miejsca w tablicy literami A, B, C, D ...
 
 ### Zadanie 6
+
+Utwóz funkcję varToString() która przyjmuje jako parametr zmienną typu `var` oraz zwraca wskaźnik do łańcucha znaków. Np. jeśli var przechowuje wartość 100 to varToString() pwoinna zwrócić wskaźnik na tablicę przechowującą napis "100". Wykorzystaj funkcję [`snprintf()`](https://pl.wikibooks.org/wiki/C/printf) do dynamicznego stworzenia tablicy. 
+
+### Zadanie 7
 
 Wypisz zawartość tablic wykorzystując stworzone funkcje.
 
