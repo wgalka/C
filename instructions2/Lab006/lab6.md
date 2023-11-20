@@ -98,6 +98,32 @@ int main(int argc, char const *argv[])
 }
 ```
 
+Wartości pól uni są przechowywane we wspólnym bloku pamięci. Po zmianie wartości innego pola unii wartości będą poprawne tylko dla tego pola.
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef union unia
+{
+    int liczbaCalkowita;
+    char znak;
+} unia;
+
+int main()
+{
+    unia a;
+    a.liczbaCalkowita = 4321;
+    printf("a.liczba: %i\n", a.liczbaCalkowita); // liczba zostanie wyswietlona poprawnie
+    a.znak = 'v';
+    // Przez to że blok pamięci jest współdzielony po przypisaniu wartosci dla pola znak, liczba nie będzie poprawnie wyświetlana.
+    printf("a.liczba: %i\n", a.liczbaCalkowita); // liczba nie zostanie wyswietlona poprawnie
+    printf("a.znak: %c\n", a.znak);              // znak zostanie wyswietlony poprawnie
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+```
+
 ### Enum
 
 Typ wyniliczeniowy jest to struktura która może przyjmować pewne z góry ustalone wartości. Nazwy tych wartości zazwyczaj wskazują jakiś stan aplikacji lub nazwę obiektu która pozwala w czytelny sposób określic co dany kawąłek kodu robi. Pod daną nazwą kryje się liczba. Np. definicje kolorów w instrukcji switch czy menu.
