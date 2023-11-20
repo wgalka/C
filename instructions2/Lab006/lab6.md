@@ -231,4 +231,17 @@ Utwóz funkcję varToString() która przyjmuje jako parametr zmienną typu `var`
 Wypisz zawartość tablic wykorzystując stworzone funkcje.
 
 
+## Zadania 2
+
+### Zadanie 1
+
+Zapoznaj się z opisem listy powiązanej: https://www.geeksforgeeks.org/what-is-linked-list/
+
+- Lista powiązana składa się z węzłów, z których każdy zawiera dane oraz wskaźnik do następnego węzła w liście.
+
+- Nie ma potrzeby z góry określać rozmiaru listy - nowe elementy mogą być łatwo dodawane i usuwane.
+
+- Dostęp do elementów listy odbywa się sekwencyjnie, zaczynając od głowy (pierwszego elementu) i przechodząc przez kolejne elementy za pomocą wskaźników.
+
+Zaimplementuj listę powiązaną w języku C.
 
