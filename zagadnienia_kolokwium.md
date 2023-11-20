@@ -167,6 +167,93 @@ int main(){
 
 ## Struktury i unie
 
+Tworzenie struktury
+
+```c
+struct [tag struktury]{
+    [typ zmiennej] [nazwa zmiennej];
+    [typ zmiennej] [nazwa zmiennej];
+    [typ zmiennej] [nazwa zmiennej];
+    [typ zmiennej] [nazwa zmiennej];
+    ...
+
+}
+```
+
+Odczytywanie i przypisywanie wartości do pola struktury:
+
+```
+typedef struct Trojkat{
+    int bok1;
+    int bok2;
+    int bok3;
+} trojkat;
+
+int setBok1(trojkat *structWsk,int bok1){
+    structWsk->bok1 = 3;
+}
+
+int main(){
+    trojkat trojkat1 = {1,2,3};
+
+    trojkat1.bok3 = 1; // przypisanie wartosci do pola bok1
+    return 0;
+}
+```
+
+Definiowanie Uni:
+
+```
+union [tag uni]{
+    [typ zmiennej] [nazwa zmiennej];
+    [typ zmiennej] [nazwa zmiennej];
+    [typ zmiennej] [nazwa zmiennej];
+    ...
+};
+```
+
+```
+typedef union Przyklad1{
+    int a;
+    float b;
+    char c;
+} przyklad1;
+
+int main(){
+    przyklad1 a;
+    przyklad.a = 4321;
+    printf("%i", przyklad1.a);
+    przyklad.b = 3.14;
+    printf("%i", przyklad1.a);
+    return 0
+}
+```
+
+```
+typedef union Przyklad1{
+    int a;
+    float b;
+    char c;
+} przyklad1;
+
+typedef struct Trojkat{
+    int bok1;
+    int bok2;
+    int bok3;
+} trojkat;
+
+typedef struct Struktura5{
+    przyklad1 a;
+    trojkat b;
+} struktura5;
+
+int main(){
+    struktura5 a;
+    a.b.bok1 = 5;
+    return 0;
+}
+```
+
 ## Biblioteki standardowe
 
 ## Dynamiczna alokacja pamięci

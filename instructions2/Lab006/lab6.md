@@ -237,7 +237,7 @@ Utwórz unię `var_value` mogącą przechowywać typy INT, FLOAT, CHAR.
 
 ### Zadanie 3
 
-Utwórz struktórę `var` która będzie przechowywać typ zmiennej. Oraz wartość zmiennej. Typ zmiennej jest typem wyliczeniowym natomiast do przechowywania wartości wykorzystywana jest unia.
+Utwórz struktórę `var` która będzie przechowywać typ zmiennej, oraz wartość zmiennej. Typ zmiennej jest liczbą. 0 dla INT 1 dla FLOAT 2 dla CHAR. Do przechowywania wartości wykorzystywana jest unia.
 
 ### Zadanie 4
 
