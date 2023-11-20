@@ -163,9 +163,41 @@ int main(){
 
 ## Pętle
 
+Jak działa `break` oraz `continue`.
+
+```c
+for(int i = 0; i<10;i++){
+    
+    if(i==0){
+        break;
+    }
+    printf("%i", i);
+}
+```
+
+```c
+for(int i = 0; i<10;i++){
+    
+    if(i==0){
+        continue;
+    }
+    printf("%i", i);
+}
+```
+
 ## Funkcje
 
-## Struktury i unie
+```
+[typ zwracany] [nazwa funkcji]([typ parametru] [nazwa], [typ parametru] [nazwa], ...){
+    \\ ciało funkcji
+}
+```
+
+`void` - funkcja nic nie zwraca (return;)
+
+w pozostałych przypadkach przy słówku `return` musi być wartość odpowiedniego typu.
+
+## Struktury, unie, typ wyliczeniowy 
 
 Tworzenie struktury
 
@@ -182,7 +214,7 @@ struct [tag struktury]{
 
 Odczytywanie i przypisywanie wartości do pola struktury:
 
-```
+```c
 typedef struct Trojkat{
     int bok1;
     int bok2;
@@ -194,16 +226,21 @@ int setBok1(trojkat *structWsk,int bok1){
 }
 
 int main(){
-    trojkat trojkat1 = {1,2,3};
+    trojkat xd = {1,2,3};
 
-    trojkat1.bok3 = 1; // przypisanie wartosci do pola bok1
+    trojkat var2 = {3,4,5};
+
+    xd.bok3 = 1; // przypisanie wartosci do pola bok1
+
+    var2.bok1 = 4;
+    printf("%i",var2.bok1)
     return 0;
 }
 ```
 
 Definiowanie Uni:
 
-```
+```c
 union [tag uni]{
     [typ zmiennej] [nazwa zmiennej];
     [typ zmiennej] [nazwa zmiennej];
@@ -212,7 +249,7 @@ union [tag uni]{
 };
 ```
 
-```
+```c
 typedef union Przyklad1{
     int a;
     float b;
@@ -229,7 +266,9 @@ int main(){
 }
 ```
 
-```
+Unie i struktury możemy zagnieżdżać. 
+
+```c
 typedef union Przyklad1{
     int a;
     float b;
@@ -253,6 +292,29 @@ int main(){
     return 0;
 }
 ```
+
+Typ wyliczeniowy
+
+```c
+enum plec{
+    MALE, // przechowuje wartość 0
+    FEMALE // przechowuje wartość 1
+};
+
+int main(){
+    enum plec var1;
+    var1 = MALE;
+    printf("%i", var1);
+
+    switch(var1):
+    case MALE: // Łatwo zrozumieć program - warunek wykona się gdy var1 jest mezczyzna
+        break;
+    case FEMALE:
+        break;
+    return 0;
+}
+```
+
 
 ## Biblioteki standardowe
 
