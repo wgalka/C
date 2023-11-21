@@ -124,6 +124,34 @@ int main()
 }
 ```
 
+### Przekazywanie wskaźnika do struktury w funkcji
+
+```c
+#include <stdlib.h>
+#include <stdio.h>
+
+typdef {
+    int x;
+    int y;
+}point;
+
+void func(point *punkt){
+    punkt->x = 5; // Aby dostać się do pola struktury należy użyć operatora ->
+};
+
+int main(){
+
+    point punkt1 = {-10, 10}; // inicjalizacja struktury
+
+    printf("przed wywolaniem funkcji:%i\n", punkt1.x);
+    func(&punkt1);
+    printf("po wywolaniu funkcji: %i\n", punkt1.x);
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+```
+
 ### Enum
 
 Typ wyniliczeniowy jest to struktura która może przyjmować pewne z góry ustalone wartości. Nazwy tych wartości zazwyczaj wskazują jakiś stan aplikacji lub nazwę obiektu która pozwala w czytelny sposób określic co dany kawąłek kodu robi. Pod daną nazwą kryje się liczba. Np. definicje kolorów w instrukcji switch czy menu.

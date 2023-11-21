@@ -287,6 +287,7 @@ typedef struct Struktura5{
 } struktura5;
 
 int main(){
+
     struktura5 a;
     a.b.bok1 = 5;
     return 0;
