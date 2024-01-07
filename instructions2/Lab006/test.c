@@ -3,7 +3,7 @@
 struct month
 {
     unsigned int numberOfDays;
-    char name[3];
+    char name[4];
 };
 int main(int argc, char **argv)
 {
@@ -21,6 +21,7 @@ int main(int argc, char **argv)
     aMonth.name[1] = 'a';
 
     aMonth.name[2] = 'n';
+    aMonth.name[3] = 'n';
 
     // definicja i deklaracja jednoczesnie
 
