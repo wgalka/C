@@ -5,10 +5,19 @@
 Pobeirz i zainstaluj środowisko MinGW w wersji 13. 
 https://raysan5.itch.io/raylib/download/eyJleHBpcmVzIjoxNzA0NjY4NzA2LCJpZCI6ODUzMzF9.wSQM8OQhU4Q7z9XN4DFfgE3xvIM%3d
 
+https://c.lazysolutions.pl/instructions2/Lab007/mingw.zip
+
 Znajdź zainstalowane narzędzie i dodaj do zmiennych środowiskowych folder:
 ```
 w64devkit\bin
 ```
+
+Sprawdź czy narzędzie działa wpisując w konsoli:
+
+```
+gcc --version
+```
+![Alt text](image-2.png)
 
 Pobierz archiwum zawierające strukturę projektu i otwórz w Visual Studio Code: https://c.lazysolutions.pl/instructions2/Lab007/VSCode.zip
 
