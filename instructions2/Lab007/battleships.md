@@ -22,6 +22,8 @@ gcc --version
 
 Pobierz archiwum zawierające strukturę projektu i otwórz w Visual Studio Code: https://c.lazysolutions.pl/instructions2/Lab007/VSCode.zip
 
+!Jeśli nie otworzysz wypakowanej zawartości jako projekt konfiguracja VSCode zawarta w pliku settings.json nie zadziała.
+
 W pliku settings.json znajduje się konfiguracja CodeRunner tak aby podczas kompilacji programu wykorzystana była bibloiteka raylib.
 ![Alt text](image.png)
 
@@ -65,12 +67,23 @@ Zmień wartości pól struktury Color. Co robią poszczególne wartości?
 
 ## Zadanie 3
 
+Narysuj dwa kwadraty obok siebie:
+![Alt text](image-4.png)
+
+## Zadanie 4
+
+Wykorzystaj funkcje DrawRectangleRec() do narysowania poniższej szachownicy:
+
+![Alt text](image-3.png)
+
+## Zadanie 5
+
 Funkcja CheckCollisionPointRec() sprawdza czy kursor myszy znajduje się nad kwadratem.
 
 Zmodyfikuj funkcję drawBoard tak aby po uruchomieniu programu wyświetlała się poniższa plansza, gdzie po najechaniu na dany kwadrat zmienia on kolor z białego na szary:
 ![Alt text](image-1.png)
 
-## Zadanie 4
+## Zadanie 6
 
 W strukturze Game pole boardPlayer1 przechowuje planszę gracza 1 a pole Player1Shoots przechowuje strzały gracza1. Zmodyfikuj program z poprzedniego zadania tak aby po lewej stronie plansza była wyświetlana na podstawie stanu pól w tablicy boardPlayer1 a po prawej plansza była wyświetlana na podstawie wartości z tablicy Player1Shoots.
 
