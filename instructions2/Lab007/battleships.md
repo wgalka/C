@@ -8,9 +8,9 @@ https://raysan5.itch.io/raylib/download/eyJleHBpcmVzIjoxNzA0NjY4NzA2LCJpZCI6ODUz
 Jeśli nie masz praw administratora spróbuj:
 https://c.lazysolutions.pl/instructions2/Lab007/mingw.zip
 
-Znajdź zainstalowane narzędzie i dodaj do zmiennych środowiskowych folder:
+Znajdź zainstalowane narzędzie i dodaj do zmiennych środowiskowych folder. Jeśli zachowano domyślne ustawienia podczas instalacji, gcc znajduje się w następującej lokalizacji:
 ```
-w64devkit\bin
+C:\raylib\w64devkit\bin
 ```
 
 Sprawdź czy narzędzie działa wpisując w konsoli:
