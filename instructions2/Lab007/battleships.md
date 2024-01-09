@@ -2,11 +2,13 @@
 
 ## Konfigruacja środowiska
 
-Pobeirz i zainstaluj środowisko MinGW w wersji 13. 
-https://raysan5.itch.io/raylib/download/eyJleHBpcmVzIjoxNzA0NjY4NzA2LCJpZCI6ODUzMzF9.wSQM8OQhU4Q7z9XN4DFfgE3xvIM%3d
+Pobeirz i zainstaluj środowisko MinGW w wersji 13.
+
+[MinGw 13](https://raysan5.itch.io/raylib/download/eyJleHBpcmVzIjoxNzA0NjY4NzA2LCJpZCI6ODUzMzF9.wSQM8OQhU4Q7z9XN4DFfgE3xvIM%3d)
 
 Jeśli nie masz praw administratora spróbuj:
-https://c.lazysolutions.pl/instructions2/Lab007/mingw.zip
+
+[w64devkit.zip](https://c.lazysolutions.pl/instructions2/Lab007/mingw.zip)
 
 Znajdź zainstalowane narzędzie i dodaj do zmiennych środowiskowych folder. Jeśli zachowano domyślne ustawienia podczas instalacji, gcc znajduje się w następującej lokalizacji:
 ```
@@ -20,11 +22,13 @@ gcc --version
 ```
 ![Alt text](image-2.png)
 
-Pobierz archiwum zawierające strukturę projektu i otwórz w Visual Studio Code: https://c.lazysolutions.pl/instructions2/Lab007/VSCode.zip
+Pobierz archiwum zawierające strukturę projektu i otwórz w Visual Studio Code: 
+
+[VSCode.zip](https://c.lazysolutions.pl/instructions2/Lab007/VSCode.zip)
 
 !Jeśli nie otworzysz wypakowanej zawartości jako projekt konfiguracja VSCode zawarta w pliku settings.json nie zadziała.
 
-W pliku settings.json znajduje się konfiguracja CodeRunner tak aby podczas kompilacji programu wykorzystana była bibloiteka raylib.
+W pliku settings.json znajduje się konfiguracja CodeRunner tak aby podczas kompilacji programu wykorzystana była bibloiteka raylib. Folder .vscode powinien znajdować się w drzewie katalogów tak jak poniżej(Tylko wtedy plik settings JSON będzie wykorzystywany przez CodeRunner). 
 ![Alt text](image.png)
 
 Powyższa konfiguracja będzie uruchamiać narzędzie gcc w sposób podobny do poniższego:
