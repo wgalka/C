@@ -7,7 +7,7 @@
     }
 
     .container-lg {
-        border-radius: 20px 50px;
+        /* border-radius: 20px 50px; */
         padding: 10px;
         height:100vh;
         background-color: #FEFEFE;
@@ -87,3 +87,11 @@
 
 
 *[Zagadnienia kolokwium1](zagadnienia_kolokwium.html)*
+
+<sub>
+Cyberbezpieczeństwo:
+
+[bezpiecznedane.gov.pl - sprawdź czy wyciekły twoje dane](https://bezpiecznedane.gov.pl/)
+
+[bik.pl - sprawdź czy masz kredyt o którym nie wiesz](https://www.bik.pl/)
+</sub>
