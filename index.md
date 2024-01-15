@@ -86,12 +86,12 @@
 ~~[Lab9](instructions/lab9.html)~~ -->
 
 
-*[Zagadnienia kolokwium1](zagadnienia_kolokwium.html)*
+<!-- *[Zagadnienia kolokwium1](zagadnienia_kolokwium.html)* -->
 
-<sub>
+<!-- <sub>
 Cyberbezpieczeństwo:
 
 [bezpiecznedane.gov.pl - sprawdź czy wyciekły twoje dane](https://bezpiecznedane.gov.pl/)
 
 [bik.pl - sprawdź czy masz kredyt o którym nie wiesz](https://www.bik.pl/)
-</sub>
+</sub> -->
