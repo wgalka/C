@@ -4,7 +4,7 @@
 
 Pobierz i uruchom poniższy projekt w Visual Studio Code(wzorując się na poprzedniej instrukcji [LAB7](https://c.lazysolutions.pl/instructions2/Lab007/battleships.html)):
 
-[VSCode.zip](VSCODE.zip)
+[VSCode.zip](VSCode.zip)
 
 ## Zadanie 2
 
@@ -97,9 +97,118 @@ Zainicjalizuj zmienne row, col, direction;
 
 W nieskończonej pętli losuj row, col, direction dopóki nie zostanie znalezione miejsce na planszy umożliwiające postawienie statku.
 
+https://pl.wikibooks.org/wiki/C/rand
+
 Jeśli znajdziesz współrzędne umożliwiające postawienie statku. Zmień odpowiednio status pola `board` na SINGLE_DECKER ... FOUR_DECKER
 
 ## Zadanie 4
 
+Wzorując się na poniższym przykładzie, spróbuj przenieść struktury z pliku main.c do pliku gameHeader.h
+
+
+### MyStruct.h
+```c
+#ifndef MYSTRUCT_H
+#define MYSTRUCT_H
+
+// Struktura reprezentująca przykładowe dane
+struct MyStruct {
+    int id;                   // Unikalny identyfikator
+    char name[50];            // Nazwa, ograniczona do 50 znaków
+    float value;              // Wartość liczbowa
+};
+
+#endif
+```
+
+### main.c
+```c
+#include <stdio.h>
+#include "MyStruct.h"
+
+int main() {
+    // Utworzenie instancji struktury MyStruct
+    struct MyStruct exampleStruct;
+
+    // Przykładowe użycie struktury
+    exampleStruct.id = 1;                                       // Przypisanie wartości do pola id
+    snprintf(exampleStruct.name, sizeof(exampleStruct.name),    // Przypisanie wartości do pola name
+             "Example Name");
+    exampleStruct.value = 3.14;                                  // Przypisanie wartości do pola value
+
+    // Wyświetlenie danych ze struktury
+    printf("ID: %d\n", exampleStruct.id);
+    printf("Name: %s\n", exampleStruct.name);
+    printf("Value: %f\n", exampleStruct.value);
+
+    return 0;
+}
+```
+
+### Zadanie 5
+
+Dodaj do programu zapis historii rozgrywki, a także obecnego stanu do pliku. Po zamknięciu programu w środku rozgrywki, przy uruchomieniu wczytaj stan z pliku binarnego. Jeśli nie pamiętasz zagadnień związanych z zapisem i odczytem z pliku wróć do pliku LAB9 na platformie ms teams.
+
+ZAPIS:
+
+```c
+#include <stdio.h>
+
+int main() {
+    // Zmienna do zapisu
+    int myVariable = 42;
+
+    // Otwarcie pliku do zapisu binarnego
+    FILE *file = fopen("moj_plik.bin", "wb");
+
+    // Sprawdzenie czy plik został otwarty poprawnie
+    if (file == NULL) {
+        fprintf(stderr, "Błąd otwarcia pliku do zapisu binarnego.\n");
+        return 1; // Zakończenie programu z błędem
+    }
+
+    // Zapis binarny zmiennej do pliku
+    fwrite(&myVariable, sizeof(myVariable), 1, file);
+
+    // Zamknięcie pliku
+    fclose(file);
+
+    return 0;
+}
+```
+
+Odczyt:
+
+```c
+#include <stdio.h>
+
+int main() {
+    // Zmienna do odczytu
+    int myVariable;
+
+    // Otwarcie pliku do odczytu binarnego
+    FILE *file = fopen("moj_plik.bin", "rb");
+
+    // Sprawdzenie czy plik został otwarty poprawnie
+    if (file == NULL) {
+        fprintf(stderr, "Błąd otwarcia pliku do odczytu binarnego.\n");
+        return 1; // Zakończenie programu z błędem
+    }
+
+    // Odczyt binarny zmiennej z pliku
+    if (fread(&myVariable, sizeof(myVariable), 1, file) != 1) {
+        fprintf(stderr, "Błąd odczytu zmiennej z pliku binarnego.\n");
+        return 1; // Zakończenie programu z błędem
+    }
+
+    // Zamknięcie pliku
+    fclose(file);
+
+    // Wyświetlenie odczytanej wartości
+    printf("Odczytana wartość: %d\n", myVariable);
+
+    return 0;
+}
+```
 
 

@@ -2,50 +2,13 @@
 #define RAYGUI_IMPLEMENTATION
 #include "include/raygui.h"
 #include <stdio.h>
+#include "include/strustures.h"
 
-#define BOARD_SIZE 10
 #define GAP 2
 #define PADDING 30
 #define BUTTON_SIZE 30
 #define WINDOW_WIDTH ((BOARD_SIZE * BUTTON_SIZE + (GAP * BOARD_SIZE)) * 2) + 3 * PADDING
 #define WINDOW_HEIGHT (BOARD_SIZE * BUTTON_SIZE + (GAP * BOARD_SIZE)) + 2 * PADDING
-
-enum GAME_STATE
-{
-    BOARD_INITIALIZED,
-    PLACE_SHIP,
-    GAME_STARTED,
-    PLAYER1_TURN,
-    COMPUTER_TURN,
-    PLAYER1_WIN,
-    COMPUTER_WIN,
-};
-
-typedef enum
-{
-    EMPTY = 0,
-    SINGLE_DECKER,
-    DOUBLE_DECKER,
-    TRIPPLE_DECKER,
-    FOUR_DECKER,
-    SHOOTED = 100,
-    MARKED = 200,
-    MISS = 300,
-} FIELD_STATE;
-
-typedef struct
-{
-    unsigned char row;
-    unsigned char col;
-    FIELD_STATE state;
-} Field;
-
-typedef struct
-{
-    Field boardPlayer1[BOARD_SIZE][BOARD_SIZE];  // Plansza gracza 1
-    Field boardComputer[BOARD_SIZE][BOARD_SIZE]; // Plansza komputera
-    int gameState;                               // Stan gry (np. czy trwa gra, czy jest zakończona)
-} Game;
 
 // Zmienna globalna która będzie przechowywać stan gry
 Game game;
@@ -146,26 +109,6 @@ int initGame()
     game.gameState = BOARD_INITIALIZED;
     game.gameState = PLAYER1_TURN;
     return 1;
-}
-
-void fieldAction(Field *field)
-{
-    switch (field->state)
-    {
-    case EMPTY:
-        field->state = MISS;
-        game.gameState = COMPUTER_TURN;
-        break;
-    case SINGLE_DECKER:
-    case DOUBLE_DECKER:
-    case TRIPPLE_DECKER:
-    case FOUR_DECKER:
-        field->state = SHOOTED;
-        game.gameState = COMPUTER_TURN;
-        break;
-    }
-
-    printf("Shooted %i %i\n", field->col, field->row);
 }
 
 int checkWinCondition(Field board[BOARD_SIZE][BOARD_SIZE])
