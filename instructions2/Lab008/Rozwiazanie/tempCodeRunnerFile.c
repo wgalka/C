@@ -1,0 +1,10 @@
+placeRandomShip(game.boardComputer, 4); // Battleship
+    placeRandomShip(game.boardComputer, 3); // Cruiser
+    placeRandomShip(game.boardComputer, 3); // Cruiser
+    placeRandomShip(game.boardComputer, 2); // Destroyer
+    placeRandomShip(game.boardComputer, 2); // Destroyer
+    placeRandomShip(game.boardComputer, 2); // Destroyer
+    placeRandomShip(game.boardComputer, 1); // Submarine
+    placeRandomShip(game.boardComputer, 1); // Submarine
+    placeRandomShip(game.boardComputer, 1); // Submarine
+    placeRandomShip(game.boardComputer, 1); // Submarine
