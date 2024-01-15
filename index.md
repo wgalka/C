@@ -35,7 +35,9 @@
 
 [lab6](instructions2/Lab006/lab6.html)
 
-<a href="instructions2/Lab007/battleships.html" class="button-55">LAB7</a>
+[lab7](instructions2/Lab007/battleships.html)
+
+<a href="instructions2/Lab008/battleships.html" class="button-55">LAB8</a>
 
 <!-- [lab4](instructions2/Lab004/lab4.html) -->
 
