@@ -102,8 +102,8 @@ Ponadto jako nazw zmiennych nie używa się poniższych słów kluczowych:
 ### Zadanie 1
 
 Biblioteki które nalezy wykorzystać:
-- [<limits.h>](https://en.wikibooks.org/wiki/C_Programming/limits.h)
-- [<float.h>](https://en.wikibooks.org/wiki/C_Programming/float.h)
+- [`<limits.h>`](https://en.wikibooks.org/wiki/C_Programming/limits.h)
+- [`<float.h>`](https://en.wikibooks.org/wiki/C_Programming/float.h)
 
 Napisz program który wypisze dla typów:
 - short
