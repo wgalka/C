@@ -158,6 +158,18 @@ Tekst po usunięciu znaków interpunkcyjnych: to jest przykładowe zdanie czy po
 
 W tym zadaniu będziesz musiał użyć funkcji takich jak strlen, isalpha, tolower, strtok, strchr, printf, itp.
 
+Aby wczytać pełne zdanie z konsoli do znaku dowej lini należy użyć następującej formatki:
+```
+#include <stdio.h> 
+int main() 
+{ 
+    char sen[100]; 
+    scanf("%[^f]s", sen); 
+    printf("Output : %s", sen); 
+    return 0; 
+}
+```
+
 ### Zadanie 3
 
 Biblioteki które nalezy wykorzystać:
