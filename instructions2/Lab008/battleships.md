@@ -115,9 +115,8 @@ Liczbę bajtów którą zajmują w pamięci oraz minimalną i maksymalną warto�
 ### Zadanie 2
 
 Biblioteki które nalezy wykorzystać:
-- <ctype.h>
-
-- <string.h>
+- `<ctype.h>`
+- `<string.h>`
 
 Napisz program w języku C, który przyjmuje od użytkownika dowolny tekst (zdanie lub krótki paragraf) i wykonuje następujące czynności:
 
@@ -162,7 +161,7 @@ W tym zadaniu będziesz musiał użyć funkcji takich jak strlen, isalpha, tolow
 ### Zadanie 3
 
 Biblioteki które nalezy wykorzystać:
-- <time.h>
+- `<time.h>`
 
 Dane są dwie funkcje obliczające wartość ntego elementu ciągu fibbonaciego:
 
@@ -197,7 +196,7 @@ Zmierz czas potrzebny na znalezienie 10, 50, 100 elementu ciągu. Która funkcja
 ### Zadanie 4
 
 Biblioteki które nalezy wykorzystać:
-- <stdlib.h>
+- `<stdlib.h>`
 
 Napisz program w języku C, który wczytuje z pliku tekstowego ciąg liczb całkowitych, konwertuje je na liczby, a następnie oblicza ich sumę.
 
@@ -224,7 +223,7 @@ Pobierz i uruchom poniższy projekt w Visual Studio Code(wzorując się na poprz
 ### Zadanie 6
 
 Biblioteki które nalezy wykorzystać:
-- <stdlib.h>
+- `<stdlib.h>`
 
 Funkcja `canPlaceShip()` służy do sprawdzania, czy na planszy możliwe jest umieszczenie statku o określonym rozmiarze w danym miejscu, z określonym kierunkiem (pionowo lub poziomo). 
 
@@ -310,7 +309,7 @@ int main() {
 ### Zadanie 8
 
 Biblioteki które nalezy wykorzystać:
-- <stdio.h>
+- `<stdio.h>`
 
 Dodaj do programu zapis historii rozgrywki do pliku tekstowego, a także obecnego stanu do pliku binarnego, po zamknięciu programu w środku rozgrywki. Przy uruchomieniu wczytaj stan rozgrywki z pliku binarnego. Jeśli nie pamiętasz zagadnień związanych z zapisem i odczytem z pliku wróć do pliku LAB9 na platformie ms teams.
 
