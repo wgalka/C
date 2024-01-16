@@ -1,70 +1,230 @@
 # PWJC
 
-## Zadanie 1
+Powtórzenie
 
-Pobierz i uruchom poniższy projekt w Visual Studio Code(wzorując się na poprzedniej instrukcji [LAB7](https://c.lazysolutions.pl/instructions2/Lab007/battleships.html)):
+## Pliki nagłówkowe - header files .h
 
-[VSCode.zip](VSCode.zip)
+Pliki nagłówkowe w języku C to pliki, które zawierają prototypy funkcji (deklaracje funkcji bez ciała), makra (stałe), struktury i inne elementy, które są używane w programie głównym lub innych plikach źródłowych. Oto kilka kluczowych rzeczy dotyczących plików nagłówkowych w C:
 
-## Zadanie 2
+1. Zazwyczaj pliki nagłówkowe mają rozszerzenie ".h", co ułatwia ich identyfikację (przyjęto taką konwencję nazewnictwa).
 
-
-Pliki nagłówkowe w języku C to pliki zawierające deklaracje funkcji, definicje struktur, preprocesorowe dyrektywy #define itp., które są używane w jednym lub wielu plikach źródłowych (plik z rozszerzeniem .c). Pliki te pomagają w organizacji i strukturyzacji kodu, umożliwiając podział projektu na logiczne jednostki i poprawiając czytelność kodu. Oto kilka kluczowych informacji o plikach nagłówkowych w C:
-
-1. Rozszerzenie Pliku:
-
-Pliki nagłówkowe mają zazwyczaj rozszerzenie `.h`, np., `mojplik.h`.
-
-2. Struktura Pliku Nagłówkowego:
-
-Pliki nagłówkowe zawierają deklaracje, a nie definicje. Oznacza to, że zawierają informacje o tym, jak używać danego elementu (np. funkcji), ale nie zawierają implementacji.
+2. Plik nagłówkowy może zawierać deklaracje funkcji, definicje makr, struktury, a także deklaracje zmiennych globalnych.
 
 ```c
-// Przykładowy plik nagłówkowy: mojplik.h
+// Przykład pliku nagłówkowego "moj_program.h"
+#ifndef MOJ_PROGRAM_H
+#define MOJ_PROGRAM_H
 
-#ifndef MOJPLIK_H
-#define MOJPLIK_H
+// Deklaracja funkcji
+void moja_funkcja(int x, int y);
 
-// Deklaracje funkcji
-int dodaj(int a, int b);
-void wyswietlKomunikat(void);
+// Deklaracja makra
+#define STALA 10
 
-// Deklaracje struktur, zmiennych itp.
+// Deklaracja makra 2
+#define ADD(x) (x + x)
 
-#endif  // MOJPLIK_H
+// Deklaracja struktury
+struct MojaStruktura {
+    int a;
+    char b;
+};
+
+#endif  // MOJ_PROGRAM_H
+```
+!Jeśli definicja funkcji moja_funkcja znajduje się w pliku moj_program.c podczas kompilacji należy dodać pliki źródłowe do jej implementacji np.:
+
+```
+gcc main.c -o main moj_program.c
 ```
 
-Dyrektywy `#ifndef`, `#define`, i `#endif` zapobiegają wielokrotnemu włączeniu tego samego pliku nagłówkowego.
-
-3. Używanie Plików Nagłówkowych:
-
-Aby używać pliku nagłówkowego w pliku źródłowym, użyj dyrektywy `#include`.
+3. Plik nagłówkowy jest inkludowany w pliku programu głównego za pomocą dyrektywy #include.
 
 ```c
-// Przykładowy plik źródłowy: main.c
+// Przykład inkluzji pliku nagłówkowego w programie głównym "main.c"
+#include "moj_program.h"
 
-#include <stdio.h>
-#include "mojplik.h"
+int main() {
+    // Wywołanie funkcji z pliku nagłówkowego
+    moja_funkcja(5, 8);
 
-int main(void) {
-    int wynik = dodaj(3, 4);
-    printf("Wynik dodawania: %d\n", wynik);
-
-    wyswietlKomunikat();
+    // Użycie makra z pliku nagłówkowego
+    int wynik = STALA * 2;
 
     return 0;
 }
 ```
 
-Dyrektywa `#include <stdio.h>` używana jest do dołączenia standardowego pliku nagłówkowego z biblioteką standardową C.
+4. Aby zapobiec wielokrotnemu inkludowaniu, używa się dyrektywy #ifndef (jeśli niezdefiniowane) i #define wraz z dyrektywą #endif na końcu pliku nagłówkowego.
 
----
+```c
+// moj_program.h
+#ifndef MOJ_PROGRAM_H // oznacza "if not defined" (jeśli niezdefiniowane) MOJ_PROGRAM_H wykonaj instrukcje do #endif.
+#define MOJ_PROGRAM_H // Definiuje symbol MOJ_PROGRAM_H (jeśli będę próbował wczytać ten plik nagówkowy w innym pliku źródłowym tego samego programu #ifndef zapobiegnie wtedy wczytaniu tego pliku)
 
-Większość IDE (Zintegrowane środowisko programistyczne ang. Integrated Development Environment) umożliwa przejście do definicji funkcji przy kliknięciu w funkcję jednocześnie trzymajac przycisk ctrl.
+// Kod pliku nagłówkowego (deklaracje, definicje)
 
-Przejrzyj plik nagłówkowy raylib.h odnajdując go w drzewie projektu lub przez użycie narzędzia "Go to definition" odszukując funkcję biblioteki w pliku `main.c`
+#endif  // MOJ_PROGRAM_H
+```
 
-## Zadanie 3
+5. Pliki nagłówkowe zawierają jedynie deklaracje, a definicje są umieszczane w plikach źródłowych (.c).
+
+6. Pliki nagłówkowe pozwalają na oddzielenie interfejsu (deklaracji) od implementacji (definicji). Interfejs jest dostępny dla klientów (innych fragmentów kodu), podczas gdy implementacja pozostaje ukryta. To wspiera enkapsulację i utrzymanie prywatności implementacji.
+
+## Identyfikatory
+
+
+W języku C, identyfikator jest terminem odnoszącym się do nazwy używanej w celu identyfikacji zmiennej, funkcji lub innego elementu zdefiniowanego przez programistę. Zgodnie z zasadami języka, identyfikator zaczyna się od litery A do Z, a do z, lub znaku podkreślenia '_', po którym może następować zero lub więcej liter, podkreślników i cyfr (0 do 9). Znaki interpunkcyjne, takie jak @, $ i %, są niedozwolone w identyfikatorach. Ponadto, C jest językiem wrażliwym na wielkość liter, co implikuje, że identyfikatory z różną wielkością liter są traktowane jako odrębne. Przykładowo, `MojaFunkcja` i `mojaFunkcja` są rozróżniane jako dwa odrębne identyfikatory w języku C. Przykłady poprawnych identyfikatorów obejmują zmienna, NazwaFunkcji, _mojaZmienna, licznik123. Z kolei błędne identyfikatory to np. 3zmienna, @wartosc, moja-zmienna, C++Identyfikator.
+
+Ponadto jako nazw zmiennych nie używa się poniższych słów kluczowych:
+```c
++-----------+---------+------------+------------+------------+
+| auto      | else    | long       | switch     | break      |
++-----------+---------+------------+------------+------------+
+| enum      | register| typedef    | case       | extern     |
++-----------+---------+------------+------------+------------+
+| char      | float   | short      | unsigned   | const      |
++-----------+---------+------------+------------+------------+
+| for       | signed  | void       | continue   | goto       |
++-----------+---------+------------+------------+------------+
+| default   | if      | static     | while      | do         |
++-----------+---------+------------+------------+------------+
+| int       | struct  | _Packed    | double     | sizeof     |
++-----------+---------+------------+------------+------------+
+| volatile  | default | if         | static     | while      |
++-----------+---------+------------+------------+------------+
+```
+
+## Biblioteki
+
+[Biblioteka standardowa](https://pl.wikibooks.org/wiki/C/Biblioteka_standardowa/Indeks_tematyczny)
+
+### Zadanie 1
+
+Biblioteki które nalezy wykorzystać:
+- [<limits.h>](https://en.wikibooks.org/wiki/C_Programming/limits.h)
+- [<float.h>](https://en.wikibooks.org/wiki/C_Programming/float.h)
+
+Napisz program który wypisze dla typów:
+- short
+- long long unsigned int
+- long double
+
+Liczbę bajtów którą zajmują w pamięci oraz minimalną i maksymalną wartość jaką mogą przechować w systemie.
+
+### Zadanie 2
+
+Biblioteki które nalezy wykorzystać:
+- <ctype.h>
+
+- <string.h>
+
+Napisz program w języku C, który przyjmuje od użytkownika dowolny tekst (zdanie lub krótki paragraf) i wykonuje następujące czynności:
+
+- Policz liczbę słów w tekście.
+- Zamień wszystkie litery na małe litery.
+- Policz, ile razy występuje każda litera w tekście.
+- Usuń wszelkie znaki interpunkcyjne z tekstu.
+- Wyświetl oczyszczony tekst oraz wyniki analizy.
+
+```yaml
+Podaj tekst do analizy:
+To jest przykładowe zdanie. Czy potrafisz je zanalizować?
+
+Analiza tekstu:
+Liczba słów: 10
+Tekst po zamianie na małe litery: to jest przykładowe zdanie. czy potrafisz je zanalizować?
+Wystąpienia liter:
+a: 5
+b: 1
+c: 3
+d: 2
+e: 6
+f: 2
+i: 4
+j: 3
+k: 2
+l: 3
+n: 4
+o: 5
+p: 2
+r: 4
+s: 5
+t: 6
+w: 2
+y: 1
+z: 1
+Tekst po usunięciu znaków interpunkcyjnych: to jest przykładowe zdanie czy potrafisz je zanalizować
+```
+
+W tym zadaniu będziesz musiał użyć funkcji takich jak strlen, isalpha, tolower, strtok, strchr, printf, itp.
+
+### Zadanie 3
+
+Biblioteki które nalezy wykorzystać:
+- <time.h>
+
+Dane są dwie funkcje obliczające wartość ntego elementu ciągu fibbonaciego:
+
+```c
+int fibonacciRecursion(int n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacciRecursion(n - 1) + fibonacciRecursion(n - 2);
+    }
+}
+
+
+int fibonacciIteration(int n) {
+    if (n <= 1) {
+        return n;
+    }
+
+    int a = 0, b = 1, next;
+    for (int i = 2; i <= n; i++) {
+        next = a + b;
+        a = b;
+        b = next;
+    }
+
+    return b;
+}
+```
+
+Zmierz czas potrzebny na znalezienie 10, 50, 100 elementu ciągu. Która funkcja działa szybciej?
+
+### Zadanie 4
+
+Biblioteki które nalezy wykorzystać:
+- <stdlib.h>
+
+Napisz program w języku C, który wczytuje z pliku tekstowego ciąg liczb całkowitych, konwertuje je na liczby, a następnie oblicza ich sumę.
+
+Przykładowy plik file.txt:
+
+```
+123 45 -67
+89
+-12 0 987
+```
+
+Wynik działania programu:
+```
+1165
+```
+
+
+### Zadanie 5
+
+Pobierz i uruchom poniższy projekt w Visual Studio Code(wzorując się na poprzedniej instrukcji [LAB7](https://c.lazysolutions.pl/instructions2/Lab007/battleships.html)):
+
+[VSCode.zip](VSCode.zip)
+
+### Zadanie 6
+
+Biblioteki które nalezy wykorzystać:
+- <stdlib.h>
 
 Funkcja `canPlaceShip()` służy do sprawdzania, czy na planszy możliwe jest umieszczenie statku o określonym rozmiarze w danym miejscu, z określonym kierunkiem (pionowo lub poziomo). 
 
@@ -101,9 +261,11 @@ https://pl.wikibooks.org/wiki/C/rand
 
 Jeśli znajdziesz współrzędne umożliwiające postawienie statku. Zmień odpowiednio status pola `board` na SINGLE_DECKER ... FOUR_DECKER
 
-## Zadanie 4
+### Zadanie 7
 
-Wzorując się na poniższym przykładzie, spróbuj przenieść struktury z pliku main.c do pliku gameHeader.h
+Wzorując się na poniższym przykładzie, spróbuj przenieść struktury z pliku main.c do pliku gameHeader.h Jeśli to możliwe utwórz też prototypy funkcji w pliku gameHeader.h oraz przenieś ich implementacje do gameHeader.c
+
+!Podczas kompilacji należy wskazać plik źródłowy zawierający imeplentacje funkcji.
 
 
 ### MyStruct.h
@@ -145,9 +307,12 @@ int main() {
 }
 ```
 
-### Zadanie 5
+### Zadanie 8
 
-Dodaj do programu zapis historii rozgrywki, a także obecnego stanu do pliku. Po zamknięciu programu w środku rozgrywki, przy uruchomieniu wczytaj stan z pliku binarnego. Jeśli nie pamiętasz zagadnień związanych z zapisem i odczytem z pliku wróć do pliku LAB9 na platformie ms teams.
+Biblioteki które nalezy wykorzystać:
+- <stdio.h>
+
+Dodaj do programu zapis historii rozgrywki do pliku tekstowego, a także obecnego stanu do pliku binarnego, po zamknięciu programu w środku rozgrywki. Przy uruchomieniu wczytaj stan rozgrywki z pliku binarnego. Jeśli nie pamiętasz zagadnień związanych z zapisem i odczytem z pliku wróć do pliku LAB9 na platformie ms teams.
 
 ZAPIS:
 

@@ -40,6 +40,4 @@ typedef struct
 } Game;
 
 extern Game game;
-
-void fieldAction(Field *field);
 #endif
