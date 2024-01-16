@@ -1,5 +1,9 @@
 {
     "code-runner.executorMap": {
         "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt ./lib/biblioteka.c  && $dir$fileNameWithoutExt",
+    },
+    "files.associations": {
+        "*.cps": "javascript",
+        "stdio.h": "c"
     }
-}   
+}

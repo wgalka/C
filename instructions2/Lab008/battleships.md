@@ -158,7 +158,7 @@ Tekst po usunięciu znaków interpunkcyjnych: to jest przykładowe zdanie czy po
 
 W tym zadaniu będziesz musiał użyć funkcji takich jak strlen, isalpha, tolower, strtok, strchr, printf, itp.
 
-Aby wczytać pełne zdanie z konsoli do znaku dowej lini należy użyć następującej formatki:
+Aby wczytać pełne zdanie z konsoli do 'f' należy użyć następującej formatki:
 ```
 #include <stdio.h> 
 int main() 
@@ -169,6 +169,7 @@ int main()
     return 0; 
 }
 ```
+Zmień formatkę tak by czytała zdanie do przejścia do nowej linii.
 
 ### Zadanie 3
 
