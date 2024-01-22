@@ -1,6 +1,12 @@
+Pliki CSV (Comma-Separated Values) to format przechowywania danych, w którym wartości są oddzielone specjalnym znakiem, najczęściej przecinkiem (','). Jednak pliki CSV mogą również używać innych separatorów, takich jak średnik (';') lub tabulator ('\t'). Typowy plik CSV składa się z rekordów, a każdy rekord zawiera pola oddzielone separatorem.
+
+- Separatory: Oprócz przecinka, mogą używać innych separatorów, takich jak średnik czy tabulator, w zależności od wymagań lub standardów.
+
+- Nagłówek: Plik CSV może zawierać nagłówek, który definiuje nazwy kolumn. Nagłówek jest zazwyczaj pierwszym wierszem pliku i pomaga zrozumieć, co znajduje się w poszczególnych kolumnach.
+
 # DST
 
-Napisz program w języku C, który wczytuje dane z pliku tekstowego o określonej liczbie kolumn np:
+Napisz program w języku C, który wczytuje dane z pliku tekstowego o określonej liczbie kolumn i wierszy (5 x 5). Przykładowy plik:
 
 ```yaml
 ID, Population (millions), GDP per Capita (USD), Life Expectancy (years), Internet Users (%)
