@@ -13,7 +13,7 @@ ID, Population (millions), GDP per Capita (USD), Life Expectancy (years), Intern
 
 Program powinien również umożliwiać obliczenie średniej arytmetycznej dla wybranej kolumny lub wiersza. Możliwa jest też modyfikacja wczytanych danych oraz zapis.
 
-1. W programie powinna być możliwość wczytania danych ze wskazanego pliku oraz o dowolnym znaku separującym kolumny (w przykładzie jest to "," takim znakiem możę być również "|"). (może być to zrealizowane przy pomocy funkcji o odpowiednich parametrach)
+1. W programie powinna być możliwość wczytania danych ze wskazanego pliku oraz o dowolnym znaku separującym kolumny (w przykładzie jest to "," takim znakiem możę być również "/"). (może być to zrealizowane przy pomocy funkcji o odpowiednich parametrach)
 2. Wczytane dane będą przechowywane w strukturze. Należy odpowiednio zdefiniować jej pola. Oprócz danych powinny być też zachowane nazwy kolumn.
 3. W programie powinniśmy mieć możliwość obliczenia średniej arytmetycznej z danego zakresu np. 2 kolumny, 3 wiersza lub średnią z drugiej i trzeciej kolumny. (może to być realizowane za pomocą funkcji)
 4. Użytkownik powinien mieć możliwość edycji nazw kolumn lub wartości w danym wierszu i kolumnie. Po modyfikacji powinien mieć możliwość zapisania resultatów do tego samego lub innego pliku.
