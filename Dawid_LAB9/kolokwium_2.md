@@ -41,7 +41,7 @@ Double mean = calculateMean(matrix ,"col", 3); // obliczy średnią w 3 kolumnie
 4. Użytkownik powinien mieć możliwość edycji nazw kolumn lub wartości w danym wierszu i kolumnie. Po modyfikacji powinien mieć możliwość zapisania resultatów do tego samego lub innego pliku.
 
 ```c
-edit(1,2,3); // wstawienie do 1 wiersza 2 kolumny wartości 3
+edit(matrix, 1,2,3); // wstawienie do 1 wiersza 2 kolumny wartości 3
 ```
 
 Przetestuj wszystkie funkcjonalności programu. Każdy z testów opisz odpowiednim komentarzem.
