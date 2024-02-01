@@ -366,7 +366,7 @@
 
 .codeblock-label {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-style: italic;
     background-color: #f8f8f8;
     display: inline-block;
