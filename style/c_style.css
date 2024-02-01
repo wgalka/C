@@ -364,8 +364,9 @@
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 
-.codeblock-label {
+.codeblock-label.highlight {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     font-weight: bold;
     font-style: italic;
+    margin-bottom: 0px;
 }
