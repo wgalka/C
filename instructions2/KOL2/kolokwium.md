@@ -1,6 +1,6 @@
 Pliki *CSV* (Comma-Separated Values) to format przechowywania danych, w którym zazwyczaj pierwsza linia zawiera nazwy kolumn gdzie wartości są oddzielone `,`:
 
-<div class="codeblock-label">example.csv</div>
+<div class="codeblock-label highlight">example.csv</div>
 ```yaml
 kolumna A, Kolumna B, Kolumna C, Kolumna D
 ```
