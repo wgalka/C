@@ -368,7 +368,9 @@
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     /* font-weight: bold; */
     font-style: italic;
+    font-size: 1em;
     background-color: #f6f8fa;
     display: inline-block;
     padding: 16px;
+    border-radius: 16 16 0 0;
 }
