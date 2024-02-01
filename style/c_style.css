@@ -375,3 +375,7 @@
     padding: 5px 16px 0px 16px;
     border-radius: 16px 16px 0px 0px;
 }
+
+.highlight {
+    background-color: #e5eeff;
+}
