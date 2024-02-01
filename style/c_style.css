@@ -376,6 +376,7 @@
     border-radius: 16px 16px 0px 0px;
 }
 
-.highlight {
+.markdown-body .highlight pre,
+.markdown-body pre {
     background-color: #e5eeff;
 }
