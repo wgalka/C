@@ -369,5 +369,5 @@
     font-weight: bold;
     font-style: italic;
     background-color: #f8f8f8;
-    display: block;
+    display: inline-block;
 }
