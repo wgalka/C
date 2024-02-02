@@ -3,19 +3,68 @@ title: C - kolokwium 2
 layout: default
 ---
 
+# C - kolokwium 2
+
 Pliki *CSV* (Comma-Separated Values) to format przechowywania danych, w którym zazwyczaj pierwsza linia zawiera nazwy kolumn gdzie wartości są oddzielone `,`:
 
 <div class="codeblock-label">example.csv</div>
 ```yaml
 kolumna A, Kolumna B, Kolumna C, Kolumna D
 ```
-Kolejne linie w pliku *CSV* 
+Kolejne linie w pliku *CSV* zawierają dane, które również oddzielone są separatorem `,`:
 
- Jednak pliki CSV mogą również używać innych separatorów, takich jak średnik (';') lub tabulator ('\t'). Typowy plik CSV składa się z rekordów, a każdy rekord zawiera pola oddzielone separatorem, najczęściej jest to znak `,` jednak możliwe jest też użycie np. `;`,`|` lub `\t`.
+<div class="codeblock-label">example.csv</div>
+```yaml
+kolumna A, Kolumna B, Kolumna C, Kolumna D
+1, A, 3, 4.0
+2, B, 3, 4.0
+3, C, 3, 5.0
+```
 
-- Separatory: Oprócz przecinka, mogą używać innych separatorów, takich jak średnik czy tabulator, w zależności od wymagań lub standardów.
 
-- Nagłówek: Plik CSV może zawierać nagłówek, który definiuje nazwy kolumn. Nagłówek jest zazwyczaj pierwszym wierszem pliku i pomaga zrozumieć, co znajduje się w poszczególnych kolumnach.
+ Pliki CSV mogą również używać innych separatorów, takich jak średnik np. `;`,`|` lub `\t`.
+
+ <div class="codeblock-label">example.csv</div>
+```yaml
+kolumna A; Kolumna B; Kolumna C; Kolumna D
+1; A; 3; 4.0
+2; B; 3; 4.0
+3; C; 3; 5.0
+```
+
+**Zadanie będzie polegać na stworzeniu biblioteki umożliwiającej wczytanie pliku CSV, wykonanie okreslonych operacji na wczytanym pliku oraz zapis rezultatów.**
+
+## Krok 1 - Przechowywanie danych
+
+Znając strukturę pliku CSV należy wymyśleć sposób przehcowywania danych w pamięci komputera z wykorzytsaniem podstawowych konstrukcji języka C.
+
+Wiemy że pierwsza linia odczytanego pliku to nagłówek i skłąda się on z `n` łańcuchów znaków gdzie `n` to liczba kolumn. Łańcuch znaków jest to tablica przechowująca typ `char`. Zatem aby przechować nagłówek będzie potrzebne `n` tablic zdolnych przechować wszystkie znaki z poszczególnych nazw kolumn. Dla uproszczenia wstępnie możemy przyjąć założenia że liczba kolumn nie przekroczy 10 a liczba znaków w nazwie kolumny 100 znaków. Z tymi założeniami możemy utworzyć zmienną przechowującą nasz nałówek w następujący sposób:
+
+<div class="codeblock-label">main.c</div>
+```c
+char header[10][100] = {'\0'}; // 10 kolumn po 100 znaków. {'\0'} uzupełnia tablicę wartościami pustymi.
+```
+
+Kolejne linie przechowują dane. Zazwyczaj są to wartości liczbowe stąd dla ułatwienia przyjmiemy że wartość w każdej komórce jest typu `double` który umożliwi przechowanie wartości zarówno całkowitych jak i zmienno przecinkowych oraz stosunkowo precyzyjne operacje arytmetyczne na danych.
+
+W jednej linii pliku `CSV` jest przechowywane założone 10 wartości(10 kolumn). Plik ma `m` linni. Dla ułatwienia możemy przyjąć że nasz plik z danymi może maksymalnie mieć 1000 lini. Stąd aby przechować dane najprostszym sposobem jest stworzenie tablicy którą możemy zadeklarować w poniższy sposób:
+
+<div class="codeblock-label">example.csv</div>
+```c
+double data[10][1000] = {0.0};
+```
+
+Jeśli nasz program miałby wczytać więcej niż jeden plik `CSV` możemy zorganizować powstałe zmienne w strukturę o przykładowej nazwie `DataMatrix`.
+
+### Zadanie
+
+Utwórz plik nagłówkowy `csvreader.h`. W pliku utwórz strukturę `DataMatrix` będącą w stanie przechować zawartość pliku *CSV* zakładając podane wcześniej ograniczenia.
+Utwórz plik `main.c` w którym jest zaimportowany plik nagłówkowy `csvreader.h`.
+
+## Krok 2 - wczytanie danych
+
+
+
 
 ## DST
 
