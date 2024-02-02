@@ -1,4 +1,7 @@
-# C - kolokwium 2
+---
+title: C - kolokwium 2
+layout: default
+---
 
 Pliki *CSV* (Comma-Separated Values) to format przechowywania danych, w którym zazwyczaj pierwsza linia zawiera nazwy kolumn gdzie wartości są oddzielone `,`:
 
