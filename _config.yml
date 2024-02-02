@@ -21,7 +21,7 @@ plugins:
 # remote_theme: yous/whiteglass
 # theme: just-the-docs
   
-theme: jekyll-theme-minimal
+theme: minima
 
 # markdown: GFM
 # markdown: GFM
