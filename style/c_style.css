@@ -378,5 +378,6 @@
 
 .markdown-body .highlight pre,
 .markdown-body pre {
-    background-color: #e5eeff;
+    /* background-color: #e5eeff; */
+    background-color: #eef3ff;
 }

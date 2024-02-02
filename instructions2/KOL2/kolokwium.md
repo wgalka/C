@@ -1,3 +1,5 @@
+# C - kolokwium 2
+
 Pliki *CSV* (Comma-Separated Values) to format przechowywania danych, w którym zazwyczaj pierwsza linia zawiera nazwy kolumn gdzie wartości są oddzielone `,`:
 
 <div class="codeblock-label">example.csv</div>
@@ -12,7 +14,7 @@ Kolejne linie w pliku *CSV*
 
 - Nagłówek: Plik CSV może zawierać nagłówek, który definiuje nazwy kolumn. Nagłówek jest zazwyczaj pierwszym wierszem pliku i pomaga zrozumieć, co znajduje się w poszczególnych kolumnach.
 
-# DST
+## DST
 
 Napisz program w języku C, który wczytuje dane z pliku tekstowego o określonej liczbie kolumn i wierszy (5 x 5). Przykładowy plik:
 
@@ -54,7 +56,7 @@ edit(matrix, 1,2,3); // wstawienie do 1 wiersza 2 kolumny wartości 3
 
 Przetestuj wszystkie funkcjonalności programu. Każdy z testów opisz odpowiednim komentarzem.
 
-# DB
+## DB
 
 Program z zadania DST jednak możliwe jest wczytanie danych z pliku o dowolnej liczbie kolumn i wierszy.
 
@@ -86,7 +88,7 @@ zostałyby wybrany następujący wycinek danych do obliczenia średniej:
 213, 9196, 72.10
 ```
 
-# BDB
+## BDB
 
 Program z zadania DST jednak możliwe jest wczytanie danych z pliku o dowolnej liczbie kolumn, wierszy oraz dowolny typ danych w kolumnie który program sam powinien rozpoznać.
 
